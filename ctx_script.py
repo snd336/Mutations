@@ -16,7 +16,6 @@ Ended up just running as a debug to avoid storing results, hope to minimize time
 """
 
 
-# .cover
 def create_cover_files():
     # create a trace object to get line hits for source files
     # creates .cover file
@@ -31,6 +30,7 @@ def create_cover_files():
 
     r = tracer.results()
     r.write_results(coverdir='cover')
+
 
 # TODO keep an eye out for line hits count on updated coverage
 def create_coverage_data():
@@ -49,20 +49,17 @@ def create_coverage_data():
 
 
 def create_assert_dict(cov_data):
-    # get assert features for every test file that was used
-    counter_dict = {}
-    test_ctx_class_list = []
+    assert_dict = {}
+    unique_filenames = []
     for x in cov_data.measured_contexts():  # x = module.class.test_case
-        temp_list = x.split('.')
-        test_ctx_class_list.append(temp_list[0])
-    test_ctx_class_list = list(set(test_ctx_class_list))
+        unique_filenames.append(x.split('.')[0])
+    unique_filenames = set(unique_filenames)
 
-    for x in test_ctx_class_list:
-        counter_dict.update(AssertCounter(x).assert_dict)
-    return counter_dict
+    for x in unique_filenames:
+        assert_dict.update(AssertCounter(x).assert_dict)
+    return assert_dict
 
 
-# returns: list of all .py files in src excluding runners and tests
 def generate_source_files():
     exclude = {'runners', 'tests', '__pycache__'}
     src_include_list = []
@@ -83,27 +80,6 @@ def create_mutant_dict(src__file_list):
     return mut_dict
 
 
-def update_num_executed(cov_src_file, cov_mutants):
-    cover_dict = {}
-    lineno = 1
-    if os.path.exists('cover/src.' + cov_src_file[:-3] + '.cover'):
-        with open('cover/src.' + cov_src_file[:-3] + '.cover') as f:
-            for line in f:
-                match_obj = re.match(' {4}(\\d+)', line)
-                if match_obj:
-                    cover_dict[lineno] = match_obj.group(1)
-                lineno += 1
-
-        # update num_executed
-        for key in cover_dict:
-            if key in cov_mutants.mutation_lineno_list:
-                if isinstance(cov_mutants.mutations[key], list):
-                    for k in cov_mutants.mutations[key]:
-                        k.num_executed = cover_dict[key]
-                else:
-                    cov_mutants.mutations[key].num_executed = cover_dict[key]
-
-
 def create_feature_dict(py_files, assert_dict, cov_results):
     src_ftr_dict = {}
     for py_file in py_files:
@@ -115,16 +91,37 @@ def create_feature_dict(py_files, assert_dict, cov_results):
                 for line in f:
                     match_obj = re.match(' {4}(\\d+)', line)
                     if match_obj:
-                        ftr_dict[line_no] = match_obj.group(1)
+                        ftr_dict[line_no] = [int(match_obj.group(1))]
                     line_no += 1
+        ctx_assert_dict = merge_ctx_and_assert_dict(py_file, cov_results, assert_dict)
+        for x in ctx_assert_dict:
+            ftr_dict[x] = ftr_dict[x] + ctx_assert_dict[x]
+
         src_ftr_dict[py_file] = ftr_dict
-    merge_ctx_and_assert_dict(assert_dict, cov_results)
+    return src_ftr_dict
 
 
-def merge_ctx_and_assert_dict(assert_dict, cov_data):
-    print(cov_data.measured_contexts())  # test_files
-    # print(cov_data.measured_files())  # src_files
-    print(assert_dict)
+def merge_ctx_and_assert_dict(ctx_file, ctx_results, assert_dict):
+    # TODO what if a line is hit by more than one class
+    ctx_hold_dict = dict(ctx_results.contexts_by_lineno(os.getcwd() + '\src\\' + ctx_file))
+    ctx_assert_dict = {}
+
+    for ctx_lineno, ctx_methods in ctx_hold_dict.items():
+        ctx_assert_dict[ctx_lineno] = [len(ctx_methods),0,0]
+        for ctx_method in ctx_methods:
+            ctx_assert_dict[ctx_lineno][1] = assert_dict[ctx_method][0]
+            ctx_assert_dict[ctx_lineno][2] += assert_dict[ctx_method][1]
+    return ctx_assert_dict
+
+
+def update_dyn_ftr(file_list, dyn_dict, mut_dict):
+    for file_src in file_list:
+        ftr_dict = dyn_dict[file_src]
+        mutant_list = mut_dict[file_src]
+        org_mut_dict = mutant_list.mutations
+        for lineno in org_mut_dict:
+            for x in org_mut_dict[lineno]:
+                x.update_ftr(ftr_dict[lineno])
 
 
 if __name__ == '__main__':
@@ -134,44 +131,14 @@ if __name__ == '__main__':
     assert_counter_dict = create_assert_dict(covData)
     src_list = generate_source_files()
 
-    create_feature_dict(src_list, assert_counter_dict, covData)  # TODO if this works redo update_num_executed()
+    dyn_ftr_dict = create_feature_dict(src_list, assert_counter_dict, covData)
 
-    # all source code # src_mut_dict['calculator.py'] = mutationList
     src_mut_dict = create_mutant_dict(src_list)
 
-    for src_file, mutants in src_mut_dict.items():
-        update_num_executed(src_file, mutants)
-
-        cwd_path = os.getcwd()
-        test_ctx_path = cwd_path + '\src\\' + src_file
-        if covData.contexts_by_lineno(test_ctx_path):
-            ctx_dict = dict(covData.contexts_by_lineno(test_ctx_path))
-            for ctx_key in ctx_dict.keys():
-                unique_tc_list = []
-                if ctx_key in mutants.mutation_lineno_list:
-                    if isinstance(mutants.mutations[ctx_key], list):
-                        for i in mutants.mutations[ctx_key]:
-                            i.num_test_cover = len(ctx_dict[ctx_key])
-                    else:
-                        mutants.mutations[ctx_key].num_test_cover = len(ctx_dict[ctx_key])
-
-                    for new_key in ctx_dict[ctx_key]:
-                        tc_name = new_key.split('.')[2]
-                        key_name = 'tests.' + new_key
-                        if key_name in assert_counter_dict:
-                            if tc_name not in unique_tc_list:
-                                if isinstance(mutants.mutations[ctx_key], list):
-                                    for i in mutants.mutations[ctx_key]:
-                                        i.num_assert_tc += assert_counter_dict[key_name][0]
-                                else:
-                                    mutants.mutations[ctx_key].num_assert_tc += assert_counter_dict[key_name][0]
-                                unique_tc_list.append(tc_name)
-                            if isinstance(mutants.mutations[ctx_key], list):
-                                for i in mutants.mutations[ctx_key]:
-                                    i.num_assert_tm += assert_counter_dict[key_name][1]
-                            else:
-                                mutants.mutations[ctx_key].num_assert_tm += assert_counter_dict[key_name][1]
-
+    update_dyn_ftr(src_list, dyn_ftr_dict, src_mut_dict)
     for file in src_mut_dict:
         src_mut_dict[file].display_mutants()
-    # given_mutation_dict(src_mut_dict) # to csv
+
+    given_mutation_dict(src_mut_dict)  # to csv
+
+

@@ -3,7 +3,7 @@ import re
 
 
 class Mutation:
-    def __init__(self, num_test_cover=0, num_executed=0, num_assert_tm=0, num_assert_tc=0, mutant_operator_type=None,
+    def __init__(self, num_test_cover=0, num_executed=0, num_assert_tc=0, num_assert_tm=0, mutant_operator_type=None,
                  source_file=None, lineno=None, col_offset=None, num_of_operations=0):
         self.num_of_operations = num_of_operations  # if you need to know how many operators applied to mutant
         self.source_file = source_file
@@ -13,8 +13,14 @@ class Mutation:
         self.mutant_operator_type = mutant_operator_type
         self.num_test_cover = num_test_cover
         self.num_executed = num_executed
-        self.num_assert_tm = num_assert_tm
         self.num_assert_tc = num_assert_tc
+        self.num_assert_tm = num_assert_tm
+
+    def update_ftr(self, ftr_list):
+        self.num_test_cover = ftr_list[0]
+        self.num_executed = ftr_list[1]
+        self.num_assert_tc = ftr_list[2]
+        self.num_assert_tm = ftr_list[3]
 
 
 class MutationList:
@@ -73,16 +79,16 @@ class MutationOperator(ast.NodeVisitor):
         if visitors:
             if self.last_lineno in self.mutation_list.mutations.keys():
                 # TODO may have to flatten the list
-                self.mutation_list.mutations[self.last_lineno] = [self.mutation_list.mutations[self.last_lineno],
-                                                                  Mutation(lineno=self.last_lineno,
+                self.mutation_list.mutations[self.last_lineno] = self.mutation_list.mutations[self.last_lineno] + \
+                                                                 [Mutation(lineno=self.last_lineno,
                                                                            source_file=self.filename,
                                                                            num_of_operations=len(visitors),
                                                                            mutant_operator_type=self.name())]
             else:
-                self.mutation_list.mutations[self.last_lineno] = Mutation(lineno=self.last_lineno,
-                                                                          source_file=self.filename,
-                                                                          num_of_operations=len(visitors),
-                                                                          mutant_operator_type=self.name())
+                self.mutation_list.mutations[self.last_lineno] = [Mutation(lineno=self.last_lineno,
+                                                                           source_file=self.filename,
+                                                                           num_of_operations=len(visitors),
+                                                                           mutant_operator_type=self.name())]
             self.mutation_list.update_lineno_list(self.last_lineno)
             # TODO make sure adds more than AOR
 

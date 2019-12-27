@@ -18,7 +18,7 @@ class AssertCounter(ast.NodeVisitor):
         self.filename = filename
         with open('src\\tests\\' + filename + '.py') as f:
             module = ast.parse(f.read())
-            self.filename = 'tests.' + filename
+            self.filename = filename
             self.visit(module)
 
 
