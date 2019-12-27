@@ -1,12 +1,11 @@
+import csv
 import coverage
 import trace
 import os
 import re
 import sys
 
-from mutations import standard_operators
-from mutations import MutationList
-from pd_work import given_mutation_dict
+from mutations import MutationList, standard_operators
 from scripts.assert_script import AssertCounter
 from src.runners.unittest_runner import debug_suit
 
@@ -107,7 +106,7 @@ def merge_ctx_and_assert_dict(ctx_file, ctx_results, assert_dict):
     ctx_assert_dict = {}
 
     for ctx_lineno, ctx_methods in ctx_hold_dict.items():
-        ctx_assert_dict[ctx_lineno] = [len(ctx_methods),0,0]
+        ctx_assert_dict[ctx_lineno] = [len(ctx_methods), 0, 0]
         for ctx_method in ctx_methods:
             ctx_assert_dict[ctx_lineno][1] = assert_dict[ctx_method][0]
             ctx_assert_dict[ctx_lineno][2] += assert_dict[ctx_method][1]
@@ -122,6 +121,23 @@ def update_dyn_ftr(file_list, dyn_dict, mut_dict):
         for lineno in org_mut_dict:
             for x in org_mut_dict[lineno]:
                 x.update_ftr(ftr_dict[lineno])
+
+
+def mutant_dict_to_csv(mutation_dict):
+    with open('data.csv', 'w', newline='') as f:
+        writer = csv.writer(f)
+
+        col_list = ['source_file', 'lineno', 'num_test_cover', 'num_executed', 'num_assert_tm', 'num_assert_tc',
+                    'mutant_operator_type']
+        writer.writerow(col_list)
+        for key in mutation_dict:
+            per_src_dict = mutation_dict[key].mutations
+            for i in per_src_dict:
+                for j in per_src_dict[i]:
+                    m_o = j
+                    writer.writerow(
+                        [m_o.source_file, m_o.lineno, m_o.num_test_cover, m_o.num_executed, m_o.num_assert_tm,
+                         m_o.num_assert_tc, m_o.mutant_operator_type])
 
 
 if __name__ == '__main__':
@@ -139,6 +155,4 @@ if __name__ == '__main__':
     for file in src_mut_dict:
         src_mut_dict[file].display_mutants()
 
-    given_mutation_dict(src_mut_dict)  # to csv
-
-
+    mutant_dict_to_csv(src_mut_dict)  # to csv
