@@ -16,6 +16,7 @@ Ended up just running as a debug to avoid storing results, hope to minimize time
 """
 
 
+# .cover
 def create_cover_files():
     # create a trace object to get line hits for source files
     # creates .cover file
@@ -31,7 +32,7 @@ def create_cover_files():
     r = tracer.results()
     r.write_results(coverdir='cover')
 
-
+# TODO keep an eye out for line hits count on updated coverage
 def create_coverage_data():
     # create a coverage object
     t_path = os.getcwd() + '\\src\\tests\\*'
@@ -61,6 +62,7 @@ def create_assert_dict(cov_data):
     return counter_dict
 
 
+# returns: list of all .py files in src excluding runners and tests
 def generate_source_files():
     exclude = {'runners', 'tests', '__pycache__'}
     src_include_list = []
@@ -91,6 +93,7 @@ def update_num_executed(cov_src_file, cov_mutants):
                 if match_obj:
                     cover_dict[lineno] = match_obj.group(1)
                 lineno += 1
+
         # update num_executed
         for key in cover_dict:
             if key in cov_mutants.mutation_lineno_list:
@@ -101,6 +104,29 @@ def update_num_executed(cov_src_file, cov_mutants):
                     cov_mutants.mutations[key].num_executed = cover_dict[key]
 
 
+def create_feature_dict(py_files, assert_dict, cov_results):
+    src_ftr_dict = {}
+    for py_file in py_files:
+        ftr_dict = {}
+        # per src create ftr_dict
+        line_no = 1
+        if os.path.exists('cover/src.' + py_file[:-3] + '.cover'):
+            with open('cover/src.' + py_file[:-3] + '.cover') as f:
+                for line in f:
+                    match_obj = re.match(' {4}(\\d+)', line)
+                    if match_obj:
+                        ftr_dict[line_no] = match_obj.group(1)
+                    line_no += 1
+        src_ftr_dict[py_file] = ftr_dict
+    merge_ctx_and_assert_dict(assert_dict, cov_results)
+
+
+def merge_ctx_and_assert_dict(assert_dict, cov_data):
+    print(cov_data.measured_contexts())  # test_files
+    # print(cov_data.measured_files())  # src_files
+    print(assert_dict)
+
+
 if __name__ == '__main__':
 
     create_cover_files()
@@ -108,8 +134,11 @@ if __name__ == '__main__':
     assert_counter_dict = create_assert_dict(covData)
     src_list = generate_source_files()
 
+    create_feature_dict(src_list, assert_counter_dict, covData)  # TODO if this works redo update_num_executed()
+
     # all source code # src_mut_dict['calculator.py'] = mutationList
     src_mut_dict = create_mutant_dict(src_list)
+
     for src_file, mutants in src_mut_dict.items():
         update_num_executed(src_file, mutants)
 
