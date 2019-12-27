@@ -1,0 +1,4 @@
+source_file,lineno,num_test_cover,num_executed,num_assert_tm,num_assert_tc,mutant_operator_type
+src/calculator.py,2,2,2,3,6,AOR
+src/calculator.py,2,2,2,3,6,AOR
+src/calculator.py,6,1,1,2,3,AOR
