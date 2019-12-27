@@ -1,0 +1,6 @@
+    1: def mul(x, y):
+    2:     return x * y * 2
+       
+       
+    1: def div(x, y):
+    1:     return x / y
