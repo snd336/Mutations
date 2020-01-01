@@ -1,24 +1,25 @@
 import ast
 
-from mutations import MutationOperator, copy_node, MutationResign
+from mutations import MutationOperator
 
 
+# DDL, CDI, SDI
 class DecoratorDeletion(MutationOperator):
-    @copy_node
+
     def mutate_FunctionDef(self, node):
         if node.decorator_list:
             node.decorator_list = []
             return node
         else:
-            raise MutationResign()
-            # TODO what to do about MutationResign
+            pass
+
     @classmethod
     def name(cls):
         return 'DDL'
 
 
 class AbstractMethodDecoratorInsertionMutationOperator(MutationOperator):
-    @copy_node
+
     def mutate_FunctionDef(self, node):
         if not isinstance(node.parent, ast.ClassDef):
             raise MutationResign()

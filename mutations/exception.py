@@ -14,14 +14,14 @@ class BaseExceptionHandlerOperator(MutationOperator):
 class ExceptionHandlerDeletion(BaseExceptionHandlerOperator):
     def mutate_ExceptHandler(self, node):
         if node.body and isinstance(node.body[0], ast.Raise):
-            raise MutationResign()
+            return
         return self._replace_exception_body(node, [ast.Raise(lineno=node.body[0].lineno)])
 
 
 class ExceptionSwallowing(BaseExceptionHandlerOperator):
     def mutate_ExceptHandler(self, node):
         if len(node.body) == 1 and isinstance(node.body[0], ast.Pass):
-            raise MutationResign()
+            return
         return self._replace_exception_body(node, [ast.Pass(lineno=node.body[0].lineno)])
 
     @classmethod

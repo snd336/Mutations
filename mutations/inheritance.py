@@ -1,15 +1,15 @@
 import ast
 import functools
-# TODO figure out dependencies for utils
-# from mutpy import utils
-
-from mutations import MutationOperator, MutationResign, copy_node
 
 
+from mutations import MutationOperator, MutationResign
+
+
+# IHD, IOP, IOD, SCD, SCI
 class AbstractOverriddenElementModification(MutationOperator):
     def is_overridden(self, node, name=None):
         if not isinstance(node.parent, ast.ClassDef):
-            raise MutationResign()
+            return
         if not name:
             name = node.name
         parent = node.parent
@@ -18,13 +18,14 @@ class AbstractOverriddenElementModification(MutationOperator):
             if not isinstance(parent, ast.Module):
                 parent_names.append(parent.name)
             if not isinstance(parent, ast.ClassDef) and not isinstance(parent, ast.Module):
-                raise MutationResign()
+                return
             parent = parent.parent
         getattr_rec = lambda obj, attr: functools.reduce(getattr, attr, obj)
         try:
+
             klass = getattr_rec(self.module, reversed(parent_names))
         except AttributeError:
-            raise MutationResign()
+            return
         for base_klass in type.mro(klass)[1:-1]:
             if hasattr(base_klass, name):
                 return True
@@ -34,13 +35,13 @@ class AbstractOverriddenElementModification(MutationOperator):
 class HidingVariableDeletion(AbstractOverriddenElementModification):
     def mutate_Assign(self, node):
         if len(node.targets) > 1:
-            raise MutationResign()
+            return
         if isinstance(node.targets[0], ast.Name) and self.is_overridden(node, name=node.targets[0].id):
             return ast.Pass()
         elif isinstance(node.targets[0], ast.Tuple) and isinstance(node.value, ast.Tuple):
             return self.mutate_unpack(node)
         else:
-            raise MutationResign()
+            return
 
     def mutate_unpack(self, node):
         target = node.targets[0]
@@ -92,13 +93,13 @@ class OverriddenMethodCallingPositionChange(AbstractSuperCallingModification):
     def should_mutate(self, node):
         return super().should_mutate(node) and len(node.body) > 1
 
-    @copy_node
     def mutate_FunctionDef(self, node):
         if not self.should_mutate(node):
-            raise MutationResign()
+            return
         index, stmt = self.get_super_call(node)
         if index is None:
             raise MutationResign()
+        """
         super_call = node.body[index]
         del node.body[index]
         if index == 0:
@@ -109,6 +110,7 @@ class OverriddenMethodCallingPositionChange(AbstractSuperCallingModification):
             self.set_lineno(super_call, node.body[0].lineno)
             self.shift_lines(node.body, 1)
             node.body.insert(0, super_call)
+        """
         return node
 
     @classmethod
@@ -120,7 +122,7 @@ class OverridingMethodDeletion(AbstractOverriddenElementModification):
     def mutate_FunctionDef(self, node):
         if self.is_overridden(node):
             return ast.Pass()
-        raise MutationResign()
+        return
 
     @classmethod
     def name(cls):
@@ -128,13 +130,13 @@ class OverridingMethodDeletion(AbstractOverriddenElementModification):
 
 
 class SuperCallingDeletion(AbstractSuperCallingModification):
-    @copy_node
+
     def mutate_FunctionDef(self, node):
         if not self.should_mutate(node):
-            raise MutationResign()
+            return
         index, _ = self.get_super_call(node)
         if index is None:
-            raise MutationResign()
+            return
         node.body[index] = ast.Pass(lineno=node.body[index].lineno)
         return node
 
@@ -145,18 +147,20 @@ class SuperCallingInsertPython27(AbstractSuperCallingModification, AbstractOverr
     def should_mutate(self, node):
         return super().should_mutate(node) and self.is_overridden(node)
 
-    @copy_node
     def mutate_FunctionDef(self, node):
         if not self.should_mutate(node):
-            raise MutationResign()
+            return
+
         index, stmt = self.get_super_call(node)
         if index is not None:
-            raise MutationResign()
+            return
+        """
         node.body.insert(0, self.create_super_call(node))
         self.shift_lines(node.body[1:], 1)
+        """
         return node
 
-    @copy_node
+    """
     def create_super_call(self, node):
         super_call = utils.create_ast('super().{}()'.format(node.name)).body[0]
         for arg in node.args.args[1:-len(node.args.defaults) or None]:
@@ -179,7 +183,7 @@ class SuperCallingInsertPython27(AbstractSuperCallingModification, AbstractOverr
     @staticmethod
     def add_vararg_to_super_call(super_call, vararg):
         super_call.value.starargs = ast.Name(id=vararg, ctx=ast.Load())
-
+    """
     @classmethod
     def name(cls):
         return 'SCI'

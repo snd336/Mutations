@@ -142,16 +142,16 @@ def mutant_dict_to_csv(mutation_dict):
 
 if __name__ == '__main__':
 
-    create_cover_files()
-    covData = create_coverage_data()
-    assert_counter_dict = create_assert_dict(covData)
+    # create_cover_files()
+    # covData = create_coverage_data()
+    # assert_counter_dict = create_assert_dict(covData)
     src_list = generate_source_files()
 
-    dyn_ftr_dict = create_feature_dict(src_list, assert_counter_dict, covData)
+    # dyn_ftr_dict = create_feature_dict(src_list, assert_counter_dict, covData)
 
     src_mut_dict = create_mutant_dict(src_list)
 
-    update_dyn_ftr(src_list, dyn_ftr_dict, src_mut_dict)
+    # update_dyn_ftr(src_list, dyn_ftr_dict, src_mut_dict)
     for file in src_mut_dict:
         src_mut_dict[file].display_mutants()
 

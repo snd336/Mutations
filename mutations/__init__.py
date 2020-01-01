@@ -1,26 +1,20 @@
 from .arithmetic import *
 from .base import *
-"""
+from .misc import *
+from .logical import *
 from .decorator import *
 from .exception import *
 from .inheritance import *
-from .logical import *
+
+"""
 from .loop import *
-from .misc import *
 
-SuperCallingInsert = utils.get_by_python_version([
-    SuperCallingInsertPython27,
-    SuperCallingInsertPython35,
-])
 """
+SuperCallingInsert = SuperCallingInsertPython35,
+
 standard_operators = {
-    # ArithmeticOperatorDeletion,
+    ArithmeticOperatorDeletion,
     ArithmeticOperatorReplacement,
-}
-
-"""
-# TODO fix import and other dependencies
-add_operators = {
     AssignmentOperatorReplacement,
     BreakContinueReplacement,
     ConditionalOperatorDeletion,
@@ -30,15 +24,27 @@ add_operators = {
     ExceptionHandlerDeletion,
     ExceptionSwallowing,
     HidingVariableDeletion,
+    OverridingMethodDeletion,
+    OverriddenMethodCallingPositionChange,
     LogicalConnectorReplacement,
     LogicalOperatorDeletion,
     LogicalOperatorReplacement,
-    OverriddenMethodCallingPositionChange,
-    OverridingMethodDeletion,
     RelationalOperatorReplacement,
-    SliceIndexRemove,
     SuperCallingDeletion,
-    SuperCallingInsert,
+    SuperCallingInsertPython35
+}
+
+
+"""
+# TODO fix import and other dependencies
+add_operators = {
+    ,
+    ,
+    
+
+    ,
+    SliceIndexRemove,
+    
 }
 
 experimental_operators = {

@@ -1,8 +1,9 @@
 import ast
 
-from mutations import AbstractUnaryOperatorDeletion, MutationOperator, copy_node
+from mutations import AbstractUnaryOperatorDeletion, MutationOperator
 
 
+# COD, COI, LCF, LOD, LOR, ROR
 class ConditionalOperatorDeletion(AbstractUnaryOperatorDeletion):
     def get_operator_type(self):
         return ast.Not
@@ -16,12 +17,10 @@ class ConditionalOperatorInsertion(MutationOperator):
         not_node = ast.UnaryOp(op=ast.Not(), operand=node.test)
         node.test = not_node
         return node
-    # TODO what does this decorator do
-    @copy_node
+
     def mutate_While(self, node):
         return self.negate_test(node)
 
-    @copy_node
     def mutate_If(self, node):
         return self.negate_test(node)
 

@@ -1,11 +1,8 @@
 import ast
-
-from mutpy import utils
-
-
-from mutations import AbstractArithmeticOperatorReplacement, MutationOperator
+from mutations import AbstractArithmeticOperatorReplacement, MutationOperator, MutationResign
 
 
+# ASR, BCR, CRP, SIR, SVD, SDL
 class AssignmentOperatorReplacement(AbstractArithmeticOperatorReplacement):
     def should_mutate(self, node):
         return isinstance(node.parent, ast.AugAssign)
@@ -23,6 +20,13 @@ class BreakContinueReplacement(MutationOperator):
         return ast.Break()
 
 
+def is_docstring(node):
+    def_node = node.parent.parent
+    return (isinstance(def_node, (ast.FunctionDef, ast.ClassDef, ast.Module)) and def_node.body and
+            isinstance(def_node.body[0], ast.Expr) and isinstance(def_node.body[0].value, ast.Str) and
+            def_node.body[0].value == node)
+
+# TODO not sure how this is working
 class ConstantReplacement(MutationOperator):
     FIRST_CONST_STRING = 'mutpy'
     SECOND_CONST_STRING = 'python'
@@ -31,7 +35,7 @@ class ConstantReplacement(MutationOperator):
         return ast.Num(n=node.n + 1)
 
     def mutate_Str(self, node):
-        if utils.is_docstring(node):
+        if is_docstring(node):
             raise MutationResign()
 
         if node.s != self.FIRST_CONST_STRING:
@@ -40,7 +44,7 @@ class ConstantReplacement(MutationOperator):
             return ast.Str(s=self.SECOND_CONST_STRING)
 
     def mutate_Str_empty(self, node):
-        if not node.s or utils.is_docstring(node):
+        if not node.s or is_docstring(node):
             raise MutationResign()
 
         return ast.Str(s='')

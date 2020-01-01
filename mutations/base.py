@@ -1,5 +1,11 @@
 import ast
 import re
+import os
+import sys
+
+
+class MutationResign(Exception):
+    pass
 
 
 class Mutation:
@@ -36,49 +42,72 @@ class MutationList:
             if lineno not in self.mutation_lineno_list:
                 self.mutation_lineno_list.append(lineno)
 
-    # TODO replace with creating a csv file
+    # TODO really unclear, need to be able to sort by operator then line no
     def display_mutants(self):
+        temp_list = []
         for key in self.mutations:
             if isinstance(self.mutations[key], list):
                 for i in self.mutations[key]:
                     file = i.source_file
                     line = i.lineno
+                    ops = i.num_of_operations
                     op_type = i.mutant_operator_type
                     num_test = i.num_test_cover
                     num_exec = i.num_executed
                     tm = i.num_assert_tm
                     tc = i.num_assert_tc
-                    self.display_helper(file, line, op_type, num_test, num_exec, tm, tc)
+                    temp_list = self.display_helper(file, line, op_type, num_test, num_exec, tm, tc, ops, temp_list)
             else:
                 file = self.mutations[key].source_file
                 line = self.mutations[key].lineno
+                ops = self.muations[key].num_of_operations
                 op_type = self.mutations[key].mutant_operator_type
                 num_test = self.mutations[key].num_test_cover
                 num_exec = self.mutations[key].num_executed
                 tm = self.mutations[key].num_assert_tm
                 tc = self.mutations[key].num_assert_tc
-                self.display_helper(file, line, op_type, num_test, num_exec, tm, tc)
+                temp_list = self.display_helper(file, line, op_type, num_test, num_exec, tm, tc, ops, temp_list)
+        temp_list.sort()
+        for i in temp_list:
+            print(i)
 
     @staticmethod
-    def display_helper(file, line, op_type, num_test, num_exec, tm, tc):
+    def display_helper(file, line, op_type, num_test, num_exec, tm, tc, ops, temp_list):
+        debug_list = temp_list
+        for i in range(ops):
+            debug_list.append("{} [{}]".format(op_type, line))
+        return debug_list
+
+"""
         print("Mutation at {}/{}".format(file, line))
         print("\tmutant_operator_type: {}".format(op_type))
+        print("\tnum_of_operations: {}".format(ops))
+        # dynamic features
         print("\tnum_test_cover: {}".format(num_test))
         print("\tnum_executed: {}".format(num_exec))
         print("\tnum_assert_tm: {}".format(tm))
         print("\tnum_assert_tc: {}\n".format(tc))
+"""
 
 
 class MutationOperator(ast.NodeVisitor):
     def __init__(self):
         self.last_lineno = None
+        self.last_parent_node = []
         self.mutation_list = None
         self.filename = None
+        self.module = None
 
-    def update_mutation_list(self, visitors):
+    def update_mutation_list(self, visitors, node):
+        temp_visitors = []
+        if visitors:
+            for visitor in visitors:
+                if visitor(node):
+                    temp_visitors.append(visitor)
+        visitors = temp_visitors
         if visitors:
             if self.last_lineno in self.mutation_list.mutations.keys():
-                # TODO may have to flatten the list
+                # TODO may have to flatten the list or use enumerate to make cleaner
                 self.mutation_list.mutations[self.last_lineno] = self.mutation_list.mutations[self.last_lineno] + \
                                                                  [Mutation(lineno=self.last_lineno,
                                                                            source_file=self.filename,
@@ -95,19 +124,36 @@ class MutationOperator(ast.NodeVisitor):
     def generate_mutants(self, src_file=None, mutation_list=None):
         self.mutation_list = mutation_list
         self.filename = src_file
+
+        directory, module_name = os.path.split(src_file)
+        module_name = os.path.splitext(module_name)[0]
+
+        path = list(sys.path)
+        sys.path.insert(0, directory)
+        try:
+            self.module = __import__(module_name)
+        finally:
+            sys.path[:] = path  # restore
+
         with open(src_file) as f:
             module = ast.parse(f.read())
+
             self.visit(module)
             return self.mutation_list
 
     def generic_visit(self, node):
+        if isinstance(node, ast.Module):
+            setattr(node, 'parent', None)
         visitors = self.find_visitors(node)
-        self.update_mutation_list(visitors)
+        self.update_mutation_list(visitors, node)
+        self.last_parent_node.append(node)
+
         for child_node in ast.iter_child_nodes(node):
             if isinstance(child_node, list):
                 self.generic_visit_list(child_node)
             elif isinstance(child_node, ast.AST):
                 self.generic_visit_real_node(child_node)
+        self.last_parent_node.pop()
 
     def generic_visit_list(self, ast_list):
         for position, value in enumerate(ast_list):
@@ -117,6 +163,7 @@ class MutationOperator(ast.NodeVisitor):
     def generic_visit_real_node(self, node):
         if hasattr(node, 'lineno'):
             self.last_lineno = node.lineno
+        setattr(node, 'parent', self.last_parent_node[-1])
         self.visit(node)
 
     def find_visitors(self, node):

@@ -2,7 +2,7 @@ import ast
 import copy
 
 from mutpy import utils
-
+# TODO is this being used?
 COVERAGE_SET_NAME = '__covered_nodes__'
 
 
