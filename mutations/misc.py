@@ -26,7 +26,7 @@ def is_docstring(node):
             isinstance(def_node.body[0], ast.Expr) and isinstance(def_node.body[0].value, ast.Str) and
             def_node.body[0].value == node)
 
-# TODO not sure how this is working
+
 class ConstantReplacement(MutationOperator):
     FIRST_CONST_STRING = 'mutpy'
     SECOND_CONST_STRING = 'python'

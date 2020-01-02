@@ -30,7 +30,6 @@ class CalculatorTest(TestCase):
         temp_ddl = DDL()
         self.assertEqual(temp_ddl.ddl(), None)
 
-    # TODO create tests with pass
     def test_EHD(self):
         pass
 
