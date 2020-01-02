@@ -31,7 +31,7 @@ def create_cover_files():
     r.write_results(coverdir='cover')
 
 
-# TODO keep an eye out for line hits count on updated coverage
+# TODO keep an eye out for line hits count on updated coverage.py
 def create_coverage_data():
     # create a coverage object
     t_path = os.getcwd() + '\\src\\tests\\*'
