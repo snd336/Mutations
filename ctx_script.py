@@ -95,7 +95,9 @@ def create_feature_dict(py_files, assert_dict, cov_results):
         ctx_assert_dict = merge_ctx_and_assert_dict(py_file, cov_results, assert_dict)
         for x in ctx_assert_dict:
             ftr_dict[x] = ftr_dict[x] + ctx_assert_dict[x]
-
+        for y in ftr_dict:
+            if len(ftr_dict[y]) == 1:
+                ftr_dict[y] = ftr_dict[y] + [0, 0, 0]
         src_ftr_dict[py_file] = ftr_dict
     return src_ftr_dict
 
@@ -113,14 +115,16 @@ def merge_ctx_and_assert_dict(ctx_file, ctx_results, assert_dict):
     return ctx_assert_dict
 
 
+# (src_list, dyn_ftr_dict, src_mut_dict)
 def update_dyn_ftr(file_list, dyn_dict, mut_dict):
     for file_src in file_list:
         ftr_dict = dyn_dict[file_src]
         mutant_list = mut_dict[file_src]
         org_mut_dict = mutant_list.mutations
         for lineno in org_mut_dict:
-            for x in org_mut_dict[lineno]:
-                x.update_ftr(ftr_dict[lineno])
+            for mut_obj in org_mut_dict[lineno]:
+                if lineno in ftr_dict.keys():
+                    mut_obj.update_ftr(ftr_dict[lineno])
 
 
 def mutant_dict_to_csv(mutation_dict):
@@ -142,17 +146,18 @@ def mutant_dict_to_csv(mutation_dict):
 
 if __name__ == '__main__':
 
-    # create_cover_files()
-    # covData = create_coverage_data()
-    # assert_counter_dict = create_assert_dict(covData)
+    create_cover_files()
+    covData = create_coverage_data()
+
+    assert_counter_dict = create_assert_dict(covData)
     src_list = generate_source_files()
 
-    # dyn_ftr_dict = create_feature_dict(src_list, assert_counter_dict, covData)
-
+    dyn_ftr_dict = create_feature_dict(src_list, assert_counter_dict, covData)
     src_mut_dict = create_mutant_dict(src_list)
 
-    # update_dyn_ftr(src_list, dyn_ftr_dict, src_mut_dict)
+    update_dyn_ftr(src_list, dyn_ftr_dict, src_mut_dict)
     for file in src_mut_dict:
         src_mut_dict[file].display_mutants()
 
     mutant_dict_to_csv(src_mut_dict)  # to csv
+

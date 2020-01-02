@@ -4,7 +4,7 @@ def aod(x):
 
 
 def aor(x, y):
-    return x * y
+    return x * y * 2
 
 
 def asr(x, y):
@@ -25,7 +25,7 @@ def cod(x):
     return True
 
 
-def coi(x,):
+def coi(x):
     if x:
         return False
     return True
@@ -88,9 +88,9 @@ class IOP(IOPSuper):
 
 def lcr(x, y):
     if x or y:
-        pass
+        return x
     while x and y:
-        pass
+        return x
 
 
 def lod(x):

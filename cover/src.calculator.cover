@@ -1,6 +1,163 @@
-    1: def mul(x, y):
-    2:     return x * y * 2
+       # Standard operators
+    1: def aod(x):
+    1:     return -x
        
        
-    1: def div(x, y):
-    1:     return x / y
+    1: def aor(x, y):
+    1:     return x * y * 2
+       
+       
+    1: def asr(x, y):
+    1:     x += y
+    1:     return x
+       
+       
+    1: def bcr():
+    4:     for letter in 'Python':  # First Example
+    4:         if letter == 'h':
+    1:             break
+    1:     return letter
+       
+       
+    1: def cod(x):
+    1:     if not x:
+>>>>>>         return False
+    1:     return True
+       
+       
+    1: def coi(x):
+    1:     if x:
+    1:         return False
+>>>>>>     return True
+       
+       
+    1: def crp():
+    1:     x = 1
+    1:     z = 'test'
+    1:     return x, z
+       
+       
+    2: class DDL:
+    1:     @ classmethod
+           def ddl(cls):
+    1:         pass
+       
+       
+    2: class EHD:
+    1:     try:
+    1:         pass
+>>>>>>     except NameError:
+>>>>>>         pass
+       
+       
+    2: class EXS:
+    1:     try:
+    1:         pass
+>>>>>>     except NameError:
+>>>>>>         raise Exception("Temp")
+       
+       
+    2: class IHDSuper:
+    1:     y = 1
+       
+       
+    2: class IHD(IHDSuper):
+    1:     y = 2
+       
+       
+    2: class IODSuper:
+    1:     def foo(self):
+>>>>>>         pass
+       
+       
+    2: class IOD(IODSuper):
+    1:     def foo(self):
+    1:         pass
+       
+       
+    2: class IOPSuper:
+    1:     def foo(self):
+    1:         pass
+       
+       
+    2: class IOP(IOPSuper):
+    1:     def foo(self):
+    1:         super().foo()
+    1:         x = 2
+       
+       
+    1: def lcr(x, y):
+    1:     if x or y:
+    1:         return x
+>>>>>>     while x and y:
+>>>>>>         return x
+       
+       
+    1: def lod(x):
+    1:     return ~ x
+       
+       
+    1: def lor(x, y):
+    1:     x & y
+    1:     x << y
+       
+       
+    1: def ror(x, y):
+    1:     if x < y:
+    1:         pass
+       
+       
+    2: class SCDSuper:
+    1:     def foo(self):
+    1:         pass
+       
+       
+    2: class SCD(SCDSuper):
+    1:     def foo(self):
+    1:         super().foo()
+       
+       
+    2: class SCISuper:
+    1:     def foo(self):
+>>>>>>         pass
+       
+       
+    2: class SCI(SCISuper):
+    1:     def foo(self):
+    1:         pass
+       
+       
+    1: def sir(x, y):
+    2:     for x in y:
+    1:         pass
+       
+       
+       # Experimental mutation operators
+    1: def cdi(x, y):
+>>>>>>     pass
+       
+       
+    1: def oil(x, y):
+>>>>>>     pass
+       
+       
+    1: def ril(x, y):
+>>>>>>     pass
+       
+       
+    1: def sdi(x, y):
+>>>>>>     pass
+       
+       
+    1: def sdl(x, y):
+>>>>>>     pass
+       
+       
+    2: class SVD:
+    1:     def svd(self):
+>>>>>>         return self.x
+       
+       
+    1: def zil(x, y):
+>>>>>>     pass
+       
