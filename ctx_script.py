@@ -71,10 +71,13 @@ def generate_source_files():
 
 def create_mutant_dict(src__file_list):
     mut_dict = {}
+    mutant_num = 1
     for file_name in src__file_list:
         mutant = MutationList()
-        for op in standard_operators:
-            mutant = op().generate_mutants(src_file='src/' + file_name, mutation_list=mutant)
+        sorted_ops = sorted(standard_operators, key=lambda cls: cls.name())
+        for op in sorted_ops:
+            mutant, mutant_num = op().generate_mutants(src_file='src/' + file_name, mutation_list=mutant,
+                                                       mutation_number=mutant_num)
         mut_dict[file_name] = mutant
     return mut_dict
 
@@ -132,16 +135,20 @@ def mutant_dict_to_csv(mutation_dict):
         writer = csv.writer(f)
 
         col_list = ['source_file', 'lineno', 'num_test_cover', 'num_executed', 'num_assert_tm', 'num_assert_tc',
-                    'mutant_operator_type']
+                    'mutant_operator_type', 'mutation_number']
         writer.writerow(col_list)
-        for key in mutation_dict:
-            per_src_dict = mutation_dict[key].mutations
-            for i in per_src_dict:
-                for j in per_src_dict[i]:
-                    m_o = j
-                    writer.writerow(
-                        [m_o.source_file, m_o.lineno, m_o.num_test_cover, m_o.num_executed, m_o.num_assert_tm,
-                         m_o.num_assert_tc, m_o.mutant_operator_type])
+
+        for src_file in mutation_dict:
+            per_src_dict = mutation_dict[src_file].mutations
+            for lineno in per_src_dict:
+
+                for m_o in per_src_dict[lineno]:
+                    mut_num = m_o.mutation_number
+                    for i in range(m_o.num_of_operations):
+                        writer.writerow(
+                            [m_o.source_file, m_o.lineno, m_o.num_test_cover, m_o.num_executed, m_o.num_assert_tm,
+                             m_o.num_assert_tc, m_o.mutant_operator_type, mut_num])
+                        mut_num += 1
 
 
 if __name__ == '__main__':

@@ -10,10 +10,11 @@ class MutationResign(Exception):
 
 class Mutation:
     def __init__(self, num_test_cover=0, num_executed=0, num_assert_tc=0, num_assert_tm=0, mutant_operator_type=None,
-                 source_file=None, lineno=None, num_of_operations=0):
+                 source_file=None, lineno=None, num_of_operations=0, mutation_number=None):
         self.num_of_operations = num_of_operations  # if you need to know how many operators applied to mutant
         self.source_file = source_file
         self.lineno = lineno
+        self.mutation_number = mutation_number
         # features
         self.mutant_operator_type = mutant_operator_type
         self.num_test_cover = num_test_cover
@@ -31,7 +32,7 @@ class Mutation:
 class MutationList:
     def __init__(self, mutation_lineno_list=None):
         self.mutation_lineno_list = mutation_lineno_list
-        self.mutations = {}  # hold mutation objects
+        self.mutations = {}  # TODO ordered set?
 
     def update_lineno_list(self, lineno):
         if not self.mutation_lineno_list:  # if its empty
@@ -45,19 +46,21 @@ class MutationList:
         temp_list = []
         for key in self.mutations:
             for i in self.mutations[key]:
+                num = i.mutation_number
                 line = i.lineno
                 ops = i.num_of_operations
                 op_type = i.mutant_operator_type
-                temp_list = self.display_helper(line, op_type, ops, temp_list)
-        temp_list.sort()
+                temp_list = self.display_helper(line, op_type, ops, temp_list, num)
+        temp_list = sorted(temp_list, key=lambda mutant: mutant[2])
         for i in temp_list:
-            print(i)
+            print("{} [{}] {}".format(i[0], i[1], i[2]))
 
     @staticmethod
-    def display_helper(line, op_type, ops, temp_list):
+    def display_helper(line, op_type, ops, temp_list, num):
         debug_list = temp_list
         for i in range(ops):
-            debug_list.append("{} [{}]".format(op_type, line))
+            debug_list.append((op_type, line, num))
+            num += 1
         return debug_list
 
 
@@ -68,6 +71,7 @@ class MutationOperator(ast.NodeVisitor):
         self.mutation_list = None
         self.filename = None
         self.module = None
+        self.mutant_number = None
 
     def update_mutation_list(self, visitors, node):
         temp_visitors = []
@@ -82,17 +86,21 @@ class MutationOperator(ast.NodeVisitor):
                                                                  [Mutation(lineno=self.last_lineno,
                                                                            source_file=self.filename,
                                                                            num_of_operations=len(visitors),
-                                                                           mutant_operator_type=self.name())]
+                                                                           mutant_operator_type=self.name(),
+                                                                           mutation_number=self.mutant_number)]
             else:
                 self.mutation_list.mutations[self.last_lineno] = [Mutation(lineno=self.last_lineno,
                                                                            source_file=self.filename,
                                                                            num_of_operations=len(visitors),
-                                                                           mutant_operator_type=self.name())]
+                                                                           mutant_operator_type=self.name(),
+                                                                           mutation_number=self.mutant_number)]
+            self.mutant_number += len(visitors)
             self.mutation_list.update_lineno_list(self.last_lineno)
 
-    def generate_mutants(self, src_file=None, mutation_list=None):
+    def generate_mutants(self, src_file=None, mutation_list=None, mutation_number=None):
         self.mutation_list = mutation_list
         self.filename = src_file
+        self.mutant_number = mutation_number
 
         directory, module_name = os.path.split(src_file)
         module_name = os.path.splitext(module_name)[0]
@@ -107,7 +115,7 @@ class MutationOperator(ast.NodeVisitor):
         with open(src_file) as f:
             module = ast.parse(f.read())
             self.visit(module)
-            return self.mutation_list
+            return self.mutation_list, self.mutant_number
 
     def generic_visit(self, node):
         if isinstance(node, ast.Module):
