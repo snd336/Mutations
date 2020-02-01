@@ -1,9 +1,13 @@
+import ast
 import csv
 import coverage
 import trace
 import os
 import re
 import sys
+from mutpy import commandline
+import yaml
+
 
 from mutations import MutationList, standard_operators
 from scripts.assert_script import AssertCounter
@@ -13,6 +17,8 @@ from src.runners.unittest_runner import debug_suit
 Run's the unittest twice, can't find a way to merge trace and coverage
 Ended up just running as a debug to avoid storing results, hope to minimize time and space
 """
+# TODO preprocess by removing blank lines for LOC counts?
+# TODO keep an eye out for line hits count on updated coverage.py
 
 
 def create_cover_files():
@@ -31,7 +37,6 @@ def create_cover_files():
     r.write_results(coverdir='cover')
 
 
-# TODO keep an eye out for line hits count on updated coverage.py
 def create_coverage_data():
     # create a coverage object
     t_path = os.getcwd() + '\\src\\tests\\*'
@@ -47,124 +52,175 @@ def create_coverage_data():
     return cov.get_data()
 
 
-def create_assert_dict(cov_data):
-    assert_dict = {}
-    unique_filenames = []
-    for x in cov_data.measured_contexts():  # x = module.class.test_case
-        unique_filenames.append(x.split('.')[0])
-    unique_filenames = set(unique_filenames)
+def generate_ast_file(src_file_list, test_src_list):
+    modules = []
+    src_ast_list = []
+    test_ast_list = []
+    for src_file in src_file_list:
+        modules.append(src_file + '\n')
+        with open(src_file) as f:
+            src_ast = ast.parse(f.read())
+            modules.append(ast.dump(src_ast) + '\n')
+            src_ast_list.append(src_ast)
 
-    for x in unique_filenames:
-        assert_dict.update(AssertCounter(x).assert_dict)
-    return assert_dict
+    for test_file in test_src_list:
+        modules.append(test_file)
+        with open(test_file) as f:
+            test_ast = ast.parse(f.read())
+            modules.append(ast.dump(test_ast) + '\n')
+            test_ast_list.append(test_ast)
+
+    with open('ast_data', 'w') as file:
+        file.writelines(modules)
+
+    return src_ast_list, test_ast_list
 
 
-def generate_source_files():
-    exclude = {'runners', 'tests', '__pycache__'}
-    src_include_list = []
-    for root, dirs, files in os.walk(top='src', topdown=True):
-        dirs[:] = [d for d in dirs if d not in exclude]
-        for file_s in files:
-            src_include_list.append(file_s)
-    return src_include_list
-
-
-def create_mutant_dict(src__file_list):
+def create_mutant_dict(src__file_list, src_ast_list):
     mut_dict = {}
     mutant_num = 1
+    count = 0
     for file_name in src__file_list:
         mutant = MutationList()
         sorted_ops = sorted(standard_operators, key=lambda cls: cls.name())
         for op in sorted_ops:
-            mutant, mutant_num = op().generate_mutants(src_file='src/' + file_name, mutation_list=mutant,
-                                                       mutation_number=mutant_num)
+            mutant, mutant_num = op().generate_mutants(src_file=file_name, src_ast_module=src_ast_list[count],
+                                                       mutation_list=mutant, mutation_number=mutant_num)
         mut_dict[file_name] = mutant
+        count += 1
     return mut_dict
 
 
-def create_feature_dict(py_files, assert_dict, cov_results):
-    src_ftr_dict = {}
-    for py_file in py_files:
-        ftr_dict = {}
-        # per src create ftr_dict
-        line_no = 1
-        if os.path.exists('cover/src.' + py_file[:-3] + '.cover'):
-            with open('cover/src.' + py_file[:-3] + '.cover') as f:
-                for line in f:
-                    match_obj = re.match(' {4}(\\d+)', line)
-                    if match_obj:
-                        ftr_dict[line_no] = [int(match_obj.group(1))]
-                    line_no += 1
-        ctx_assert_dict = merge_ctx_and_assert_dict(py_file, cov_results, assert_dict)
-        for x in ctx_assert_dict:
-            ftr_dict[x] = ftr_dict[x] + ctx_assert_dict[x]
-        for y in ftr_dict:
-            if len(ftr_dict[y]) == 1:
-                ftr_dict[y] = ftr_dict[y] + [0, 0, 0]
-        src_ftr_dict[py_file] = ftr_dict
-    return src_ftr_dict
+def add_dynamic_features(src_file, mutation_list_obj, cov_data, test_ast, ast_filename):
+    mutation_dict = mutation_list_obj.mutations
+    assert_dict = AssertCounter(ast_filename).get_assert_stats(test_ast)
+
+    with open('cover/src.' + src_file[4:-3] + '.cover', 'r') as file:
+        data = file.readlines()
+
+    for lineno in mutation_dict.keys():
+
+        num_executed = 0
+        num_test_cover = 0
+        num_assert_tm = 0
+        num_assert_tc = 0
+        class_max_depth = 0
+        function_max_depth = 0
+        function_avg_depth = 0
+        lineno_loc = 0
+        loc_list = []
+
+        match_obj = re.match(' {4}(\\d+)', data[lineno-1])
+        if match_obj:
+            num_executed = int(match_obj.group(1))
+
+        coverage_dict = None
+        for file in cov_data.measured_files():
+            coverage_dict = cov_data.contexts_by_lineno(file)
+        if coverage_dict:
+            num_test_cover = len(coverage_dict[lineno])
+            ctx_class_set = set([])
+
+            for ctx in coverage_dict[lineno]:
+                function_counter_object = assert_dict[ctx]
+                num_assert_tm += function_counter_object.num_assert_tm
+                if function_counter_object.max_depth > function_max_depth:
+                    function_max_depth = function_counter_object.max_depth
+                function_avg_depth += function_counter_object.max_depth
+                lineno_loc += function_counter_object.loc
+                loc_list.append(str(function_counter_object.begin_lineno) + ':'
+                                + str(function_counter_object.end_lineno))
+                ctx_class_set.add(function_counter_object.class_counter)
+            if num_test_cover != 0:
+                function_avg_depth /= num_test_cover
+
+            for ctx_class in ctx_class_set:
+                num_assert_tc += ctx_class.num_assert_tc
+                if ctx_class.max_depth > class_max_depth:
+                    class_max_depth = ctx_class.max_depth
+
+        ftr_list = [num_executed, num_test_cover, num_assert_tm, num_assert_tc, function_max_depth, function_avg_depth,
+                    class_max_depth, lineno_loc, loc_list]
+        for mut_obj in mutation_dict[lineno]:
+            mut_obj.update_ftr(ftr_list)
 
 
-def merge_ctx_and_assert_dict(ctx_file, ctx_results, assert_dict):
-    # TODO what if a line is hit by more than one class
-    ctx_hold_dict = dict(ctx_results.contexts_by_lineno(os.getcwd() + '\src\\' + ctx_file))
-    ctx_assert_dict = {}
-
-    for ctx_lineno, ctx_methods in ctx_hold_dict.items():
-        ctx_assert_dict[ctx_lineno] = [len(ctx_methods), 0, 0]
-        for ctx_method in ctx_methods:
-            ctx_assert_dict[ctx_lineno][1] = assert_dict[ctx_method][0]
-            ctx_assert_dict[ctx_lineno][2] += assert_dict[ctx_method][1]
-    return ctx_assert_dict
+def run_mut(src, test):
+    sys.argv = ['mut.py', '--target', src, '--unit-test', test,
+                '--report', 'REPO', '-q']
+    commandline.main(sys.argv)
 
 
-# (src_list, dyn_ftr_dict, src_mut_dict)
-def update_dyn_ftr(file_list, dyn_dict, mut_dict):
-    for file_src in file_list:
-        ftr_dict = dyn_dict[file_src]
-        mutant_list = mut_dict[file_src]
-        org_mut_dict = mutant_list.mutations
-        for lineno in org_mut_dict:
-            for mut_obj in org_mut_dict[lineno]:
-                if lineno in ftr_dict.keys():
-                    mut_obj.update_ftr(ftr_dict[lineno])
+def get_results_from_mut():
+    # avoids some import issues in the yaml file
+    with open('REPO', 'r') as file:
+        data = file.readlines()
+    i = 0
+    for line in data:
+        if line[0:26] == '  module: &id001 !!python/':
+            data[i] = '  module: &id001\n'
+            break
+        i += 1
+    with open('REPO', 'w') as file:
+        file.writelines(data)
+
+    result_list = []
+
+    with open('REPO') as yaml_file:
+        mutation_dict = yaml.load(yaml_file, Loader=yaml.FullLoader)
+
+        for key in mutation_dict:
+            if key == 'mutations':
+                for i_dict in mutation_dict[key]:
+                    result_list.append(i_dict['status'])
+    return result_list
 
 
-def mutant_dict_to_csv(mutation_dict):
+def mutant_dict_to_csv(mutation_dict, status):
     with open('data.csv', 'w', newline='') as f:
         writer = csv.writer(f)
 
-        col_list = ['source_file', 'lineno', 'num_test_cover', 'num_executed', 'num_assert_tm', 'num_assert_tc',
-                    'mutant_operator_type', 'mutation_number']
+        col_list = ['source_file', 'lineno', 'ast_depth', 'num_test_cover', 'num_executed', 'num_assert_tm',
+                    'num_assert_tc', 'mutant_operator_type', 'function_max_depth', 'function_avg_depth',
+                    'class_max_depth', 'lineno_loc', 'loc_list', 'mutation_number', 'status']
         writer.writerow(col_list)
 
         for src_file in mutation_dict:
-            per_src_dict = mutation_dict[src_file].mutations
-            for lineno in per_src_dict:
+            per_src_dict = mutation_dict[src_file].sort_mutants()
 
-                for m_o in per_src_dict[lineno]:
-                    mut_num = m_o.mutation_number
-                    for i in range(m_o.num_of_operations):
-                        writer.writerow(
-                            [m_o.source_file, m_o.lineno, m_o.num_test_cover, m_o.num_executed, m_o.num_assert_tm,
-                             m_o.num_assert_tc, m_o.mutant_operator_type, mut_num])
-                        mut_num += 1
+            for item in per_src_dict:  # via mutation_number
+                m_o = item[1]
+                writer.writerow(
+                    [m_o.source_file, m_o.lineno, m_o.ast_depth, m_o.num_test_cover, m_o.num_executed, m_o.num_assert_tm,
+                     m_o.num_assert_tc, m_o.mutant_operator_type, m_o.function_max_depth, m_o.function_avg_depth,
+                     m_o.class_max_depth, m_o.lineno_loc, m_o.loc_list, item[0], status[item[0]-1]])
 
 
 if __name__ == '__main__':
 
     create_cover_files()
     covData = create_coverage_data()
+    # Generate for each src?
 
-    assert_counter_dict = create_assert_dict(covData)
-    src_list = generate_source_files()
+    src_list = ['src/calculator.py']
+    test_list = ['src/tests/test_calculator.py']
+    t_name = ['test_calculator']
 
-    dyn_ftr_dict = create_feature_dict(src_list, assert_counter_dict, covData)
-    src_mut_dict = create_mutant_dict(src_list)
+    src_files_ast, test_files_ast = generate_ast_file(src_list, test_list)
+    src_mut_dict = create_mutant_dict(src_list, src_files_ast)
 
-    update_dyn_ftr(src_list, dyn_ftr_dict, src_mut_dict)
-    for file in src_mut_dict:
-        src_mut_dict[file].display_mutants()
+    count = 0
+    for src_name in src_list:
+        add_dynamic_features(src_name, src_mut_dict[src_name], covData, test_files_ast[count], t_name[count])
+        count += 1
 
-    mutant_dict_to_csv(src_mut_dict)  # to csv
+
+
+    run_mut(src_list[0], test_list[0])
+    status_list = get_results_from_mut()
+    mutant_dict_to_csv(src_mut_dict, status_list)
+
+
+
+
 

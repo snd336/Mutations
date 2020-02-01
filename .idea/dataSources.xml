@@ -7,5 +7,11 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\steph\Desktop\Thesis\Feature Scripts\Num Test Cover Script\.coverage</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="[2]" uuid="77920030-7c10-4239-b909-ec9b9bd58027">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\steph\Desktop\Thesis\Feature Scripts\Working\.coverage</jdbc-url>
+    </data-source>
   </component>
 </project>

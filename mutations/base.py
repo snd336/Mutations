@@ -10,7 +10,7 @@ class MutationResign(Exception):
 
 class Mutation:
     def __init__(self, num_test_cover=0, num_executed=0, num_assert_tc=0, num_assert_tm=0, mutant_operator_type=None,
-                 source_file=None, lineno=None, num_of_operations=0, mutation_number=None):
+                 source_file=None, lineno=None, num_of_operations=0, mutation_number=None, status=None, ast_depth=None):
         self.num_of_operations = num_of_operations  # if you need to know how many operators applied to mutant
         self.source_file = source_file
         self.lineno = lineno
@@ -21,18 +21,30 @@ class Mutation:
         self.num_executed = num_executed
         self.num_assert_tc = num_assert_tc
         self.num_assert_tm = num_assert_tm
+        self.ast_depth = ast_depth
+        self.status = status
+        self.function_max_depth = None
+        self.function_avg_depth = None
+        self.class_max_depth = None
+        self.lineno_loc = None  # tests loc that touch mutation
+        self.loc_list = None
 
     def update_ftr(self, ftr_list):
-        self.num_test_cover = ftr_list[0]
-        self.num_executed = ftr_list[1]
-        self.num_assert_tc = ftr_list[2]
-        self.num_assert_tm = ftr_list[3]
+        self.num_executed = ftr_list[0]
+        self.num_test_cover = ftr_list[1]
+        self.num_assert_tm = ftr_list[2]
+        self.num_assert_tc = ftr_list[3]
+        self.function_max_depth = ftr_list[4]
+        self.function_avg_depth = ftr_list[5]
+        self.class_max_depth = ftr_list[6]
+        self.lineno_loc = ftr_list[7]
+        self.loc_list = ftr_list[8]
 
 
 class MutationList:
     def __init__(self, mutation_lineno_list=None):
         self.mutation_lineno_list = mutation_lineno_list
-        self.mutations = {}  # TODO ordered set?
+        self.mutations = {}
 
     def update_lineno_list(self, lineno):
         if not self.mutation_lineno_list:  # if its empty
@@ -42,24 +54,20 @@ class MutationList:
             if lineno not in self.mutation_lineno_list:
                 self.mutation_lineno_list.append(lineno)
 
-    def display_mutants(self):
+    def sort_mutants(self):
         temp_list = []
-        for key in self.mutations:
-            for i in self.mutations[key]:
+        for lineno in self.mutations:
+            for i in self.mutations[lineno]:  # each mutation per lineno
                 num = i.mutation_number
-                line = i.lineno
                 ops = i.num_of_operations
-                op_type = i.mutant_operator_type
-                temp_list = self.display_helper(line, op_type, ops, temp_list, num)
-        temp_list = sorted(temp_list, key=lambda mutant: mutant[2])
-        for i in temp_list:
-            print("{} [{}] {}".format(i[0], i[1], i[2]))
+                temp_list = self.sort_helper(ops, temp_list, num, i)
+        return sorted(temp_list, key=lambda mutant: mutant[0])  # sort by mutation_number
 
     @staticmethod
-    def display_helper(line, op_type, ops, temp_list, num):
+    def sort_helper(ops, temp_list, num, mutant_obj):
         debug_list = temp_list
         for i in range(ops):
-            debug_list.append((op_type, line, num))
+            debug_list.append((num, mutant_obj))
             num += 1
         return debug_list
 
@@ -72,6 +80,7 @@ class MutationOperator(ast.NodeVisitor):
         self.filename = None
         self.module = None
         self.mutant_number = None
+        self.ast_depth = 0
 
     def update_mutation_list(self, visitors, node):
         temp_visitors = []
@@ -87,39 +96,30 @@ class MutationOperator(ast.NodeVisitor):
                                                                            source_file=self.filename,
                                                                            num_of_operations=len(visitors),
                                                                            mutant_operator_type=self.name(),
-                                                                           mutation_number=self.mutant_number)]
+                                                                           mutation_number=self.mutant_number,
+                                                                           ast_depth=self.ast_depth)]
             else:
                 self.mutation_list.mutations[self.last_lineno] = [Mutation(lineno=self.last_lineno,
                                                                            source_file=self.filename,
                                                                            num_of_operations=len(visitors),
                                                                            mutant_operator_type=self.name(),
-                                                                           mutation_number=self.mutant_number)]
+                                                                           mutation_number=self.mutant_number,
+                                                                           ast_depth=self.ast_depth)]
             self.mutant_number += len(visitors)
             self.mutation_list.update_lineno_list(self.last_lineno)
 
-    def generate_mutants(self, src_file=None, mutation_list=None, mutation_number=None):
+    def generate_mutants(self, src_file=None, src_ast_module=None, mutation_list=None, mutation_number=None):
         self.mutation_list = mutation_list
         self.filename = src_file
         self.mutant_number = mutation_number
 
-        directory, module_name = os.path.split(src_file)
-        module_name = os.path.splitext(module_name)[0]
-
-        path = list(sys.path)
-        sys.path.insert(0, directory)
-        try:
-            self.module = __import__(module_name)
-        finally:
-            sys.path[:] = path  # restore
-
-        with open(src_file) as f:
-            module = ast.parse(f.read())
-            self.visit(module)
-            return self.mutation_list, self.mutant_number
+        self.visit(src_ast_module)
+        return self.mutation_list, self.mutant_number
 
     def generic_visit(self, node):
         if isinstance(node, ast.Module):
             setattr(node, 'parent', None)
+
         visitors = self.find_visitors(node)
         self.update_mutation_list(visitors, node)
         self.last_parent_node.append(node)
@@ -137,10 +137,12 @@ class MutationOperator(ast.NodeVisitor):
                 self.visit(value)
 
     def generic_visit_real_node(self, node):
+        self.ast_depth += 1
         if hasattr(node, 'lineno'):
             self.last_lineno = node.lineno
         setattr(node, 'parent', self.last_parent_node[-1])
         self.visit(node)
+        self.ast_depth -= 1
 
     def find_visitors(self, node):
         method_prefix = 'mutate_' + node.__class__.__name__

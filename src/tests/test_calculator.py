@@ -6,7 +6,16 @@ from src.calculator import *
 class CalculatorTest(TestCase):
 
     def test_aod(self):
+        aod(3)
         self.assertEqual(aod(2), -2)
+        self.assertEqual(aod(2), -2)
+
+
+        x = ((2 + 3*9/10) * 2 + 3) *3
+
+    def test_aod2(self):
+        self.assertEqual(aod(2), -2)
+
 
     def test_aor(self):
         self.assertEqual(aor(2, 2), 8)
