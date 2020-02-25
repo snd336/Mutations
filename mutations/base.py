@@ -40,6 +40,8 @@ class Mutation:
         self.lineno_loc = ftr_list[7]
         self.loc_list = ftr_list[8]
 
+# TODO this is a dict
+
 
 class MutationList:
     def __init__(self, mutation_lineno_list=None):
@@ -76,7 +78,7 @@ class MutationOperator(ast.NodeVisitor):
     def __init__(self):
         self.last_lineno = None
         self.last_parent_node = []
-        self.mutation_list = None
+        self.mutation_list = None # TODO this is a dict!
         self.filename = None
         self.module = None
         self.mutant_number = None
@@ -108,10 +110,11 @@ class MutationOperator(ast.NodeVisitor):
             self.mutant_number += len(visitors)
             self.mutation_list.update_lineno_list(self.last_lineno)
 
-    def generate_mutants(self, src_file=None, src_ast_module=None, mutation_list=None, mutation_number=None):
+    def generate_mutants(self, mod=None, src_file=None, src_ast_module=None, mutation_list=None, mutation_number=None):
         self.mutation_list = mutation_list
         self.filename = src_file
         self.mutant_number = mutation_number
+        self.module = mod
 
         self.visit(src_ast_module)
         return self.mutation_list, self.mutant_number

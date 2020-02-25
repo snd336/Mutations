@@ -8,8 +8,10 @@ from mutations import MutationOperator, MutationResign
 # IHD, IOP, IOD, SCD, SCI
 class AbstractOverriddenElementModification(MutationOperator):
     def is_overridden(self, node, name=None):
+
         if not isinstance(node.parent, ast.ClassDef):
             return
+
         if not name:
             name = node.name
         parent = node.parent
@@ -20,13 +22,15 @@ class AbstractOverriddenElementModification(MutationOperator):
             if not isinstance(parent, ast.ClassDef) and not isinstance(parent, ast.Module):
                 return
             parent = parent.parent
+
         getattr_rec = lambda obj, attr: functools.reduce(getattr, attr, obj)
+
         try:
 
             klass = getattr_rec(self.module, reversed(parent_names))
         except AttributeError:
             return
-        for base_klass in type.mro(klass)[1:-1]:
+        for base_klass in type.mro(klass)[1:-1]:  #mro returns a list of types a class is derived from
             if hasattr(base_klass, name):
                 return True
         return False
@@ -53,7 +57,7 @@ class HidingVariableDeletion(AbstractOverriddenElementModification):
                 new_targets.append(target_element)
                 new_values.append(value_element)
         if len(new_targets) == len(target.elts):
-            raise MutationResign()
+            return
         if not new_targets:
             return ast.Pass()
         elif len(new_targets) == 1:
@@ -98,7 +102,7 @@ class OverriddenMethodCallingPositionChange(AbstractSuperCallingModification):
             return
         index, stmt = self.get_super_call(node)
         if index is None:
-            raise MutationResign()
+            return
         """
         super_call = node.body[index]
         del node.body[index]
@@ -120,6 +124,7 @@ class OverriddenMethodCallingPositionChange(AbstractSuperCallingModification):
 
 class OverridingMethodDeletion(AbstractOverriddenElementModification):
     def mutate_FunctionDef(self, node):
+
         if self.is_overridden(node):
             return ast.Pass()
         return

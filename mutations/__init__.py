@@ -33,21 +33,14 @@ standard_operators = {
     LogicalOperatorReplacement,
     RelationalOperatorReplacement,
     SuperCallingDeletion,
-    SuperCallingInsertPython35
+    SuperCallingInsertPython35,
+    SliceIndexRemove
 }
 
 
 """
-# TODO fix import and other dependencies
-add_operators = {
-    ,
-    ,
-    
 
-    ,
-    SliceIndexRemove,
-    
-}
+
 
 experimental_operators = {
     ClassmethodDecoratorInsertion,

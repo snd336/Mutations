@@ -36,7 +36,7 @@ class ConstantReplacement(MutationOperator):
 
     def mutate_Str(self, node):
         if is_docstring(node):
-            raise MutationResign()
+            return
 
         if node.s != self.FIRST_CONST_STRING:
             return ast.Str(s=self.FIRST_CONST_STRING)
@@ -45,7 +45,7 @@ class ConstantReplacement(MutationOperator):
 
     def mutate_Str_empty(self, node):
         if not node.s or is_docstring(node):
-            raise MutationResign()
+            return
 
         return ast.Str(s='')
 
@@ -57,19 +57,19 @@ class ConstantReplacement(MutationOperator):
 class SliceIndexRemove(MutationOperator):
     def mutate_Slice_remove_lower(self, node):
         if not node.lower:
-            raise MutationResign()
+            return
 
         return ast.Slice(lower=None, upper=node.upper, step=node.step)
 
     def mutate_Slice_remove_upper(self, node):
         if not node.upper:
-            raise MutationResign()
+            return
 
         return ast.Slice(lower=node.lower, upper=None, step=node.step)
 
     def mutate_Slice_remove_step(self, node):
         if not node.step:
-            raise MutationResign()
+            return
 
         return ast.Slice(lower=node.lower, upper=node.upper, step=None)
 
