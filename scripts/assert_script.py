@@ -32,13 +32,15 @@ class FunctionCounter:
         self.end_lineno = end_lineno
         self.loc = self.end_lineno - self.begin_lineno - 1
 
+# TODO deals very poorly with nested functions or classes, did a quick fix
+
 
 class AssertCounter(ast.NodeVisitor):
     def __init__(self, filename=None):
         self.function_dict = {}  # key = name
-        self.current_class = None
-        self.current_function = None
-        self.filename = filename
+        self.current_class = []
+        self.current_function = []
+        self.filename = filename[:-3]
         self.last_lineno = None
         self.current_class_assert = 0
         self.ast_depth = 0
@@ -50,26 +52,27 @@ class AssertCounter(ast.NodeVisitor):
         return self.function_dict  # list of FunctionCounter objects
 
     def visit_ClassDef(self, node):
-        self.current_class = ClassCounter(node.name, self.filename, self.last_lineno)
+        self.current_class.append(ClassCounter(node.name, self.filename, self.last_lineno))
         self.generic_visit(node)
-        self.current_class.update_loc(self.last_lineno)
-        self.current_class.max_depth = self.class_max_depth
+        self.current_class[-1].update_loc(self.last_lineno)
+        self.current_class[-1].max_depth = self.class_max_depth
+        self.current_class.pop()
         self.class_max_depth = self.ast_depth
 
     def visit_FunctionDef(self, node):
-        if node.name[0:5] == "test_":
-            self.current_function = FunctionCounter(node.name, self.current_class, self.last_lineno)
-            key_name = self.filename + '.' + self.current_class.name + '.' + self.current_function.name
-            self.function_dict[key_name] = self.current_function
+        if node.name[0:4] == 'test':
+            self.current_function.append(FunctionCounter(node.name, self.current_class[-1], self.last_lineno))
+            key_name = self.filename + '.' + self.current_class[-1].name + '.' + self.current_function[-1].name
+            self.function_dict[key_name] = self.current_function[-1]
             self.generic_visit(node)
-            self.current_function.update_loc(self.last_lineno)
-            self.current_function.max_depth = self.function_max_depth
+            self.current_function[-1].update_loc(self.last_lineno)
+            self.current_function[-1].max_depth = self.function_max_depth
             self.function_max_depth = self.ast_depth
 
     def visit_Attribute(self, node):
         if node.attr[0:6] == "assert":
-            self.current_function.num_assert_tm += 1
-            self.current_class.num_assert_tc += 1
+            self.current_function[-1].num_assert_tm += 1
+            self.current_class[-1].num_assert_tc += 1
 
     def generic_visit(self, node):
         for child_node in ast.iter_child_nodes(node):
@@ -96,9 +99,13 @@ class AssertCounter(ast.NodeVisitor):
 
 
 if __name__ == '__main__':
-    with open('test_calculator' + '.py') as f:
+    with open('test_bitarray' + '.py') as f:
         test_ast = ast.parse(f.read())
-    counter = AssertCounter('test_calculator')
+    counter = AssertCounter('test_bitarray.py')
     list_temp = counter.get_assert_stats(test_ast)
+
     for i in list_temp:
-        print(i.num_assert_tm, i.class_counter.num_assert_tc)
+        print(list_temp[i].class_counter.end_lineno)
+        print(i)
+
+    #print(list_temp[i].class_counter.end_lineno)

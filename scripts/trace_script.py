@@ -1,4 +1,6 @@
 import sys
+import time
+
 from src.runners.unittest_runner import debug_suit
 
 
@@ -11,7 +13,11 @@ class LineObject:
 class Cover:
     def __init__(self, src_name=None, test_name=None):
         self.src_name = src_name
-        self.test_name = test_name
+        self.test_name = []
+        if type(test_name) == list:
+            self.test_name = test_name
+        else:
+            self.test_name.append(test_name)
         self.counts = {}
         self.current_test = None
         self.globaltrace = self.globaltrace_count
@@ -23,7 +29,7 @@ class Cover:
             filename = filename.split('\\')[-1]
             if filename == self.src_name:
                 return self.localtrace
-            if filename != self.test_name:
+            if filename not in self.test_name:
                 return
             func = frame.f_code.co_name
             if func[0] == '<':
@@ -34,7 +40,7 @@ class Cover:
             except (KeyError, AttributeError):
                 return
 
-            if filename == self.test_name:
+            if filename in self.test_name:
                 filename = filename[:-3]
                 self.current_test = "%s.%s.%s" % (filename, class_name, func)
 
@@ -64,14 +70,18 @@ class Cover:
 
     def run_trace(self):
         sys.settrace(self.globaltrace)
-        debug_suit()
+        debug_suit(self.src_name)
         sys.settrace(None)
         return self.counts
 
 
 if __name__ == '__main__':
-    cov = Cover(src_name='dictset.py', test_name='test__dictset.py')
+    start_time = time.time()
+    print("0--- %s seconds ---" % (time.time() - start_time))
+    cov = Cover(src_name='bitstring.py', test_name=['test_bitarray.py', 'test_bits.py', 'test_bitstore.py', 'test_bitstream.py', 'test_bitstring.py', 'test_constbitstream.py'])
     cov_dict = cov.run_trace()
-    for i in cov_dict:
-        print(i, cov_dict[i].count, len(cov_dict[i].ctx))
+    print("1--- %s seconds ---" % (time.time() - start_time))
+    print(cov_dict.keys())
+    #for i in cov_dict:
+        #print(i, cov_dict[i].ctx)
 
