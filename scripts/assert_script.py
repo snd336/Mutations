@@ -69,6 +69,10 @@ class AssertCounter(ast.NodeVisitor):
             self.current_function[-1].max_depth = self.function_max_depth
             self.function_max_depth = self.ast_depth
 
+    def visit_Assert(self, node):
+        self.current_function[-1].num_assert_tm += 1
+        self.current_class[-1].num_assert_tc += 1
+
     def visit_Attribute(self, node):
         if node.attr[0:6] == "assert":
             self.current_function[-1].num_assert_tm += 1
@@ -99,13 +103,10 @@ class AssertCounter(ast.NodeVisitor):
 
 
 if __name__ == '__main__':
-    with open('test_bitarray' + '.py') as f:
+    with open('test_transformers' + '.py') as f:
         test_ast = ast.parse(f.read())
-    counter = AssertCounter('test_bitarray.py')
-    list_temp = counter.get_assert_stats(test_ast)
 
-    for i in list_temp:
-        print(list_temp[i].class_counter.end_lineno)
-        print(i)
+    counter = AssertCounter('test_transformers.py')
+    counter_dict = counter.get_assert_stats(test_ast)
 
-    #print(list_temp[i].class_counter.end_lineno)
+    print(counter_dict)
