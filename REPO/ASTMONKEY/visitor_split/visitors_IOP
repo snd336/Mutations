@@ -1,0 +1,28 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 0.0
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001
+  mutations:
+  - lineno: 16
+    operator: IOP
+  number: 1
+  status: survived
+  tests_run: 316
+  time: 0.7810800075531006
+number_of_tests: 316
+targets:
+- src/astmonkey/visitors.py
+tests:
+- name: test_visitors
+  target: null
+  time: 1.425621509552002
+time_stats:
+  create_mutant_module: 0.00399017333984375
+  create_target_ast: 0.029931068420410156
+  mutate_module: 8.125284194946289
+  run_tests_with_mutant: 0.7820765972137451
+total_time: 9.556962251663208

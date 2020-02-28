@@ -1,0 +1,128 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 80.0
+mutations:
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x00000264E7F8BD08>\nsource = \"''' This is a multi line docstring.\\n\\\
+    nFurther description...\\n'''\"\n\n    @pytest.mark.parametrize(\"source\", roundtrip_testdata)\n\
+    \    def test_codegen_roundtrip(self, source):\n        \"\"\"Check if converting\
+    \ code into AST and converting it back to code yields the same code.\"\"\"\n \
+    \       node = ast.parse(source)\n        generated = to_source(node)\n>     \
+    \  assert source == generated\nE       AssertionError\n\nsrc\\tests\\astmonkeytests\\\
+    test_visitors.py:393: AssertionError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip['''
+    This is a multi line docstring.\n\nFurther description...\n''']
+  module: &id001
+  mutations:
+  - lineno: 202
+    operator: AOD
+  number: 1
+  status: killed
+  tests_run: 121
+  time: 0.5004277229309082
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x00000264E8167288>\nsource = 'del x'\n\n    @pytest.mark.parametrize(\"\
+    source\", roundtrip_testdata)\n    def test_codegen_roundtrip(self, source):\n\
+    \        \"\"\"Check if converting code into AST and converting it back to code\
+    \ yields the same code.\"\"\"\n        node = ast.parse(source)\n>       generated\
+    \ = to_source(node)\n\nsrc\\tests\\astmonkeytests\\test_visitors.py:392: \n_ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\
+    visitors:137: in to_source\n    ???\nvisitors:347: in visit\n    ???\n..\\..\\\
+    ..\\..\\Documents\\Software\\Anaconda\\lib\\ast.py:271: in visit\n    return visitor(node)\n\
+    visitors:352: in visit_Module\n    ???\nvisitors:272: in body\n    ???\nvisitors:347:\
+    \ in visit\n    ???\n..\\..\\..\\..\\Documents\\Software\\Anaconda\\lib\\ast.py:271:\
+    \ in visit\n    return visitor(node)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <visitors.SourceGeneratorNodeVisitorPython36\
+    \ object at 0x00000264E79BD448>\nnode = <_ast.Delete object at 0x00000264E8167388>\n\
+    \n>   ???\nE   IndexError: list index out of range\n\nvisitors:498: IndexError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip[del
+    x]
+  module: *id001
+  mutations:
+  - lineno: 498
+    operator: AOD
+  number: 2
+  status: killed
+  tests_run: 77
+  time: 0.47672605514526367
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 613
+    operator: AOD
+  number: 3
+  status: survived
+  tests_run: 316
+  time: 0.7586143016815186
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x00000264E9572908>\nsource = 'with x:\\n    pass'\n\n    @pytest.mark.parametrize(\"\
+    source\", roundtrip_testdata)\n    def test_codegen_roundtrip(self, source):\n\
+    \        \"\"\"Check if converting code into AST and converting it back to code\
+    \ yields the same code.\"\"\"\n        node = ast.parse(source)\n>       generated\
+    \ = to_source(node)\n\nsrc\\tests\\astmonkeytests\\test_visitors.py:392: \n_ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\
+    visitors:137: in to_source\n    ???\nvisitors:347: in visit\n    ???\n..\\..\\\
+    ..\\..\\Documents\\Software\\Anaconda\\lib\\ast.py:271: in visit\n    return visitor(node)\n\
+    visitors:352: in visit_Module\n    ???\nvisitors:272: in body\n    ???\nvisitors:347:\
+    \ in visit\n    ???\n..\\..\\..\\..\\Documents\\Software\\Anaconda\\lib\\ast.py:271:\
+    \ in visit\n    return visitor(node)\nvisitors:823: in visit_With\n    ???\n_\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _\n\nself = <visitors.SourceGeneratorNodeVisitorPython36 object at 0x00000264E7FCC4C8>\n\
+    node = <_ast.With object at 0x00000264E9572A08>, prefixes = []\n\n>   ???\nE \
+    \  IndexError: list index out of range\n\nvisitors:916: IndexError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip[with
+    x:\n    pass]
+  module: *id001
+  mutations:
+  - lineno: 916
+    operator: AOD
+  number: 4
+  status: killed
+  tests_run: 79
+  time: 0.4849982261657715
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x00000264E97EF648>\nsource = \"f'He said his name is {name}.'\"\n\n    @pytest.mark.parametrize(\"\
+    source\", roundtrip_testdata)\n    def test_codegen_roundtrip(self, source):\n\
+    \        \"\"\"Check if converting code into AST and converting it back to code\
+    \ yields the same code.\"\"\"\n        node = ast.parse(source)\n>       generated\
+    \ = to_source(node)\n\nsrc\\tests\\astmonkeytests\\test_visitors.py:392: \n_ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\
+    visitors:137: in to_source\n    ???\nvisitors:347: in visit\n    ???\n..\\..\\\
+    ..\\..\\Documents\\Software\\Anaconda\\lib\\ast.py:271: in visit\n    return visitor(node)\n\
+    visitors:352: in visit_Module\n    ???\nvisitors:272: in body\n    ???\nvisitors:347:\
+    \ in visit\n    ???\n..\\..\\..\\..\\Documents\\Software\\Anaconda\\lib\\ast.py:271:\
+    \ in visit\n    return visitor(node)\nvisitors:391: in visit_Expr\n    ???\n..\\\
+    ..\\..\\..\\Documents\\Software\\Anaconda\\lib\\ast.py:281: in generic_visit\n\
+    \    self.visit(value)\nvisitors:347: in visit\n    ???\n..\\..\\..\\..\\Documents\\\
+    Software\\Anaconda\\lib\\ast.py:271: in visit\n    return visitor(node)\nvisitors:1006:\
+    \ in visit_JoinedStr\n    ???\nvisitors:347: in visit\n    ???\n..\\..\\..\\..\\\
+    Documents\\Software\\Anaconda\\lib\\ast.py:271: in visit\n    return visitor(node)\n\
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _\n\nself = <visitors.SourceGeneratorNodeVisitorPython36 object at 0x00000264E97C0088>\n\
+    node = <_ast.FormattedValue object at 0x00000264E97EF8C8>\n\n>   ???\nE   OverflowError:\
+    \ %c arg not in range(0x110000)\n\nvisitors:1013: OverflowError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip[f'He
+    said his name is {name}.']
+  module: *id001
+  mutations:
+  - lineno: 1012
+    operator: AOD
+  number: 5
+  status: killed
+  tests_run: 154
+  time: 0.5562229156494141
+number_of_tests: 316
+targets:
+- src/astmonkey/visitors.py
+tests:
+- name: test_visitors
+  target: null
+  time: 1.4346628189086914
+time_stats:
+  create_mutant_module: 0.022956132888793945
+  create_target_ast: 0.029926061630249023
+  mutate_module: 2.9805235862731934
+  run_tests_with_mutant: 2.7799665927886963
+total_time: 4.421204566955566

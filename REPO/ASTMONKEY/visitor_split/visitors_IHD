@@ -1,0 +1,105 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 12.5
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001
+  mutations:
+  - lineno: 845
+    operator: IHD
+  number: 1
+  status: survived
+  tests_run: 316
+  time: 0.7514102458953857
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 849
+    operator: IHD
+  number: 2
+  status: survived
+  tests_run: 316
+  time: 0.7832014560699463
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 888
+    operator: IHD
+  number: 3
+  status: survived
+  tests_run: 316
+  time: 0.746859073638916
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 892
+    operator: IHD
+  number: 4
+  status: survived
+  tests_run: 316
+  time: 0.786027193069458
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 896
+    operator: IHD
+  number: 5
+  status: survived
+  tests_run: 316
+  time: 0.7641286849975586
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 927
+    operator: IHD
+  number: 6
+  status: survived
+  tests_run: 316
+  time: 0.7953143119812012
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 944
+    operator: IHD
+  number: 7
+  status: survived
+  tests_run: 316
+  time: 0.7550323009490967
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x000001F0A452ECC8>\nsource = \"f'He said his name is {name}.'\"\n\n    @pytest.mark.parametrize(\"\
+    source\", roundtrip_testdata)\n    def test_codegen_roundtrip(self, source):\n\
+    \        \"\"\"Check if converting code into AST and converting it back to code\
+    \ yields the same code.\"\"\"\n        node = ast.parse(source)\n        generated\
+    \ = to_source(node)\n>       assert source == generated\nE       AssertionError\n\
+    \nsrc\\tests\\astmonkeytests\\test_visitors.py:393: AssertionError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip[f'He
+    said his name is {name}.']
+  module: *id001
+  mutations:
+  - lineno: 997
+    operator: IHD
+  number: 8
+  status: killed
+  tests_run: 154
+  time: 0.551318883895874
+number_of_tests: 316
+targets:
+- src/astmonkey/visitors.py
+tests:
+- name: test_visitors
+  target: null
+  time: 1.4302012920379639
+time_stats:
+  create_mutant_module: 0.039942264556884766
+  create_target_ast: 0.03195667266845703
+  mutate_module: 6.149045705795288
+  run_tests_with_mutant: 5.9332921504974365
+total_time: 7.583238363265991

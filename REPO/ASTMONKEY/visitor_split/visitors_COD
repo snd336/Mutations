@@ -1,0 +1,228 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 91.66666666666666
+mutations:
+- exception_traceback: "self = <test_visitors.TestGraphNodeVisitor object at 0x0000026904B37F88>\n\
+    visitor = <visitors.GraphNodeVisitor object at 0x0000026904B3F908>\n\n    def\
+    \ test_node_label(self, visitor):\n        node = ParentChildNodeTransformer().visit(ast.parse('x\
+    \ = 1'))\n    \n        visitor.visit(node)\n    \n        dot_node = visitor.graph.get_node(str(node.body[0].value))[0]\n\
+    \        if sys.version_info >= (3, 8):\n            assert dot_node.get_label()\
+    \ == 'ast.Constant(value=1, kind=None)'\n        else:\n>           assert dot_node.get_label()\
+    \ == 'ast.Num(n=1)'\nE           AssertionError\n\nsrc\\tests\\astmonkeytests\\\
+    test_visitors.py:45: AssertionError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestGraphNodeVisitor::test_node_label
+  module: &id001
+  mutations:
+  - lineno: 32
+    operator: COD
+  number: 1
+  status: killed
+  tests_run: 3
+  time: 0.3394954204559326
+- exception_traceback: "self = <test_visitors.TestGraphNodeVisitor object at 0x0000026904427BC8>\n\
+    visitor = <visitors.GraphNodeVisitor object at 0x00000269045FFB88>\n\n    def\
+    \ test_has_edge(self, visitor):\n        node = ParentChildNodeTransformer().visit(ast.parse('x\
+    \ = 1'))\n    \n>       visitor.visit(node)\n\nsrc\\tests\\astmonkeytests\\test_visitors.py:25:\
+    \ \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _\nvisitors:21: in visit\n    ???\n..\\..\\..\\..\\Documents\\Software\\\
+    Anaconda\\lib\\ast.py:271: in visit\n    return visitor(node)\n..\\..\\..\\..\\\
+    Documents\\Software\\Anaconda\\lib\\ast.py:279: in generic_visit\n    self.visit(item)\n\
+    visitors:21: in visit\n    ???\n..\\..\\..\\..\\Documents\\Software\\Anaconda\\\
+    lib\\ast.py:271: in visit\n    return visitor(node)\n..\\..\\..\\..\\Documents\\\
+    Software\\Anaconda\\lib\\ast.py:279: in generic_visit\n    self.visit(item)\n\
+    visitors:18: in visit\n    ???\nvisitors:27: in _dot_node\n    ???\nvisitors:33:\
+    \ in _dot_node_label\n    ???\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <visitors.GraphNodeVisitor object\
+    \ at 0x00000269045FFB88>, value = 'x'\n\n>   ???\nE   AttributeError: 'str' object\
+    \ has no attribute 'parents'\n\nvisitors:41: AttributeError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestGraphNodeVisitor::test_has_edge
+  module: *id001
+  mutations:
+  - lineno: 39
+    operator: COD
+  number: 2
+  status: killed
+  tests_run: 1
+  time: 0.3920152187347412
+- exception_traceback: "self = <test_visitors.TestGraphNodeVisitor object at 0x0000026905F13948>\n\
+    visitor = <visitors.GraphNodeVisitor object at 0x0000026905EBFB08>\n\n    def\
+    \ test_edge_label(self, visitor):\n        node = ParentChildNodeTransformer().visit(ast.parse('x\
+    \ = 1'))\n    \n        visitor.visit(node)\n    \n        dot_edge = visitor.graph.get_edge(str(node),\
+    \ str(node.body[0]))[0]\n>       assert dot_edge.get_label() == 'body[0]'\nE \
+    \      AssertionError\n\nsrc\\tests\\astmonkeytests\\test_visitors.py:53: AssertionError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestGraphNodeVisitor::test_edge_label
+  module: *id001
+  mutations:
+  - lineno: 56
+    operator: COD
+  number: 3
+  status: killed
+  tests_run: 4
+  time: 0.33950066566467285
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x00000269061378C8>\nsource = 'x = 1\\nx = 1'\n\n    @pytest.mark.parametrize(\"\
+    source\", roundtrip_testdata)\n    def test_codegen_roundtrip(self, source):\n\
+    \        \"\"\"Check if converting code into AST and converting it back to code\
+    \ yields the same code.\"\"\"\n        node = ast.parse(source)\n        generated\
+    \ = to_source(node)\n>       assert source == generated\nE       AssertionError\n\
+    \nsrc\\tests\\astmonkeytests\\test_visitors.py:393: AssertionError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip[x
+    = 1\nx = 1]
+  module: *id001
+  mutations:
+  - lineno: 244
+    operator: COD
+  number: 4
+  status: killed
+  tests_run: 11
+  time: 0.38153648376464844
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x0000026906217208>\nsource = 'x = 1'\n\n    @pytest.mark.parametrize(\"\
+    source\", roundtrip_testdata)\n    def test_codegen_roundtrip(self, source):\n\
+    \        \"\"\"Check if converting code into AST and converting it back to code\
+    \ yields the same code.\"\"\"\n        node = ast.parse(source)\n>       generated\
+    \ = to_source(node)\n\nsrc\\tests\\astmonkeytests\\test_visitors.py:392: \n_ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\
+    visitors:137: in to_source\n    ???\nvisitors:346: in visit\n    ???\nvisitors:251:\
+    \ in correct_line_number\n    ???\nvisitors:254: in add_missing_lines\n    ???\n\
+    visitors:222: in _newline_needed\n    ???\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ncls = <class 'visitors.SourceGeneratorNodeVisitorPython36'>\n\
+    node = <_ast.Module object at 0x0000026906211E88>\n\n>   ???\nE   AttributeError:\
+    \ 'Module' object has no attribute 'lineno'\n\nvisitors:206: AttributeError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip[x
+    = 1]
+  module: *id001
+  mutations:
+  - lineno: 244
+    operator: COD
+  number: 5
+  status: killed
+  tests_run: 6
+  time: 0.349165678024292
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x000002690645AB88>\nsource = \"def f(x: 'x' = 0, *args: 'args', y: 'y' =\
+    \ 1, **kwargs: 'kwargs') -> 'return':\\n    pass\"\n\n    @pytest.mark.parametrize(\"\
+    source\", roundtrip_testdata)\n    def test_codegen_roundtrip(self, source):\n\
+    \        \"\"\"Check if converting code into AST and converting it back to code\
+    \ yields the same code.\"\"\"\n        node = ast.parse(source)\n        generated\
+    \ = to_source(node)\n>       assert source == generated\nE       AssertionError\n\
+    \nsrc\\tests\\astmonkeytests\\test_visitors.py:393: AssertionError"
+  killer: 'src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip[def
+    f(x: ''x'' = 0, *args: ''args'', y: ''y'' = 1, **kwargs: ''kwargs'') -> ''return'':\n    pass]'
+  module: *id001
+  mutations:
+  - lineno: 321
+    operator: COD
+  number: 6
+  status: killed
+  tests_run: 139
+  time: 0.5079329013824463
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x0000026906645B48>\nsource = \"def f(x: 'x' = 0, *args: 'args', y: 'y' =\
+    \ 1, **kwargs: 'kwargs') -> 'return':\\n    pass\"\n\n    @pytest.mark.parametrize(\"\
+    source\", roundtrip_testdata)\n    def test_codegen_roundtrip(self, source):\n\
+    \        \"\"\"Check if converting code into AST and converting it back to code\
+    \ yields the same code.\"\"\"\n        node = ast.parse(source)\n        generated\
+    \ = to_source(node)\n>       assert source == generated\nE       AssertionError\n\
+    \nsrc\\tests\\astmonkeytests\\test_visitors.py:393: AssertionError"
+  killer: 'src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip[def
+    f(x: ''x'' = 0, *args: ''args'', y: ''y'' = 1, **kwargs: ''kwargs'') -> ''return'':\n    pass]'
+  module: *id001
+  mutations:
+  - lineno: 324
+    operator: COD
+  number: 7
+  status: killed
+  tests_run: 139
+  time: 0.5155439376831055
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 491
+    operator: COD
+  number: 8
+  status: survived
+  tests_run: 316
+  time: 0.8101353645324707
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x0000026906A360C8>\nsource = '(x, y) = z'\n\n    @pytest.mark.parametrize(\"\
+    source\", roundtrip_testdata)\n    def test_codegen_roundtrip(self, source):\n\
+    \        \"\"\"Check if converting code into AST and converting it back to code\
+    \ yields the same code.\"\"\"\n        node = ast.parse(source)\n        generated\
+    \ = to_source(node)\n>       assert source == generated\nE       AssertionError\n\
+    \nsrc\\tests\\astmonkeytests\\test_visitors.py:393: AssertionError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip[(x,
+    y) = z]
+  module: *id001
+  mutations:
+  - lineno: 618
+    operator: COD
+  number: 9
+  status: killed
+  tests_run: 7
+  time: 0.3474996089935303
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x0000026906C1C9C8>\nsource = 'not x'\n\n    @pytest.mark.parametrize(\"\
+    source\", roundtrip_testdata)\n    def test_codegen_roundtrip(self, source):\n\
+    \        \"\"\"Check if converting code into AST and converting it back to code\
+    \ yields the same code.\"\"\"\n        node = ast.parse(source)\n        generated\
+    \ = to_source(node)\n>       assert source == generated\nE       AssertionError\n\
+    \nsrc\\tests\\astmonkeytests\\test_visitors.py:393: AssertionError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip[not
+    x]
+  module: *id001
+  mutations:
+  - lineno: 674
+    operator: COD
+  number: 10
+  status: killed
+  tests_run: 44
+  time: 0.398235559463501
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x0000026906C3DB48>\nsource = '-((-x) // y)'\n\n    @pytest.mark.parametrize(\"\
+    source\", roundtrip_testdata)\n    def test_codegen_roundtrip(self, source):\n\
+    \        \"\"\"Check if converting code into AST and converting it back to code\
+    \ yields the same code.\"\"\"\n        node = ast.parse(source)\n        generated\
+    \ = to_source(node)\n>       assert source == generated\nE       AssertionError\n\
+    \nsrc\\tests\\astmonkeytests\\test_visitors.py:393: AssertionError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip[-((-x)
+    // y)]
+  module: *id001
+  mutations:
+  - lineno: 675
+    operator: COD
+  number: 11
+  status: killed
+  tests_run: 47
+  time: 0.4445955753326416
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x0000026906FB0B08>\nsource = 'x[y:z:q]'\n\n    @pytest.mark.parametrize(\"\
+    source\", roundtrip_testdata)\n    def test_codegen_roundtrip(self, source):\n\
+    \        \"\"\"Check if converting code into AST and converting it back to code\
+    \ yields the same code.\"\"\"\n        node = ast.parse(source)\n        generated\
+    \ = to_source(node)\n>       assert source == generated\nE       AssertionError\n\
+    \nsrc\\tests\\astmonkeytests\\test_visitors.py:393: AssertionError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip[x[y:z:q]]
+  module: *id001
+  mutations:
+  - lineno: 692
+    operator: COD
+  number: 12
+  status: killed
+  tests_run: 88
+  time: 0.4593319892883301
+number_of_tests: 316
+targets:
+- src/astmonkey/visitors.py
+tests:
+- name: test_visitors
+  target: null
+  time: 1.4262175559997559
+time_stats:
+  create_mutant_module: 0.06368088722229004
+  create_target_ast: 0.03200840950012207
+  mutate_module: 5.532008409500122
+  run_tests_with_mutant: 5.2889792919158936
+total_time: 6.971435070037842

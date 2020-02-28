@@ -1,0 +1,16 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 0
+mutations: []
+number_of_tests: 316
+targets:
+- src/astmonkey/visitors.py
+tests:
+- name: test_visitors
+  target: null
+  time: 1.421722650527954
+time_stats:
+  create_target_ast: 0.03195619583129883
+  mutate_module: 0.17975616455078125
+total_time: 1.6126656532287598

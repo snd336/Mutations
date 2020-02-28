@@ -1,0 +1,138 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 33.33333333333333
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001
+  mutations:
+  - lineno: 192
+    operator: DDL
+  number: 1
+  status: survived
+  tests_run: 316
+  time: 0.7909445762634277
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 200
+    operator: DDL
+  number: 2
+  status: survived
+  tests_run: 316
+  time: 0.7631912231445312
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 209
+    operator: DDL
+  number: 3
+  status: survived
+  tests_run: 316
+  time: 0.7629814147949219
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x000001BB3983F908>\nsource = 'x = 1'\n\n    @pytest.mark.parametrize(\"\
+    source\", roundtrip_testdata)\n    def test_codegen_roundtrip(self, source):\n\
+    \        \"\"\"Check if converting code into AST and converting it back to code\
+    \ yields the same code.\"\"\"\n        node = ast.parse(source)\n>       generated\
+    \ = to_source(node)\n\nsrc\\tests\\astmonkeytests\\test_visitors.py:392: \n_ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\
+    visitors:137: in to_source\n    ???\nvisitors:347: in visit\n    ???\n..\\..\\\
+    ..\\..\\Documents\\Software\\Anaconda\\lib\\ast.py:271: in visit\n    return visitor(node)\n\
+    visitors:352: in visit_Module\n    ???\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <visitors.SourceGeneratorNodeVisitorPython36\
+    \ object at 0x000001BB398F7048>\nstatements = [<_ast.Assign object at 0x000001BB398E3088>],\
+    \ indent = 0\n\n>   ???\nE   AttributeError: __enter__\n\nvisitors:269: AttributeError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip[x
+    = 1]
+  module: *id001
+  mutations:
+  - lineno: 226
+    operator: DDL
+  number: 4
+  status: killed
+  tests_run: 6
+  time: 0.35952067375183105
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x000001BB391E4B08>\nsource = 'x = 1'\n\n    @pytest.mark.parametrize(\"\
+    source\", roundtrip_testdata)\n    def test_codegen_roundtrip(self, source):\n\
+    \        \"\"\"Check if converting code into AST and converting it back to code\
+    \ yields the same code.\"\"\"\n        node = ast.parse(source)\n>       generated\
+    \ = to_source(node)\n\nsrc\\tests\\astmonkeytests\\test_visitors.py:392: \n_ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\
+    visitors:137: in to_source\n    ???\nvisitors:347: in visit\n    ???\n..\\..\\\
+    ..\\..\\Documents\\Software\\Anaconda\\lib\\ast.py:271: in visit\n    return visitor(node)\n\
+    visitors:352: in visit_Module\n    ???\nvisitors:272: in body\n    ???\nvisitors:347:\
+    \ in visit\n    ???\n..\\..\\..\\..\\Documents\\Software\\Anaconda\\lib\\ast.py:271:\
+    \ in visit\n    return visitor(node)\nvisitors:361: in visit_Assign\n    ???\n\
+    visitors:347: in visit\n    ???\n..\\..\\..\\..\\Documents\\Software\\Anaconda\\\
+    lib\\ast.py:271: in visit\n    return visitor(node)\n_ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <visitors.SourceGeneratorNodeVisitorPython36\
+    \ object at 0x000001BB391E4048>\nnode = <_ast.Num object at 0x000001BB391E4908>\n\
+    \n>   ???\nE   AttributeError: __enter__\n\nvisitors:608: AttributeError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip[x
+    = 1]
+  module: *id001
+  mutations:
+  - lineno: 232
+    operator: DDL
+  number: 5
+  status: killed
+  tests_run: 6
+  time: 0.36351943016052246
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 835
+    operator: DDL
+  number: 6
+  status: survived
+  tests_run: 316
+  time: 0.7712094783782959
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 938
+    operator: DDL
+  number: 7
+  status: incompetent
+  tests_run: 47
+  time: 0.4873497486114502
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 967
+    operator: DDL
+  number: 8
+  status: incompetent
+  tests_run: 10
+  time: 0.4324018955230713
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 978
+    operator: DDL
+  number: 9
+  status: incompetent
+  tests_run: 10
+  time: 0.3594846725463867
+number_of_tests: 316
+targets:
+- src/astmonkey/visitors.py
+tests:
+- name: test_visitors
+  target: null
+  time: 1.4368767738342285
+time_stats:
+  create_mutant_module: 0.03995943069458008
+  create_target_ast: 0.031958580017089844
+  mutate_module: 22.402956008911133
+  run_tests_with_mutant: 5.0906031131744385
+total_time: 23.844908237457275

@@ -1,0 +1,553 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 70.0
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001
+  mutations:
+  - lineno: 120
+    operator: AOR
+  number: 1
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 120
+    operator: AOR
+  number: 2
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 120
+    operator: AOR
+  number: 3
+  status: incompetent
+  tests_run: 0
+  time: 0
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x000001F10A36BC88>\nsource = \"''' This is a multi line docstring.\\n\\\
+    nFurther description...\\n'''\"\n\n    @pytest.mark.parametrize(\"source\", roundtrip_testdata)\n\
+    \    def test_codegen_roundtrip(self, source):\n        \"\"\"Check if converting\
+    \ code into AST and converting it back to code yields the same code.\"\"\"\n \
+    \       node = ast.parse(source)\n        generated = to_source(node)\n>     \
+    \  assert source == generated\nE       AssertionError\n\nsrc\\tests\\astmonkeytests\\\
+    test_visitors.py:393: AssertionError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip['''
+    This is a multi line docstring.\n\nFurther description...\n''']
+  module: *id001
+  mutations:
+  - lineno: 202
+    operator: AOR
+  number: 4
+  status: killed
+  tests_run: 121
+  time: 0.4952869415283203
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x000001F10A5B6D48>\nsource = \"''' This is a multi line docstring.\\n\\\
+    nFurther description...\\n'''\"\n\n    @pytest.mark.parametrize(\"source\", roundtrip_testdata)\n\
+    \    def test_codegen_roundtrip(self, source):\n        \"\"\"Check if converting\
+    \ code into AST and converting it back to code yields the same code.\"\"\"\n \
+    \       node = ast.parse(source)\n        generated = to_source(node)\n>     \
+    \  assert source == generated\nE       AssertionError\n\nsrc\\tests\\astmonkeytests\\\
+    test_visitors.py:393: AssertionError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip['''
+    This is a multi line docstring.\n\nFurther description...\n''']
+  module: *id001
+  mutations:
+  - lineno: 204
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 121
+  time: 0.5196645259857178
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 223
+    operator: AOR
+  number: 6
+  status: timeout
+  tests_run: null
+  time: 7.181799650192261
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 265
+    operator: AOR
+  number: 7
+  status: incompetent
+  tests_run: 6
+  time: 0.40346455574035645
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 265
+    operator: AOR
+  number: 8
+  status: incompetent
+  tests_run: 6
+  time: 0.34438276290893555
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 265
+    operator: AOR
+  number: 9
+  status: incompetent
+  tests_run: 6
+  time: 0.3474907875061035
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 292
+    operator: AOR
+  number: 10
+  status: incompetent
+  tests_run: 120
+  time: 0.5392665863037109
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 292
+    operator: AOR
+  number: 11
+  status: incompetent
+  tests_run: 120
+  time: 0.50740647315979
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 292
+    operator: AOR
+  number: 12
+  status: incompetent
+  tests_run: 120
+  time: 0.5004138946533203
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 292
+    operator: AOR
+  number: 13
+  status: incompetent
+  tests_run: 120
+  time: 0.5033166408538818
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 292
+    operator: AOR
+  number: 14
+  status: incompetent
+  tests_run: 120
+  time: 0.5434446334838867
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 292
+    operator: AOR
+  number: 15
+  status: incompetent
+  tests_run: 120
+  time: 0.5112688541412354
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 292
+    operator: AOR
+  number: 16
+  status: incompetent
+  tests_run: 120
+  time: 0.5677809715270996
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 296
+    operator: AOR
+  number: 17
+  status: incompetent
+  tests_run: 19
+  time: 0.3763716220855713
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 296
+    operator: AOR
+  number: 18
+  status: incompetent
+  tests_run: 19
+  time: 0.42377161979675293
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 296
+    operator: AOR
+  number: 19
+  status: incompetent
+  tests_run: 19
+  time: 0.3662068843841553
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x000001F10D10F708>\nsource = 'def f(x, y=1, *args, **kwargs):\\n    pass'\n\
+    \n    @pytest.mark.parametrize(\"source\", roundtrip_testdata)\n    def test_codegen_roundtrip(self,\
+    \ source):\n        \"\"\"Check if converting code into AST and converting it\
+    \ back to code yields the same code.\"\"\"\n        node = ast.parse(source)\n\
+    \        generated = to_source(node)\n>       assert source == generated\nE  \
+    \     AssertionError\n\nsrc\\tests\\astmonkeytests\\test_visitors.py:393: AssertionError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip[def
+    f(x, y=1, *args, **kwargs):\n    pass]
+  module: *id001
+  mutations:
+  - lineno: 296
+    operator: AOR
+  number: 20
+  status: killed
+  tests_run: 24
+  time: 0.3656134605407715
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 298
+    operator: AOR
+  number: 21
+  status: incompetent
+  tests_run: 19
+  time: 0.3715050220489502
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 334
+    operator: AOR
+  number: 22
+  status: incompetent
+  tests_run: 24
+  time: 0.37953877449035645
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 335
+    operator: AOR
+  number: 23
+  status: survived
+  tests_run: 316
+  time: 0.8193385601043701
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 366
+    operator: AOR
+  number: 24
+  status: incompetent
+  tests_run: 8
+  time: 0.36351799964904785
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 366
+    operator: AOR
+  number: 25
+  status: incompetent
+  tests_run: 8
+  time: 0.35547947883605957
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 375
+    operator: AOR
+  number: 26
+  status: incompetent
+  tests_run: 37
+  time: 0.39200568199157715
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 377
+    operator: AOR
+  number: 27
+  status: incompetent
+  tests_run: 35
+  time: 0.3914775848388672
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 377
+    operator: AOR
+  number: 28
+  status: incompetent
+  tests_run: 35
+  time: 0.3914797306060791
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 377
+    operator: AOR
+  number: 29
+  status: incompetent
+  tests_run: 35
+  time: 0.3875141143798828
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 395
+    operator: AOR
+  number: 30
+  status: incompetent
+  tests_run: 101
+  time: 0.4873528480529785
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 407
+    operator: AOR
+  number: 31
+  status: incompetent
+  tests_run: 149
+  time: 0.6272263526916504
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 429
+    operator: AOR
+  number: 32
+  status: survived
+  tests_run: 316
+  time: 0.7667791843414307
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x000001F10E76E7C8>\nsource = 'del x'\n\n    @pytest.mark.parametrize(\"\
+    source\", roundtrip_testdata)\n    def test_codegen_roundtrip(self, source):\n\
+    \        \"\"\"Check if converting code into AST and converting it back to code\
+    \ yields the same code.\"\"\"\n        node = ast.parse(source)\n>       generated\
+    \ = to_source(node)\n\nsrc\\tests\\astmonkeytests\\test_visitors.py:392: \n_ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\
+    visitors:137: in to_source\n    ???\nvisitors:347: in visit\n    ???\n..\\..\\\
+    ..\\..\\Documents\\Software\\Anaconda\\lib\\ast.py:271: in visit\n    return visitor(node)\n\
+    visitors:352: in visit_Module\n    ???\nvisitors:272: in body\n    ???\nvisitors:347:\
+    \ in visit\n    ???\n..\\..\\..\\..\\Documents\\Software\\Anaconda\\lib\\ast.py:271:\
+    \ in visit\n    return visitor(node)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <visitors.SourceGeneratorNodeVisitorPython36\
+    \ object at 0x000001F10E76E688>\nnode = <_ast.Delete object at 0x000001F10E76E6C8>\n\
+    \n>   ???\nE   IndexError: list index out of range\n\nvisitors:498: IndexError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip[del
+    x]
+  module: *id001
+  mutations:
+  - lineno: 498
+    operator: AOR
+  number: 33
+  status: killed
+  tests_run: 77
+  time: 0.4517652988433838
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 502
+    operator: AOR
+  number: 34
+  status: incompetent
+  tests_run: 93
+  time: 0.4675629138946533
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 505
+    operator: AOR
+  number: 35
+  status: incompetent
+  tests_run: 131
+  time: 0.5206303596496582
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 549
+    operator: AOR
+  number: 36
+  status: incompetent
+  tests_run: 96
+  time: 0.5901479721069336
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 613
+    operator: AOR
+  number: 37
+  status: survived
+  tests_run: 316
+  time: 0.7722835540771484
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 650
+    operator: AOR
+  number: 38
+  status: incompetent
+  tests_run: 45
+  time: 0.41149258613586426
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 657
+    operator: AOR
+  number: 39
+  status: incompetent
+  tests_run: 42
+  time: 0.4038207530975342
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 664
+    operator: AOR
+  number: 40
+  status: incompetent
+  tests_run: 28
+  time: 0.3954744338989258
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 768
+    operator: AOR
+  number: 41
+  status: incompetent
+  tests_run: 32
+  time: 0.3994143009185791
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 863
+    operator: AOR
+  number: 42
+  status: incompetent
+  tests_run: 16
+  time: 0.36362648010253906
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 877
+    operator: AOR
+  number: 43
+  status: incompetent
+  tests_run: 19
+  time: 0.3709137439727783
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x000001F10F362D48>\nsource = 'with x:\\n    pass'\n\n    @pytest.mark.parametrize(\"\
+    source\", roundtrip_testdata)\n    def test_codegen_roundtrip(self, source):\n\
+    \        \"\"\"Check if converting code into AST and converting it back to code\
+    \ yields the same code.\"\"\"\n        node = ast.parse(source)\n>       generated\
+    \ = to_source(node)\n\nsrc\\tests\\astmonkeytests\\test_visitors.py:392: \n_ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\
+    visitors:137: in to_source\n    ???\nvisitors:347: in visit\n    ???\n..\\..\\\
+    ..\\..\\Documents\\Software\\Anaconda\\lib\\ast.py:271: in visit\n    return visitor(node)\n\
+    visitors:352: in visit_Module\n    ???\nvisitors:272: in body\n    ???\nvisitors:347:\
+    \ in visit\n    ???\n..\\..\\..\\..\\Documents\\Software\\Anaconda\\lib\\ast.py:271:\
+    \ in visit\n    return visitor(node)\nvisitors:823: in visit_With\n    ???\n_\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _\n\nself = <visitors.SourceGeneratorNodeVisitorPython36 object at 0x000001F10F362A48>\n\
+    node = <_ast.With object at 0x000001F10F362C08>, prefixes = []\n\n>   ???\nE \
+    \  IndexError: list index out of range\n\nvisitors:916: IndexError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip[with
+    x:\n    pass]
+  module: *id001
+  mutations:
+  - lineno: 916
+    operator: AOR
+  number: 44
+  status: killed
+  tests_run: 79
+  time: 0.456589937210083
+- exception_traceback: "self = <test_visitors.TestSourceGeneratorNodeVisitor object\
+    \ at 0x000001F10DC02108>\nsource = \"f'He said his name is {name}.'\"\n\n    @pytest.mark.parametrize(\"\
+    source\", roundtrip_testdata)\n    def test_codegen_roundtrip(self, source):\n\
+    \        \"\"\"Check if converting code into AST and converting it back to code\
+    \ yields the same code.\"\"\"\n        node = ast.parse(source)\n>       generated\
+    \ = to_source(node)\n\nsrc\\tests\\astmonkeytests\\test_visitors.py:392: \n_ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\
+    visitors:137: in to_source\n    ???\nvisitors:347: in visit\n    ???\n..\\..\\\
+    ..\\..\\Documents\\Software\\Anaconda\\lib\\ast.py:271: in visit\n    return visitor(node)\n\
+    visitors:352: in visit_Module\n    ???\nvisitors:272: in body\n    ???\nvisitors:347:\
+    \ in visit\n    ???\n..\\..\\..\\..\\Documents\\Software\\Anaconda\\lib\\ast.py:271:\
+    \ in visit\n    return visitor(node)\nvisitors:391: in visit_Expr\n    ???\n..\\\
+    ..\\..\\..\\Documents\\Software\\Anaconda\\lib\\ast.py:281: in generic_visit\n\
+    \    self.visit(value)\nvisitors:347: in visit\n    ???\n..\\..\\..\\..\\Documents\\\
+    Software\\Anaconda\\lib\\ast.py:271: in visit\n    return visitor(node)\nvisitors:1006:\
+    \ in visit_JoinedStr\n    ???\nvisitors:347: in visit\n    ???\n..\\..\\..\\..\\\
+    Documents\\Software\\Anaconda\\lib\\ast.py:271: in visit\n    return visitor(node)\n\
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _\n\nself = <visitors.SourceGeneratorNodeVisitorPython36 object at 0x000001F10D4E8D08>\n\
+    node = <_ast.FormattedValue object at 0x000001F10D78F988>\n\n>   ???\nE   OverflowError:\
+    \ %c arg not in range(0x110000)\n\nvisitors:1013: OverflowError"
+  killer: src/tests/astmonkeytests/test_visitors.py::TestSourceGeneratorNodeVisitor::test_codegen_roundtrip[f'He
+    said his name is {name}.']
+  module: *id001
+  mutations:
+  - lineno: 1012
+    operator: AOR
+  number: 45
+  status: killed
+  tests_run: 154
+  time: 0.6909618377685547
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 1013
+    operator: AOR
+  number: 46
+  status: incompetent
+  tests_run: 155
+  time: 0.574751615524292
+number_of_tests: 316
+targets:
+- src/astmonkey/visitors.py
+tests:
+- name: test_visitors
+  target: null
+  time: 1.4313957691192627
+time_stats:
+  create_mutant_module: 0.221327543258667
+  create_target_ast: 0.02797555923461914
+  mutate_module: 27.562892198562622
+  run_tests_with_mutant: 27.11265468597412
+total_time: 29.018195152282715
