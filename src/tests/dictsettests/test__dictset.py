@@ -21,7 +21,7 @@ import dictset
 # Comparisons are made as with sorted lists of key value
 # pairs. The values (sets) are also sorted and turned into
 # lists
-from src.dictset import DictSet
+from src.dictset.dictset import DictSet
 
 
 def s2d(x=None):
