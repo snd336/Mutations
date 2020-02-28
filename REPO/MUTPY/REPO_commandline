@@ -1,0 +1,3250 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 41.735537190082646
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001
+  mutations:
+  - lineno: 123
+    operator: AOD
+  number: 1
+  status: survived
+  tests_run: 2
+  time: 0.015586137771606445
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 129
+    operator: AOD
+  number: 2
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 137
+    operator: AOD
+  number: 3
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 123
+    operator: AOR
+  number: 4
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 129
+    operator: AOR
+  number: 5
+  status: survived
+  tests_run: 2
+  time: 0.015586137771606445
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 137
+    operator: AOR
+  number: 6
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 110
+    operator: ASR
+  number: 7
+  status: incompetent
+  tests_run: 0
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 56
+    operator: COI
+  number: 8
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 58
+    operator: COI
+  number: 9
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 60
+    operator: COI
+  number: 10
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 87
+    operator: COI
+  number: 11
+  status: survived
+  tests_run: 2
+  time: 0.0030519962310791016
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 90
+    operator: COI
+  number: 12
+  status: survived
+  tests_run: 2
+  time: 0.002196073532104492
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 20, in test_build_mutator_with_operator\n    self.assertEqual(1, len(mutator.operators))\n\
+    AssertionError: 1 != 8\n"
+  killer: test_build_mutator_with_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 99
+    operator: COI
+  number: 13
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 104
+    operator: COI
+  number: 14
+  status: incompetent
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 113
+    operator: COI
+  number: 15
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 121
+    operator: COI
+  number: 16
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 151
+    operator: COI
+  number: 17
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 156
+    operator: COI
+  number: 18
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 159
+    operator: COI
+  number: 19
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 162
+    operator: COI
+  number: 20
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: CRP
+  number: 21
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: CRP
+  number: 22
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: CRP
+  number: 23
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 16
+    operator: CRP
+  number: 24
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 16
+    operator: CRP
+  number: 25
+  status: survived
+  tests_run: 2
+  time: 0.015583515167236328
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 17, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: CRP
+  number: 26
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 17, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: CRP
+  number: 27
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 17, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: CRP
+  number: 28
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 17, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: CRP
+  number: 29
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 17, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"mutpy\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: CRP
+  number: 30
+  status: killed
+  tests_run: 1
+  time: 0.01566791534423828
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 17, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: CRP
+  number: 31
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: CRP
+  number: 32
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: CRP
+  number: 33
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 18, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 18
+    operator: CRP
+  number: 34
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 18, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 18
+    operator: CRP
+  number: 35
+  status: killed
+  tests_run: 1
+  time: 0.015611886978149414
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 18, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 18
+    operator: CRP
+  number: 36
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 18, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 18
+    operator: CRP
+  number: 37
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1369, in add_argument\n\
+    \    self._get_formatter()._format_args(action, None)\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 605, in _format_args\n\
+    \    formats = ['%s' for _ in range(action.nargs)]\nTypeError: 'str' object cannot\
+    \ be interpreted as an integer\n\nDuring handling of the above exception, another\
+    \ exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\\
+    steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 18, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1371, in add_argument\n\
+    \    raise ValueError(\"length of metavar tuple does not match nargs\")\nValueError:\
+    \ length of metavar tuple does not match nargs\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 18
+    operator: CRP
+  number: 38
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1369, in add_argument\n\
+    \    self._get_formatter()._format_args(action, None)\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 605, in _format_args\n\
+    \    formats = ['%s' for _ in range(action.nargs)]\nTypeError: 'str' object cannot\
+    \ be interpreted as an integer\n\nDuring handling of the above exception, another\
+    \ exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\\
+    steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 18, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1371, in add_argument\n\
+    \    raise ValueError(\"length of metavar tuple does not match nargs\")\nValueError:\
+    \ length of metavar tuple does not match nargs\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 18
+    operator: CRP
+  number: 39
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 18
+    operator: CRP
+  number: 40
+  status: survived
+  tests_run: 2
+  time: 0.015622377395629883
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 18
+    operator: CRP
+  number: 41
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 20, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 19
+    operator: CRP
+  number: 42
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 20, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 19
+    operator: CRP
+  number: 43
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 20, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 19
+    operator: CRP
+  number: 44
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 20, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 19
+    operator: CRP
+  number: 45
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1369, in add_argument\n\
+    \    self._get_formatter()._format_args(action, None)\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 605, in _format_args\n\
+    \    formats = ['%s' for _ in range(action.nargs)]\nTypeError: 'str' object cannot\
+    \ be interpreted as an integer\n\nDuring handling of the above exception, another\
+    \ exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\\
+    steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 20, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1371, in add_argument\n\
+    \    raise ValueError(\"length of metavar tuple does not match nargs\")\nValueError:\
+    \ length of metavar tuple does not match nargs\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 19
+    operator: CRP
+  number: 46
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1369, in add_argument\n\
+    \    self._get_formatter()._format_args(action, None)\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 605, in _format_args\n\
+    \    formats = ['%s' for _ in range(action.nargs)]\nTypeError: 'str' object cannot\
+    \ be interpreted as an integer\n\nDuring handling of the above exception, another\
+    \ exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\\
+    steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 20, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1371, in add_argument\n\
+    \    raise ValueError(\"length of metavar tuple does not match nargs\")\nValueError:\
+    \ length of metavar tuple does not match nargs\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 19
+    operator: CRP
+  number: 47
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 20
+    operator: CRP
+  number: 48
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 20
+    operator: CRP
+  number: 49
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 9, in test_build_mutator_with_disable_operator\n    default_mutator = build_mutator(parser.parse_args([]))\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 1755, in parse_args\n    args, argv = self.parse_known_args(args, namespace)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 1787, in parse_known_args\n    namespace, args = self._parse_known_args(args,\
+    \ namespace)\n  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\\
+    argparse.py\", line 2022, in _parse_known_args\n    ', '.join(required_actions))\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 2507, in error\n    self.exit(2, _('%(prog)s: error: %(message)s\\n') %\
+    \ args)\n  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 2494, in exit\n    _sys.exit(status)\nSystemExit: 2\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 21
+    operator: CRP
+  number: 50
+  status: killed
+  tests_run: 1
+  time: 0.015609502792358398
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 22, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1338, in add_argument\n\
+    \    if not args or len(args) == 1 and args[0][0] not in chars:\nIndexError: string\
+    \ index out of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 21
+    operator: CRP
+  number: 51
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 21
+    operator: CRP
+  number: 52
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 21
+    operator: CRP
+  number: 53
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 21
+    operator: CRP
+  number: 54
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 21
+    operator: CRP
+  number: 55
+  status: survived
+  tests_run: 2
+  time: 0.015580415725708008
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 21
+    operator: CRP
+  number: 56
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 21
+    operator: CRP
+  number: 57
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 22
+    operator: CRP
+  number: 58
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 22
+    operator: CRP
+  number: 59
+  status: survived
+  tests_run: 2
+  time: 0.015621185302734375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 22
+    operator: CRP
+  number: 60
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 22
+    operator: CRP
+  number: 61
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 23, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 23
+    operator: CRP
+  number: 62
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 23, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 23
+    operator: CRP
+  number: 63
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 23, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 23
+    operator: CRP
+  number: 64
+  status: killed
+  tests_run: 1
+  time: 0.015661001205444336
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 23, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 23
+    operator: CRP
+  number: 65
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 23
+    operator: CRP
+  number: 66
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 23
+    operator: CRP
+  number: 67
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 23
+    operator: CRP
+  number: 68
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 23
+    operator: CRP
+  number: 69
+  status: survived
+  tests_run: 2
+  time: 0.015581607818603516
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 9, in test_build_mutator_with_disable_operator\n    default_mutator = build_mutator(parser.parse_args([]))\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 1755, in parse_args\n    args, argv = self.parse_known_args(args, namespace)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 1787, in parse_known_args\n    namespace, args = self._parse_known_args(args,\
+    \ namespace)\n  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\\
+    argparse.py\", line 2022, in _parse_known_args\n    ', '.join(required_actions))\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 2507, in error\n    self.exit(2, _('%(prog)s: error: %(message)s\\n') %\
+    \ args)\n  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 2494, in exit\n    _sys.exit(status)\nSystemExit: 2\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 24
+    operator: CRP
+  number: 70
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 24, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1338, in add_argument\n\
+    \    if not args or len(args) == 1 and args[0][0] not in chars:\nIndexError: string\
+    \ index out of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 24
+    operator: CRP
+  number: 71
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 24
+    operator: CRP
+  number: 72
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 24
+    operator: CRP
+  number: 73
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 24
+    operator: CRP
+  number: 74
+  status: survived
+  tests_run: 2
+  time: 0.0010061264038085938
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 24
+    operator: CRP
+  number: 75
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 26, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 25
+    operator: CRP
+  number: 76
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 26, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 25
+    operator: CRP
+  number: 77
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 26, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 25
+    operator: CRP
+  number: 78
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 26, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 25
+    operator: CRP
+  number: 79
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 26
+    operator: CRP
+  number: 80
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 26
+    operator: CRP
+  number: 81
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 27, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 27
+    operator: CRP
+  number: 82
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 27, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 27
+    operator: CRP
+  number: 83
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 27, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 27
+    operator: CRP
+  number: 84
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 27, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 27
+    operator: CRP
+  number: 85
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 27, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"mutpy\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 27
+    operator: CRP
+  number: 86
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 27, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 27
+    operator: CRP
+  number: 87
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 27
+    operator: CRP
+  number: 88
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 27
+    operator: CRP
+  number: 89
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 28, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 28
+    operator: CRP
+  number: 90
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 28, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 28
+    operator: CRP
+  number: 91
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 28, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 28
+    operator: CRP
+  number: 92
+  status: killed
+  tests_run: 1
+  time: 0.015567779541015625
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 28, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 28
+    operator: CRP
+  number: 93
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 28, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"mutpy\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 28
+    operator: CRP
+  number: 94
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 28, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 28
+    operator: CRP
+  number: 95
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 28
+    operator: CRP
+  number: 96
+  status: survived
+  tests_run: 2
+  time: 0.01564764976501465
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 28
+    operator: CRP
+  number: 97
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 29
+    operator: CRP
+  number: 98
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 29, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1338, in add_argument\n\
+    \    if not args or len(args) == 1 and args[0][0] not in chars:\nIndexError: string\
+    \ index out of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 29
+    operator: CRP
+  number: 99
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 29, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"mutpy\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 29
+    operator: CRP
+  number: 100
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 29, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 29
+    operator: CRP
+  number: 101
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 29
+    operator: CRP
+  number: 102
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 29
+    operator: CRP
+  number: 103
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 30, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 30
+    operator: CRP
+  number: 104
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 30, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 30
+    operator: CRP
+  number: 105
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 30, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 30
+    operator: CRP
+  number: 106
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 30, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 30
+    operator: CRP
+  number: 107
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 30, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"mutpy\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 30
+    operator: CRP
+  number: 108
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 30, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 30
+    operator: CRP
+  number: 109
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 30
+    operator: CRP
+  number: 110
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 30
+    operator: CRP
+  number: 111
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 32, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 31
+    operator: CRP
+  number: 112
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 32, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 31
+    operator: CRP
+  number: 113
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 32, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 31
+    operator: CRP
+  number: 114
+  status: killed
+  tests_run: 1
+  time: 0.015620946884155273
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 32, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 31
+    operator: CRP
+  number: 115
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 32, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"mutpy\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 31
+    operator: CRP
+  number: 116
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 32, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 31
+    operator: CRP
+  number: 117
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 32
+    operator: CRP
+  number: 118
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 32
+    operator: CRP
+  number: 119
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 34, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 34
+    operator: CRP
+  number: 120
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 34, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 34
+    operator: CRP
+  number: 121
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 34, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 34
+    operator: CRP
+  number: 122
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 34, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 34
+    operator: CRP
+  number: 123
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 34, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"mutpy\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 34
+    operator: CRP
+  number: 124
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 34, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 34
+    operator: CRP
+  number: 125
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 34
+    operator: CRP
+  number: 126
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 34
+    operator: CRP
+  number: 127
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 36, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 35
+    operator: CRP
+  number: 128
+  status: killed
+  tests_run: 1
+  time: 0.015659809112548828
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 36, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 35
+    operator: CRP
+  number: 129
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 36, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 35
+    operator: CRP
+  number: 130
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 36, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 35
+    operator: CRP
+  number: 131
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1369, in add_argument\n\
+    \    self._get_formatter()._format_args(action, None)\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 605, in _format_args\n\
+    \    formats = ['%s' for _ in range(action.nargs)]\nTypeError: 'str' object cannot\
+    \ be interpreted as an integer\n\nDuring handling of the above exception, another\
+    \ exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\\
+    steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 36, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1371, in add_argument\n\
+    \    raise ValueError(\"length of metavar tuple does not match nargs\")\nValueError:\
+    \ length of metavar tuple does not match nargs\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 35
+    operator: CRP
+  number: 132
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1369, in add_argument\n\
+    \    self._get_formatter()._format_args(action, None)\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 605, in _format_args\n\
+    \    formats = ['%s' for _ in range(action.nargs)]\nTypeError: 'str' object cannot\
+    \ be interpreted as an integer\n\nDuring handling of the above exception, another\
+    \ exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\\
+    steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 36, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1371, in add_argument\n\
+    \    raise ValueError(\"length of metavar tuple does not match nargs\")\nValueError:\
+    \ length of metavar tuple does not match nargs\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 35
+    operator: CRP
+  number: 133
+  status: killed
+  tests_run: 1
+  time: 0.015581607818603516
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 36
+    operator: CRP
+  number: 134
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 36
+    operator: CRP
+  number: 135
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 36
+    operator: CRP
+  number: 136
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 36
+    operator: CRP
+  number: 137
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 9, in test_build_mutator_with_disable_operator\n    default_mutator = build_mutator(parser.parse_args([]))\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 1755, in parse_args\n    args, argv = self.parse_known_args(args, namespace)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 1787, in parse_known_args\n    namespace, args = self._parse_known_args(args,\
+    \ namespace)\n  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\\
+    argparse.py\", line 2022, in _parse_known_args\n    ', '.join(required_actions))\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 2507, in error\n    self.exit(2, _('%(prog)s: error: %(message)s\\n') %\
+    \ args)\n  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 2494, in exit\n    _sys.exit(status)\nSystemExit: 2\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 37
+    operator: CRP
+  number: 138
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 38, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1338, in add_argument\n\
+    \    if not args or len(args) == 1 and args[0][0] not in chars:\nIndexError: string\
+    \ index out of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 37
+    operator: CRP
+  number: 139
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1369, in add_argument\n\
+    \    self._get_formatter()._format_args(action, None)\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 605, in _format_args\n\
+    \    formats = ['%s' for _ in range(action.nargs)]\nTypeError: 'str' object cannot\
+    \ be interpreted as an integer\n\nDuring handling of the above exception, another\
+    \ exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\\
+    steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 38, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1371, in add_argument\n\
+    \    raise ValueError(\"length of metavar tuple does not match nargs\")\nValueError:\
+    \ length of metavar tuple does not match nargs\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 37
+    operator: CRP
+  number: 140
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1369, in add_argument\n\
+    \    self._get_formatter()._format_args(action, None)\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 605, in _format_args\n\
+    \    formats = ['%s' for _ in range(action.nargs)]\nTypeError: 'str' object cannot\
+    \ be interpreted as an integer\n\nDuring handling of the above exception, another\
+    \ exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\\
+    steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 38, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1371, in add_argument\n\
+    \    raise ValueError(\"length of metavar tuple does not match nargs\")\nValueError:\
+    \ length of metavar tuple does not match nargs\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 37
+    operator: CRP
+  number: 141
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 38
+    operator: CRP
+  number: 142
+  status: survived
+  tests_run: 2
+  time: 0.015621423721313477
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 38
+    operator: CRP
+  number: 143
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 38
+    operator: CRP
+  number: 144
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 38
+    operator: CRP
+  number: 145
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 39, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 39
+    operator: CRP
+  number: 146
+  status: killed
+  tests_run: 1
+  time: 0.015671253204345703
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 39, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 39
+    operator: CRP
+  number: 147
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 39, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 39
+    operator: CRP
+  number: 148
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 39, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 39
+    operator: CRP
+  number: 149
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 39, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"mutpy\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 39
+    operator: CRP
+  number: 150
+  status: killed
+  tests_run: 1
+  time: 0.015613555908203125
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 39, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 39
+    operator: CRP
+  number: 151
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 39
+    operator: CRP
+  number: 152
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 39
+    operator: CRP
+  number: 153
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 40, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 40
+    operator: CRP
+  number: 154
+  status: killed
+  tests_run: 1
+  time: 0.015578508377075195
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 40, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 40
+    operator: CRP
+  number: 155
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 40, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1476, in _get_optional_kwargs\n\
+    \    raise ValueError(msg % args)\nValueError: invalid option string 'mutpy':\
+    \ must start with a character '-'\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 40
+    operator: CRP
+  number: 156
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 40, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1345, in add_argument\n\
+    \    kwargs = self._get_optional_kwargs(*args, **kwargs)\n  File \"C:\\Users\\\
+    steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1471, in _get_optional_kwargs\n\
+    \    if not option_string[0] in self.prefix_chars:\nIndexError: string index out\
+    \ of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 40
+    operator: CRP
+  number: 157
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 40
+    operator: CRP
+  number: 158
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 40
+    operator: CRP
+  number: 159
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 40
+    operator: CRP
+  number: 160
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 40
+    operator: CRP
+  number: 161
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 9, in test_build_mutator_with_disable_operator\n    default_mutator = build_mutator(parser.parse_args([]))\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 1755, in parse_args\n    args, argv = self.parse_known_args(args, namespace)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 1787, in parse_known_args\n    namespace, args = self._parse_known_args(args,\
+    \ namespace)\n  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\\
+    argparse.py\", line 2022, in _parse_known_args\n    ', '.join(required_actions))\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 2507, in error\n    self.exit(2, _('%(prog)s: error: %(message)s\\n') %\
+    \ args)\n  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 2494, in exit\n    _sys.exit(status)\nSystemExit: 2\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 41
+    operator: CRP
+  number: 162
+  status: killed
+  tests_run: 1
+  time: 0.015578031539916992
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 42, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1338, in add_argument\n\
+    \    if not args or len(args) == 1 and args[0][0] not in chars:\nIndexError: string\
+    \ index out of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 41
+    operator: CRP
+  number: 163
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 41
+    operator: CRP
+  number: 164
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 41
+    operator: CRP
+  number: 165
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 41
+    operator: CRP
+  number: 166
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 42
+    operator: CRP
+  number: 167
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 42
+    operator: CRP
+  number: 168
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 43
+    operator: CRP
+  number: 169
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 44, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1338, in add_argument\n\
+    \    if not args or len(args) == 1 and args[0][0] not in chars:\nIndexError: string\
+    \ index out of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 43
+    operator: CRP
+  number: 170
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 44, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"mutpy\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 43
+    operator: CRP
+  number: 171
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 44, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 43
+    operator: CRP
+  number: 172
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 44
+    operator: CRP
+  number: 173
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 44
+    operator: CRP
+  number: 174
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 9, in test_build_mutator_with_disable_operator\n    default_mutator = build_mutator(parser.parse_args([]))\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 1755, in parse_args\n    args, argv = self.parse_known_args(args, namespace)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 1787, in parse_known_args\n    namespace, args = self._parse_known_args(args,\
+    \ namespace)\n  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\\
+    argparse.py\", line 2022, in _parse_known_args\n    ', '.join(required_actions))\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 2507, in error\n    self.exit(2, _('%(prog)s: error: %(message)s\\n') %\
+    \ args)\n  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 2494, in exit\n    _sys.exit(status)\nSystemExit: 2\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 45
+    operator: CRP
+  number: 175
+  status: killed
+  tests_run: 1
+  time: 0.015614509582519531
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 45, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1338, in add_argument\n\
+    \    if not args or len(args) == 1 and args[0][0] not in chars:\nIndexError: string\
+    \ index out of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 45
+    operator: CRP
+  number: 176
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 45
+    operator: CRP
+  number: 177
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 45
+    operator: CRP
+  number: 178
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 45
+    operator: CRP
+  number: 179
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 45
+    operator: CRP
+  number: 180
+  status: survived
+  tests_run: 2
+  time: 0.015582084655761719
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 45
+    operator: CRP
+  number: 181
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 9, in test_build_mutator_with_disable_operator\n    default_mutator = build_mutator(parser.parse_args([]))\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 1755, in parse_args\n    args, argv = self.parse_known_args(args, namespace)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 1787, in parse_known_args\n    namespace, args = self._parse_known_args(args,\
+    \ namespace)\n  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\\
+    argparse.py\", line 2022, in _parse_known_args\n    ', '.join(required_actions))\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 2507, in error\n    self.exit(2, _('%(prog)s: error: %(message)s\\n') %\
+    \ args)\n  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 2494, in exit\n    _sys.exit(status)\nSystemExit: 2\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 46
+    operator: CRP
+  number: 182
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 47, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1338, in add_argument\n\
+    \    if not args or len(args) == 1 and args[0][0] not in chars:\nIndexError: string\
+    \ index out of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 46
+    operator: CRP
+  number: 183
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 46
+    operator: CRP
+  number: 184
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 46
+    operator: CRP
+  number: 185
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 46
+    operator: CRP
+  number: 186
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 46
+    operator: CRP
+  number: 187
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 47
+    operator: CRP
+  number: 188
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 47
+    operator: CRP
+  number: 189
+  status: survived
+  tests_run: 2
+  time: 0.015572071075439453
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 48
+    operator: CRP
+  number: 190
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 48, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1338, in add_argument\n\
+    \    if not args or len(args) == 1 and args[0][0] not in chars:\nIndexError: string\
+    \ index out of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 48
+    operator: CRP
+  number: 191
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 48, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"mutpy\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 48
+    operator: CRP
+  number: 192
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 48, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1358, in add_argument\n\
+    \    raise ValueError('unknown action \"%s\"' % (action_class,))\nValueError:\
+    \ unknown action \"\"\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 48
+    operator: CRP
+  number: 193
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 48
+    operator: CRP
+  number: 194
+  status: survived
+  tests_run: 2
+  time: 0.015622138977050781
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 48
+    operator: CRP
+  number: 195
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 9, in test_build_mutator_with_disable_operator\n    default_mutator = build_mutator(parser.parse_args([]))\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 1755, in parse_args\n    args, argv = self.parse_known_args(args, namespace)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 1787, in parse_known_args\n    namespace, args = self._parse_known_args(args,\
+    \ namespace)\n  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\\
+    argparse.py\", line 2022, in _parse_known_args\n    ', '.join(required_actions))\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 2507, in error\n    self.exit(2, _('%(prog)s: error: %(message)s\\n') %\
+    \ args)\n  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\argparse.py\"\
+    , line 2494, in exit\n    _sys.exit(status)\nSystemExit: 2\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 49
+    operator: CRP
+  number: 196
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 8, in test_build_mutator_with_disable_operator\n    parser = build_parser()\n\
+    \  File \"commandline\", line 50, in build_parser\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\argparse.py\", line 1338, in add_argument\n\
+    \    if not args or len(args) == 1 and args[0][0] not in chars:\nIndexError: string\
+    \ index out of range\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 49
+    operator: CRP
+  number: 197
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 49
+    operator: CRP
+  number: 198
+  status: survived
+  tests_run: 2
+  time: 0.015659093856811523
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 49
+    operator: CRP
+  number: 199
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 50
+    operator: CRP
+  number: 200
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 50
+    operator: CRP
+  number: 201
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 87
+    operator: CRP
+  number: 202
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 87
+    operator: CRP
+  number: 203
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 90
+    operator: CRP
+  number: 204
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 90
+    operator: CRP
+  number: 205
+  status: survived
+  tests_run: 2
+  time: 0.015572786331176758
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 93
+    operator: CRP
+  number: 206
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 93
+    operator: CRP
+  number: 207
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 113
+    operator: CRP
+  number: 208
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 121
+    operator: CRP
+  number: 209
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 122
+    operator: CRP
+  number: 210
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 122
+    operator: CRP
+  number: 211
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 123
+    operator: CRP
+  number: 212
+  status: survived
+  tests_run: 2
+  time: 0.015664100646972656
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 128
+    operator: CRP
+  number: 213
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 128
+    operator: CRP
+  number: 214
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 129
+    operator: CRP
+  number: 215
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 136
+    operator: CRP
+  number: 216
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 136
+    operator: CRP
+  number: 217
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 137
+    operator: CRP
+  number: 218
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 169
+    operator: CRP
+  number: 219
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 169
+    operator: CRP
+  number: 220
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 171
+    operator: CRP
+  number: 221
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 171
+    operator: CRP
+  number: 222
+  status: survived
+  tests_run: 2
+  time: 0.015609025955200195
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 172
+    operator: CRP
+  number: 223
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 172
+    operator: CRP
+  number: 224
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 174
+    operator: CRP
+  number: 225
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 174
+    operator: CRP
+  number: 226
+  status: survived
+  tests_run: 2
+  time: 0.015620231628417969
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 178
+    operator: CRP
+  number: 227
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 178
+    operator: CRP
+  number: 228
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 180
+    operator: CRP
+  number: 229
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 180
+    operator: CRP
+  number: 230
+  status: survived
+  tests_run: 2
+  time: 0.015621423721313477
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 127
+    operator: EHD
+  number: 231
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 135
+    operator: EHD
+  number: 232
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 127
+    operator: EXS
+  number: 233
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 135
+    operator: EXS
+  number: 234
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 60
+    operator: LCR
+  number: 235
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 100
+    operator: LOR
+  number: 236
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 20, in test_build_mutator_with_operator\n    self.assertEqual(1, len(mutator.operators))\n\
+    AssertionError: 1 != 0\n"
+  killer: test_build_mutator_with_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 105
+    operator: LOR
+  number: 237
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_commandline.py\"\
+    , line 14, in test_build_mutator_with_disable_operator\n    len(mutator.operators))\n\
+    AssertionError: -1 != 0\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 108
+    operator: LOR
+  number: 238
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"commandline\"\
+    , line 134, in get_operator\nKeyError: 'AOR'\n\nDuring handling of the above exception,\
+    \ another exception occurred:\n\nTraceback (most recent call last):\n  File \"\
+    C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\\
+    test_commandline.py\", line 12, in test_build_mutator_with_disable_operator\n\
+    \    parser.parse_args(['--disable-operator', 'AOR']))\n  File \"commandline\"\
+    , line 111, in build_mutator\n  File \"commandline\", line 111, in <setcomp>\n\
+    \  File \"commandline\", line 137, in get_operator\nSystemExit: -1\n"
+  killer: test_build_mutator_with_disable_operator (test_commandline.CommandLineTest)
+  module: *id001
+  mutations:
+  - lineno: 142
+    operator: LOR
+  number: 239
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 87
+    operator: ROR
+  number: 240
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 90
+    operator: ROR
+  number: 241
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 113
+    operator: ROR
+  number: 242
+  status: survived
+  tests_run: 2
+  time: 0.015619039535522461
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 121
+    operator: ROR
+  number: 243
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 121
+    operator: ROR
+  number: 244
+  status: survived
+  tests_run: 2
+  time: 0.0
+number_of_tests: 2
+targets:
+- src/mutpy/commandline.py
+tests:
+- name: test_commandline
+  target: null
+  time: 0.015628576278686523
+time_stats:
+  create_mutant_module: 0.17310595512390137
+  create_target_ast: 0.0
+  mutate_module: 1.4780511856079102
+  run_tests_with_mutant: 0.6008079051971436
+total_time: 1.4936797618865967

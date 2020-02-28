@@ -1,0 +1,1786 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 45.033112582781456
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001
+  mutations:
+  - lineno: 70
+    operator: AOD
+  number: 1
+  status: survived
+  tests_run: 19
+  time: 0.015624761581420898
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 73
+    operator: AOD
+  number: 2
+  status: survived
+  tests_run: 19
+  time: 0.01565718650817871
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 206
+    operator: AOD
+  number: 3
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 294, in test_second_order_mutation\n    self.assertEqual('x -= y - z',\
+    \ codegen.to_source(mutant))\nAssertionError: 'x -= y - z' != 'x += y - z'\n-\
+    \ x -= y - z\n+ x += y - z\n\n"
+  killer: test_second_order_mutation (test_controller.HighOrderMutatorTest)
+  module: *id001
+  mutations:
+  - lineno: 206
+    operator: AOD
+  number: 4
+  status: killed
+  tests_run: 9
+  time: 0.01562190055847168
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 38, in test_count_if_incompetent\n    self.assertEqual(self.score.count(),\
+    \ 50)\nAssertionError: 41.66666666666667 != 50\n"
+  killer: test_count_if_incompetent (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 25
+    operator: AOR
+  number: 5
+  status: killed
+  tests_run: 15
+  time: 0.015619993209838867
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 45, in test_count_if_timeout\n    self.assertEqual(self.score.count(),\
+    \ 50)\nAssertionError: 30.0 != 50\n"
+  killer: test_count_if_timeout (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 26
+    operator: AOR
+  number: 6
+  status: killed
+  tests_run: 16
+  time: 0.015659332275390625
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 23, in test_count\n    self.assertEqual(self.score.count(), 50)\nAssertionError:\
+    \ 0 != 50\n"
+  killer: test_count (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 26
+    operator: AOR
+  number: 7
+  status: killed
+  tests_run: 13
+  time: 0.01562047004699707
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 23, in test_count\n    self.assertEqual(self.score.count(), 50)\nAssertionError:\
+    \ 5000 != 50\n"
+  killer: test_count (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 26
+    operator: AOR
+  number: 8
+  status: killed
+  tests_run: 13
+  time: 0.015621662139892578
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 23, in test_count\n    self.assertEqual(self.score.count(), 50)\nAssertionError:\
+    \ 0.005 != 50\n"
+  killer: test_count (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 26
+    operator: AOR
+  number: 9
+  status: killed
+  tests_run: 13
+  time: 0.01558685302734375
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 23, in test_count\n    self.assertEqual(self.score.count(), 50)\nAssertionError:\
+    \ 0.0 != 50\n"
+  killer: test_count (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 26
+    operator: AOR
+  number: 10
+  status: killed
+  tests_run: 13
+  time: 0.01565384864807129
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 23, in test_count\n    self.assertEqual(self.score.count(), 50)\nAssertionError:\
+    \ 7.888609052210118e-31 != 50\n"
+  killer: test_count (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 26
+    operator: AOR
+  number: 11
+  status: killed
+  tests_run: 13
+  time: 0.016991376876831055
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 45, in test_count_if_timeout\n    self.assertEqual(self.score.count(),\
+    \ 50)\nAssertionError: 62.5 != 50\n"
+  killer: test_count_if_timeout (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 46
+    operator: AOR
+  number: 12
+  status: killed
+  tests_run: 16
+  time: 0.0156705379486084
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 38, in test_count_if_incompetent\n    self.assertEqual(self.score.count(),\
+    \ 50)\nAssertionError: 62.5 != 50\n"
+  killer: test_count_if_incompetent (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 46
+    operator: AOR
+  number: 13
+  status: killed
+  tests_run: 15
+  time: 0.015575170516967773
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 23, in test_count\n    self.assertEqual(self.score.count(), 50)\nAssertionError:\
+    \ 0 != 50\n"
+  killer: test_count (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 46
+    operator: AOR
+  number: 14
+  status: killed
+  tests_run: 13
+  time: 0.015658855438232422
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 70
+    operator: AOR
+  number: 15
+  status: survived
+  tests_run: 19
+  time: 0.015640974044799805
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 73
+    operator: AOR
+  number: 16
+  status: survived
+  tests_run: 19
+  time: 0.01561594009399414
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 115
+    operator: AOR
+  number: 17
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 206
+    operator: AOR
+  number: 18
+  status: survived
+  tests_run: 19
+  time: 0.015628576278686523
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 294, in test_second_order_mutation\n    self.assertEqual('x -= y - z',\
+    \ codegen.to_source(mutant))\nAssertionError: 'x -= y - z' != 'x += y - z'\n-\
+    \ x -= y - z\n+ x += y - z\n\n"
+  killer: test_second_order_mutation (test_controller.HighOrderMutatorTest)
+  module: *id001
+  mutations:
+  - lineno: 206
+    operator: AOR
+  number: 19
+  status: killed
+  tests_run: 9
+  time: 0.01561880111694336
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 31, in test_count_after_inc\n    self.assertEqual(self.score.count(), 50)\n\
+    AssertionError: 37.5 != 50\n"
+  killer: test_count_after_inc (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 29
+    operator: ASR
+  number: 20
+  status: killed
+  tests_run: 14
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 32
+    operator: ASR
+  number: 21
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 35
+    operator: ASR
+  number: 22
+  status: survived
+  tests_run: 19
+  time: 0.0010058879852294922
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 38
+    operator: ASR
+  number: 23
+  status: survived
+  tests_run: 19
+  time: 0.015663862228393555
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 50, in test_update_coverage\n    self.assertEqual(self.score.covered_nodes,\
+    \ 1)\nAssertionError: -1 != 1\n"
+  killer: test_update_coverage (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 41
+    operator: ASR
+  number: 24
+  status: killed
+  tests_run: 18
+  time: 0.015620708465576172
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 51, in test_update_coverage\n    self.assertEqual(self.score.all_nodes,\
+    \ 1)\nAssertionError: -1 != 1\n"
+  killer: test_update_coverage (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 42
+    operator: ASR
+  number: 25
+  status: killed
+  tests_run: 18
+  time: 0.015583515167236328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 99
+    operator: ASR
+  number: 26
+  status: survived
+  tests_run: 19
+  time: 0.01562047004699707
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 100
+    operator: ASR
+  number: 27
+  status: survived
+  tests_run: 19
+  time: 0.015622377395629883
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 247
+    operator: ASR
+  number: 28
+  status: timeout
+  tests_run: null
+  time: 5.03215765953064
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 118
+    operator: BCR
+  number: 29
+  status: survived
+  tests_run: 19
+  time: 0.015583992004394531
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 208
+    operator: BCR
+  number: 30
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 227
+    operator: BCR
+  number: 31
+  status: survived
+  tests_run: 19
+  time: 0.01562952995300293
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 271
+    operator: BCR
+  number: 32
+  status: survived
+  tests_run: 19
+  time: 0.01562047004699707
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 297, in test_second_order_mutation\n    self.assertEqual(codegen.to_source(target_ast),\
+    \ 'x += y + z')\nAssertionError: 'x += y - z' != 'x += y + z'\n- x += y - z\n\
+    ?        ^\n+ x += y + z\n?        ^\n\n"
+  killer: test_second_order_mutation (test_controller.HighOrderMutatorTest)
+  module: *id001
+  mutations:
+  - lineno: 338
+    operator: BCR
+  number: 33
+  status: killed
+  tests_run: 9
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 151
+    operator: COD
+  number: 34
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 214, in test_generate_if_one_operator\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 1 != 2\n"
+  killer: test_generate_if_one_operator (test_controller.BetweenOperatorsHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 188
+    operator: COD
+  number: 35
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 214, in test_generate_if_one_operator\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 4 != 2\n"
+  killer: test_generate_if_one_operator (test_controller.BetweenOperatorsHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 245
+    operator: COD
+  number: 36
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 95
+    operator: COI
+  number: 37
+  status: survived
+  tests_run: 19
+  time: 0.015574216842651367
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 111
+    operator: COI
+  number: 38
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 116
+    operator: COI
+  number: 39
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 121
+    operator: COI
+  number: 40
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 151
+    operator: COI
+  number: 41
+  status: survived
+  tests_run: 19
+  time: 0.015621423721313477
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 153
+    operator: COI
+  number: 42
+  status: survived
+  tests_run: 19
+  time: 0.015622377395629883
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: COI
+  number: 43
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 214, in test_generate_if_one_operator\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 1 != 2\n"
+  killer: test_generate_if_one_operator (test_controller.BetweenOperatorsHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 185
+    operator: COI
+  number: 44
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 241, in test_generate_if_three_operators\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 4 != 2\n"
+  killer: test_generate_if_three_operators (test_controller.BetweenOperatorsHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 186
+    operator: COI
+  number: 45
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 241, in test_generate_if_three_operators\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 4 != 2\n"
+  killer: test_generate_if_three_operators (test_controller.BetweenOperatorsHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 187
+    operator: COI
+  number: 46
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 156, in test_generate\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 0 != 2\n"
+  killer: test_generate (test_controller.FirstToLastHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 197
+    operator: COI
+  number: 47
+  status: killed
+  tests_run: 6
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 201
+    operator: COI
+  number: 48
+  status: timeout
+  tests_run: null
+  time: 5.038375616073608
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 200, in test_generate\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 0 != 2\n"
+  killer: test_generate (test_controller.EachChoiceHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 218
+    operator: COI
+  number: 49
+  status: killed
+  tests_run: 4
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 221
+    operator: COI
+  number: 50
+  status: timeout
+  tests_run: null
+  time: 5.281879901885986
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 214, in test_generate_if_one_operator\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 0 != 2\n"
+  killer: test_generate_if_one_operator (test_controller.BetweenOperatorsHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 238
+    operator: COI
+  number: 51
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 242
+    operator: COI
+  number: 52
+  status: timeout
+  tests_run: null
+  time: 5.039195775985718
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 214, in test_generate_if_one_operator\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 4 != 2\n"
+  killer: test_generate_if_one_operator (test_controller.BetweenOperatorsHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 245
+    operator: COI
+  number: 53
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 259, in test_generate\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 0 != 2\n"
+  killer: test_generate (test_controller.RandomHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 262
+    operator: COI
+  number: 54
+  status: killed
+  tests_run: 19
+  time: 0.015621185302734375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 265
+    operator: COI
+  number: 55
+  status: timeout
+  tests_run: null
+  time: 5.038006067276001
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 17, in test_count_if_zero_score\n    self.assertEqual(self.score.count(),\
+    \ 0)\nAssertionError: 100.0 != 0\n"
+  killer: test_count_if_zero_score (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: CRP
+  number: 56
+  status: killed
+  tests_run: 17
+  time: 0.015573978424072266
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 23, in test_count\n    self.assertEqual(self.score.count(), 50)\nAssertionError:\
+    \ 54.54545454545454 != 50\n"
+  killer: test_count (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 18
+    operator: CRP
+  number: 57
+  status: killed
+  tests_run: 13
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 19
+    operator: CRP
+  number: 58
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 20
+    operator: CRP
+  number: 59
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 50, in test_update_coverage\n    self.assertEqual(self.score.covered_nodes,\
+    \ 1)\nAssertionError: 2 != 1\n"
+  killer: test_update_coverage (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 21
+    operator: CRP
+  number: 60
+  status: killed
+  tests_run: 18
+  time: 0.015613794326782227
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 51, in test_update_coverage\n    self.assertEqual(self.score.all_nodes,\
+    \ 1)\nAssertionError: 2 != 1\n"
+  killer: test_update_coverage (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 22
+    operator: CRP
+  number: 61
+  status: killed
+  tests_run: 18
+  time: 0.015584468841552734
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 23, in test_count\n    self.assertEqual(self.score.count(), 50)\nAssertionError:\
+    \ 50.5 != 50\n"
+  killer: test_count (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 26
+    operator: CRP
+  number: 62
+  status: killed
+  tests_run: 13
+  time: 0.01566600799560547
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 17, in test_count_if_zero_score\n    self.assertEqual(self.score.count(),\
+    \ 0)\nAssertionError: 1 != 0\n"
+  killer: test_count_if_zero_score (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 26
+    operator: CRP
+  number: 63
+  status: killed
+  tests_run: 17
+  time: 0.015621185302734375
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 31, in test_count_after_inc\n    self.assertEqual(self.score.count(), 50)\n\
+    AssertionError: 54.54545454545454 != 50\n"
+  killer: test_count_after_inc (test_controller.MutationScoreTest)
+  module: *id001
+  mutations:
+  - lineno: 29
+    operator: CRP
+  number: 64
+  status: killed
+  tests_run: 14
+  time: 0.01562356948852539
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 32
+    operator: CRP
+  number: 65
+  status: survived
+  tests_run: 19
+  time: 0.015572786331176758
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 35
+    operator: CRP
+  number: 66
+  status: survived
+  tests_run: 19
+  time: 0.01566338539123535
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 38
+    operator: CRP
+  number: 67
+  status: survived
+  tests_run: 19
+  time: 0.015625953674316406
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 52
+    operator: CRP
+  number: 68
+  status: survived
+  tests_run: 19
+  time: 0.01562190055847168
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 70
+    operator: CRP
+  number: 69
+  status: survived
+  tests_run: 19
+  time: 0.015579938888549805
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 73
+    operator: CRP
+  number: 70
+  status: survived
+  tests_run: 19
+  time: 0.015618085861206055
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 91
+    operator: CRP
+  number: 71
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 92
+    operator: CRP
+  number: 72
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 115
+    operator: CRP
+  number: 73
+  status: survived
+  tests_run: 19
+  time: 0.015621185302734375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 143
+    operator: CRP
+  number: 74
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 143
+    operator: CRP
+  number: 75
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 179
+    operator: CRP
+  number: 76
+  status: survived
+  tests_run: 19
+  time: 0.0155792236328125
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 193
+    operator: CRP
+  number: 77
+  status: survived
+  tests_run: 19
+  time: 0.01564502716064453
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 193
+    operator: CRP
+  number: 78
+  status: survived
+  tests_run: 19
+  time: 0.015627622604370117
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 199
+    operator: CRP
+  number: 79
+  status: timeout
+  tests_run: null
+  time: 5.039069890975952
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 206
+    operator: CRP
+  number: 80
+  status: survived
+  tests_run: 19
+  time: 0.015621423721313477
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 206
+    operator: CRP
+  number: 81
+  status: survived
+  tests_run: 19
+  time: 0.015574455261230469
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 159, in test_generate\n    self.assert_mutation_in_changeset_at_position_equals(changes_to_apply,\
+    \ 0, 1, mutations[2])\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\\
+    Working\\src\\tests\\mutpytests\\test_controller.py\", line 147, in assert_mutation_in_changeset_at_position_equals\n\
+    \    self.assertEqual(changes[changeset_index][change_index], mutation)\nAssertionError:\
+    \ <src.mutpy.operators.base.Mutation object at 0x000001F3D1C222C8> != <src.mutpy.operators.base.Mutation\
+    \ object at 0x000001F3D1C22C88>\n"
+  killer: test_generate (test_controller.FirstToLastHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 206
+    operator: CRP
+  number: 82
+  status: killed
+  tests_run: 6
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 214
+    operator: CRP
+  number: 83
+  status: survived
+  tests_run: 19
+  time: 0.015623331069946289
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 214
+    operator: CRP
+  number: 84
+  status: survived
+  tests_run: 19
+  time: 0.0156557559967041
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 223
+    operator: CRP
+  number: 85
+  status: timeout
+  tests_run: null
+  time: 5.045697450637817
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 233
+    operator: CRP
+  number: 86
+  status: survived
+  tests_run: 19
+  time: 0.015620946884155273
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 233
+    operator: CRP
+  number: 87
+  status: survived
+  tests_run: 19
+  time: 0.015618562698364258
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 236
+    operator: CRP
+  number: 88
+  status: timeout
+  tests_run: null
+  time: 5.078650951385498
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 243
+    operator: CRP
+  number: 89
+  status: timeout
+  tests_run: null
+  time: 5.046464443206787
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 247
+    operator: CRP
+  number: 90
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 253
+    operator: CRP
+  number: 91
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 253
+    operator: CRP
+  number: 92
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 267
+    operator: CRP
+  number: 93
+  status: timeout
+  tests_run: null
+  time: 5.327926397323608
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 286
+    operator: CRP
+  number: 94
+  status: survived
+  tests_run: 19
+  time: 0.01557779312133789
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 300
+    operator: CRP
+  number: 95
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 320
+    operator: CRP
+  number: 96
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 320
+    operator: CRP
+  number: 97
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 339
+    operator: CRP
+  number: 98
+  status: survived
+  tests_run: 19
+  time: 0.015572547912597656
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 339
+    operator: CRP
+  number: 99
+  status: survived
+  tests_run: 19
+  time: 0.01562047004699707
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 44
+    operator: DDL
+  number: 100
+  status: incompetent
+  tests_run: 14
+  time: 0.015657901763916016
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 107
+    operator: DDL
+  number: 101
+  status: survived
+  tests_run: 19
+  time: 0.015622138977050781
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 129
+    operator: DDL
+  number: 102
+  status: survived
+  tests_run: 19
+  time: 0.015658140182495117
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 134
+    operator: DDL
+  number: 103
+  status: survived
+  tests_run: 19
+  time: 0.015585899353027344
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 68
+    operator: EHD
+  number: 104
+  status: survived
+  tests_run: 19
+  time: 0.01558542251586914
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 71
+    operator: EHD
+  number: 105
+  status: survived
+  tests_run: 19
+  time: 0.015656709671020508
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 86
+    operator: EHD
+  number: 106
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 142
+    operator: EHD
+  number: 107
+  status: survived
+  tests_run: 19
+  time: 0.015685081481933594
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 207
+    operator: EHD
+  number: 108
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 226
+    operator: EHD
+  number: 109
+  status: survived
+  tests_run: 19
+  time: 0.015577077865600586
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 270
+    operator: EHD
+  number: 110
+  status: survived
+  tests_run: 19
+  time: 0.015620946884155273
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 319
+    operator: EHD
+  number: 111
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"controller\"\
+    , line 324, in mutate\n  File \"controller\", line 336, in finish_generators\n\
+    StopIteration\n\nThe above exception was the direct cause of the following exception:\n\
+    \nTraceback (most recent call last):\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\\
+    Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\", line 292,\
+    \ in test_second_order_mutation\n    for number, (mutations, mutant) in enumerate(mutator.mutate(target_ast)):\n\
+    RuntimeError: generator raised StopIteration\n"
+  killer: test_second_order_mutation (test_controller.HighOrderMutatorTest)
+  module: *id001
+  mutations:
+  - lineno: 337
+    operator: EHD
+  number: 112
+  status: killed
+  tests_run: 9
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 68
+    operator: EXS
+  number: 113
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 71
+    operator: EXS
+  number: 114
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 142
+    operator: EXS
+  number: 115
+  status: survived
+  tests_run: 19
+  time: 0.015586137771606445
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 207
+    operator: EXS
+  number: 116
+  status: survived
+  tests_run: 19
+  time: 0.015587806701660156
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 226
+    operator: EXS
+  number: 117
+  status: survived
+  tests_run: 19
+  time: 0.015619516372680664
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 270
+    operator: EXS
+  number: 118
+  status: survived
+  tests_run: 19
+  time: 0.015621185302734375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 319
+    operator: EXS
+  number: 119
+  status: survived
+  tests_run: 19
+  time: 0.01559305191040039
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 292, in test_second_order_mutation\n    for number, (mutations, mutant)\
+    \ in enumerate(mutator.mutate(target_ast)):\n  File \"controller\", line 324,\
+    \ in mutate\n  File \"controller\", line 339, in finish_generators\nAssertionError:\
+    \ too many mutations!\n"
+  killer: test_second_order_mutation (test_controller.HighOrderMutatorTest)
+  module: *id001
+  mutations:
+  - lineno: 337
+    operator: EXS
+  number: 120
+  status: killed
+  tests_run: 9
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: IOD
+  number: 121
+  status: survived
+  tests_run: 19
+  time: 0.015621423721313477
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 51
+    operator: IOD
+  number: 122
+  status: survived
+  tests_run: 19
+  time: 0.015631914138793945
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 255
+    operator: IOD
+  number: 123
+  status: incompetent
+  tests_run: 18
+  time: 0.01565718650817871
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 292, in test_second_order_mutation\n    for number, (mutations, mutant)\
+    \ in enumerate(mutator.mutate(target_ast)):\n  File \"controller\", line 304,\
+    \ in mutate\nAttributeError: 'HighOrderMutator' object has no attribute 'hom_strategy'\n"
+  killer: test_second_order_mutation (test_controller.HighOrderMutatorTest)
+  module: *id001
+  mutations:
+  - lineno: 298
+    operator: IOD
+  number: 124
+  status: killed
+  tests_run: 9
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 294, in test_second_order_mutation\n    self.assertEqual('x -= y - z',\
+    \ codegen.to_source(mutant))\nAssertionError: 'x -= y - z' != 'x += y - z'\n-\
+    \ x -= y - z\n+ x += y - z\n\n"
+  killer: test_second_order_mutation (test_controller.HighOrderMutatorTest)
+  module: *id001
+  mutations:
+  - lineno: 302
+    operator: IOD
+  number: 125
+  status: killed
+  tests_run: 9
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 51
+    operator: IOP
+  number: 126
+  status: survived
+  tests_run: 19
+  time: 0.01563429832458496
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 255
+    operator: IOP
+  number: 127
+  status: survived
+  tests_run: 19
+  time: 0.01557469367980957
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 298
+    operator: IOP
+  number: 128
+  status: survived
+  tests_run: 19
+  time: 0.015653133392333984
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 116
+    operator: LCR
+  number: 129
+  status: survived
+  tests_run: 19
+  time: 0.015614748001098633
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 214, in test_generate_if_one_operator\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 1 != 2\n"
+  killer: test_generate_if_one_operator (test_controller.BetweenOperatorsHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 185
+    operator: LCR
+  number: 130
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 241, in test_generate_if_three_operators\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 4 != 2\n"
+  killer: test_generate_if_three_operators (test_controller.BetweenOperatorsHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 188
+    operator: LCR
+  number: 131
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 156, in test_generate\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 1 != 2\n"
+  killer: test_generate (test_controller.FirstToLastHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 201
+    operator: LCR
+  number: 132
+  status: killed
+  tests_run: 6
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 200, in test_generate\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 1 != 2\n"
+  killer: test_generate (test_controller.EachChoiceHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 221
+    operator: LCR
+  number: 133
+  status: killed
+  tests_run: 4
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 213, in test_generate_if_one_operator\n    mutations)\n  File \"C:\\Users\\\
+    steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 138, in apply_strategy_to_mutations_with_order_2\n    return self.apply_strategy_to_mutations(hom_strategy_cls,\
+    \ mutations, 2, hom_kwargs=hom_kwargs)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\\
+    Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\", line 133,\
+    \ in apply_strategy_to_mutations\n    return list(hom_strategy.generate(mutations))\n\
+    \  File \"controller\", line 243, in generate\nIndexError: pop from empty list\n"
+  killer: test_generate_if_one_operator (test_controller.BetweenOperatorsHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 242
+    operator: LCR
+  number: 134
+  status: killed
+  tests_run: 1
+  time: 0.015601634979248047
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 259, in test_generate\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 1 != 2\n"
+  killer: test_generate (test_controller.RandomHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 265
+    operator: LCR
+  number: 135
+  status: killed
+  tests_run: 19
+  time: 0.015594005584716797
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 292, in test_second_order_mutation\n    for number, (mutations, mutant)\
+    \ in enumerate(mutator.mutate(target_ast)):\n  File \"controller\", line 304,\
+    \ in mutate\nAttributeError: 'NoneType' object has no attribute 'generate'\n"
+  killer: test_second_order_mutation (test_controller.HighOrderMutatorTest)
+  module: *id001
+  mutations:
+  - lineno: 300
+    operator: LCR
+  number: 136
+  status: killed
+  tests_run: 9
+  time: 0.015660524368286133
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 116
+    operator: ROR
+  number: 137
+  status: survived
+  tests_run: 19
+  time: 0.015568017959594727
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 241, in test_generate_if_three_operators\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 4 != 2\n"
+  killer: test_generate_if_three_operators (test_controller.BetweenOperatorsHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 185
+    operator: ROR
+  number: 138
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 214, in test_generate_if_one_operator\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 1 != 2\n"
+  killer: test_generate_if_one_operator (test_controller.BetweenOperatorsHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 188
+    operator: ROR
+  number: 139
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 201
+    operator: ROR
+  number: 140
+  status: timeout
+  tests_run: null
+  time: 5.280017614364624
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 156, in test_generate\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 1 != 2\n"
+  killer: test_generate (test_controller.FirstToLastHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 201
+    operator: ROR
+  number: 141
+  status: killed
+  tests_run: 6
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 159, in test_generate\n    self.assert_mutation_in_changeset_at_position_equals(changes_to_apply,\
+    \ 0, 1, mutations[2])\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\\
+    Working\\src\\tests\\mutpytests\\test_controller.py\", line 147, in assert_mutation_in_changeset_at_position_equals\n\
+    \    self.assertEqual(changes[changeset_index][change_index], mutation)\nAssertionError:\
+    \ <src.mutpy.operators.base.Mutation object at 0x000001F3D466A1C8> != <src.mutpy.operators.base.Mutation\
+    \ object at 0x000001F3C41C7808>\n"
+  killer: test_generate (test_controller.FirstToLastHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 206
+    operator: ROR
+  number: 142
+  status: killed
+  tests_run: 6
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 221
+    operator: ROR
+  number: 143
+  status: timeout
+  tests_run: null
+  time: 5.04535436630249
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 200, in test_generate\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 1 != 2\n"
+  killer: test_generate (test_controller.EachChoiceHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 221
+    operator: ROR
+  number: 144
+  status: killed
+  tests_run: 4
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 242
+    operator: ROR
+  number: 145
+  status: timeout
+  tests_run: null
+  time: 5.290196180343628
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 242, in test_generate_if_three_operators\n    self.assert_num_changeset_entries(changes_to_apply,\
+    \ 0, 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\\
+    src\\tests\\mutpytests\\test_controller.py\", line 144, in assert_num_changeset_entries\n\
+    \    self.assertEqual(len(changes[changeset_index]), num_entries)\nAssertionError:\
+    \ 3 != 2\n"
+  killer: test_generate_if_three_operators (test_controller.BetweenOperatorsHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 242
+    operator: ROR
+  number: 146
+  status: killed
+  tests_run: 2
+  time: 0.015572786331176758
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 265
+    operator: ROR
+  number: 147
+  status: timeout
+  tests_run: null
+  time: 5.280526161193848
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 259, in test_generate\n    self.assert_num_changesets(changes_to_apply,\
+    \ 2)\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\\
+    tests\\mutpytests\\test_controller.py\", line 141, in assert_num_changesets\n\
+    \    self.assertEqual(len(changes), num_changes)\nAssertionError: 1 != 2\n"
+  killer: test_generate (test_controller.RandomHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 265
+    operator: ROR
+  number: 148
+  status: killed
+  tests_run: 19
+  time: 0.015623807907104492
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 51
+    operator: SCD
+  number: 149
+  status: survived
+  tests_run: 19
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 258, in test_generate\n    hom_kwargs={'shuffler': shuffler})\n  File \"\
+    C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\\
+    test_controller.py\", line 138, in apply_strategy_to_mutations_with_order_2\n\
+    \    return self.apply_strategy_to_mutations(hom_strategy_cls, mutations, 2, hom_kwargs=hom_kwargs)\n\
+    \  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\\
+    mutpytests\\test_controller.py\", line 133, in apply_strategy_to_mutations\n \
+    \   return list(hom_strategy.generate(mutations))\n  File \"controller\", line\
+    \ 265, in generate\nAttributeError: 'RandomHOMStrategy' object has no attribute\
+    \ 'order'\n"
+  killer: test_generate (test_controller.RandomHOMStrategyTest)
+  module: *id001
+  mutations:
+  - lineno: 255
+    operator: SCD
+  number: 150
+  status: killed
+  tests_run: 19
+  time: 0.015574932098388672
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_controller.py\"\
+    , line 292, in test_second_order_mutation\n    for number, (mutations, mutant)\
+    \ in enumerate(mutator.mutate(target_ast)):\n  File \"controller\", line 303,\
+    \ in mutate\n  File \"controller\", line 328, in generate_all_mutations\nAttributeError:\
+    \ 'HighOrderMutator' object has no attribute 'operators'\n"
+  killer: test_second_order_mutation (test_controller.HighOrderMutatorTest)
+  module: *id001
+  mutations:
+  - lineno: 298
+    operator: SCD
+  number: 151
+  status: killed
+  tests_run: 9
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: SCI
+  number: 152
+  status: survived
+  tests_run: 19
+  time: 0.01566028594970703
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 302
+    operator: SCI
+  number: 153
+  status: survived
+  tests_run: 19
+  time: 0.01561880111694336
+number_of_tests: 19
+targets:
+- src/mutpy/controller.py
+tests:
+- name: test_controller
+  target: null
+  time: 0.015620708465576172
+time_stats:
+  create_mutant_module: 0.2030503749847412
+  create_target_ast: 0.015659093856811523
+  mutate_module: 77.30338287353516
+  run_tests_with_mutant: 75.24007487297058
+total_time: 77.33456993103027

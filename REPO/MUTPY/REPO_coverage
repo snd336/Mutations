@@ -1,0 +1,851 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 71.69811320754717
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001
+  mutations:
+  - lineno: 30
+    operator: AOR
+  number: 1
+  status: incompetent
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 54, in test_result\n    self.assertEqual(self.coverage_injector.get_result(),\
+    \ (5, 5))\nAssertionError: Tuples differ: (5, -5) != (5, 5)\n\nFirst differing\
+    \ element 1:\n-5\n5\n\n- (5, -5)\n?     -\n\n+ (5, 5)\n"
+  killer: test_result (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: ASR
+  number: 2
+  status: killed
+  tests_run: 10
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 141, in test_class_def_coverage\n    self.assert_covered([class_node, base_node])\n\
+    \  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\\
+    mutpytests\\test_coverage.py\", line 25, in assert_covered\n    self.assertTrue(self.coverage_injector.is_covered(node))\n\
+    AssertionError: False is not true\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 31
+    operator: COD
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 141, in test_class_def_coverage\n    self.assert_covered([class_node, base_node])\n\
+    \  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\\
+    mutpytests\\test_coverage.py\", line 25, in assert_covered\n    self.assertTrue(self.coverage_injector.is_covered(node))\n\
+    AssertionError: False is not true\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 31
+    operator: COI
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 136, in test_class_def_coverage\n    self.coverage_injector.inject(node)\n\
+    \  File \"coverage\", line 157, in inject\n  File \"C:\\Users\\steph\\Documents\\\
+    Software\\Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\ast.py\", line\
+    \ 326, in generic_visit\n    value = self.visit(value)\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n\
+    \  File \"coverage\", line 45, in inject_inside_visit\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\ast.py\", line 326, in generic_visit\n   \
+    \ value = self.visit(value)\n  File \"C:\\Users\\steph\\Documents\\Software\\\
+    Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n  File\
+    \ \"coverage\", line 45, in inject_inside_visit\n  File \"C:\\Users\\steph\\Documents\\\
+    Software\\Anaconda\\lib\\ast.py\", line 326, in generic_visit\n    value = self.visit(value)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\ast.py\", line\
+    \ 271, in visit\n    return visitor(node)\n  File \"coverage\", line 47, in inject_inside_visit\n\
+    AttributeError: 'Pass' object has no attribute 'body'\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 32
+    operator: COI
+  number: 5
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 141, in test_class_def_coverage\n    self.assert_covered([class_node, base_node])\n\
+    \  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\\
+    mutpytests\\test_coverage.py\", line 25, in assert_covered\n    self.assertTrue(self.coverage_injector.is_covered(node))\n\
+    AssertionError: False is not true\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 39
+    operator: COI
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 142, in test_class_def_coverage\n    self.assert_not_covered([func_body_el])\n\
+    \  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\\
+    mutpytests\\test_coverage.py\", line 29, in assert_not_covered\n    self.assertFalse(self.coverage_injector.is_covered(node))\n\
+    AssertionError: True is not false\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 51
+    operator: COI
+  number: 7
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 65
+    operator: COI
+  number: 8
+  status: incompetent
+  tests_run: 3
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 136, in test_class_def_coverage\n    self.coverage_injector.inject(node)\n\
+    \  File \"coverage\", line 157, in inject\n  File \"C:\\Users\\steph\\Documents\\\
+    Software\\Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\ast.py\", line\
+    \ 326, in generic_visit\n    value = self.visit(value)\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n\
+    \  File \"coverage\", line 38, in inject_before_visit\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\ast.py\", line 326, in generic_visit\n   \
+    \ value = self.visit(value)\n  File \"C:\\Users\\steph\\Documents\\Software\\\
+    Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n  File\
+    \ \"coverage\", line 41, in inject_before_visit\n  File \"coverage\", line 52,\
+    \ in generate_coverage_node\n  File \"coverage\", line 72, in get_markers_from_body_node\n\
+    AttributeError: 'FunctionDef' object has no attribute 'test'\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 71
+    operator: COI
+  number: 9
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 136, in test_class_def_coverage\n    self.coverage_injector.inject(node)\n\
+    \  File \"coverage\", line 157, in inject\n  File \"C:\\Users\\steph\\Documents\\\
+    Software\\Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\ast.py\", line\
+    \ 326, in generic_visit\n    value = self.visit(value)\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n\
+    \  File \"coverage\", line 38, in inject_before_visit\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\ast.py\", line 326, in generic_visit\n   \
+    \ value = self.visit(value)\n  File \"C:\\Users\\steph\\Documents\\Software\\\
+    Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n  File\
+    \ \"coverage\", line 41, in inject_before_visit\n  File \"coverage\", line 52,\
+    \ in generate_coverage_node\n  File \"coverage\", line 74, in get_markers_from_body_node\n\
+    AttributeError: 'FunctionDef' object has no attribute 'target'\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 73
+    operator: COI
+  number: 10
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 141, in test_class_def_coverage\n    self.assert_covered([class_node, base_node])\n\
+    \  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\\
+    mutpytests\\test_coverage.py\", line 25, in assert_covered\n    self.assertTrue(self.coverage_injector.is_covered(node))\n\
+    AssertionError: False is not true\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 75
+    operator: COI
+  number: 11
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 141, in test_class_def_coverage\n    self.assert_covered([class_node, base_node])\n\
+    \  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\\
+    mutpytests\\test_coverage.py\", line 25, in assert_covered\n    self.assertTrue(self.coverage_injector.is_covered(node))\n\
+    AssertionError: False is not true\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 167
+    operator: COI
+  number: 12
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: CRP
+  number: 13
+  status: survived
+  tests_run: 14
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 136, in test_class_def_coverage\n    self.coverage_injector.inject(node)\n\
+    \  File \"coverage\", line 157, in inject\n  File \"C:\\Users\\steph\\Documents\\\
+    Software\\Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\ast.py\", line\
+    \ 326, in generic_visit\n    value = self.visit(value)\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n\
+    \  File \"coverage\", line 38, in inject_before_visit\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\ast.py\", line 326, in generic_visit\n   \
+    \ value = self.visit(value)\n  File \"C:\\Users\\steph\\Documents\\Software\\\
+    Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n  File\
+    \ \"coverage\", line 38, in inject_before_visit\n  File \"C:\\Users\\steph\\Documents\\\
+    Software\\Anaconda\\lib\\ast.py\", line 326, in generic_visit\n    value = self.visit(value)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\ast.py\", line\
+    \ 271, in visit\n    return visitor(node)\n  File \"coverage\", line 41, in inject_before_visit\n\
+    \  File \"coverage\", line 55, in generate_coverage_node\n  File \"C:\\Users\\\
+    steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\mutpy\\utils.py\", line\
+    \ 398, in create_ast\n    return ParentNodeTransformer().visit(ast.parse(code))\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\ast.py\", line\
+    \ 35, in parse\n    return compile(source, filename, mode, PyCF_ONLY_AST)\n  File\
+    \ \"<unknown>\", line 1\n    .update({7})\n    ^\nSyntaxError: invalid syntax\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: CRP
+  number: 14
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 141, in test_class_def_coverage\n    self.assert_covered([class_node, base_node])\n\
+    \  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\\
+    mutpytests\\test_coverage.py\", line 25, in assert_covered\n    self.assertTrue(self.coverage_injector.is_covered(node))\n\
+    AssertionError: False is not true\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 13
+    operator: CRP
+  number: 15
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 54, in test_result\n    self.assertEqual(self.coverage_injector.get_result(),\
+    \ (5, 5))\nAssertionError: Tuples differ: (5, 10) != (5, 5)\n\nFirst differing\
+    \ element 1:\n10\n5\n\n- (5, 10)\n?     ^^\n\n+ (5, 5)\n?     ^\n\n"
+  killer: test_result (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 17
+    operator: CRP
+  number: 16
+  status: killed
+  tests_run: 10
+  time: 0.015613794326782227
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 141, in test_class_def_coverage\n    self.assert_covered([class_node, base_node])\n\
+    \  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\\
+    mutpytests\\test_coverage.py\", line 25, in assert_covered\n    self.assertTrue(self.coverage_injector.is_covered(node))\n\
+    AssertionError: False is not true\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 30
+    operator: CRP
+  number: 17
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 141, in test_class_def_coverage\n    self.assert_covered([class_node, base_node])\n\
+    \  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\\
+    mutpytests\\test_coverage.py\", line 25, in assert_covered\n    self.assertTrue(self.coverage_injector.is_covered(node))\n\
+    AssertionError: False is not true\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 30
+    operator: CRP
+  number: 18
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 47
+    operator: CRP
+  number: 19
+  status: survived
+  tests_run: 14
+  time: 0.015619754791259766
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 142, in test_class_def_coverage\n    self.assert_not_covered([func_body_el])\n\
+    \  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\\
+    mutpytests\\test_coverage.py\", line 29, in assert_not_covered\n    self.assertFalse(self.coverage_injector.is_covered(node))\n\
+    AssertionError: True is not false\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 51
+    operator: CRP
+  number: 20
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 142, in test_class_def_coverage\n    self.assert_not_covered([func_body_el])\n\
+    \  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\\
+    mutpytests\\test_coverage.py\", line 29, in assert_not_covered\n    self.assertFalse(self.coverage_injector.is_covered(node))\n\
+    AssertionError: True is not false\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 51
+    operator: CRP
+  number: 21
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 136, in test_class_def_coverage\n    self.coverage_injector.inject(node)\n\
+    \  File \"coverage\", line 163, in inject\n  File \"C:\\Users\\steph\\Desktop\\\
+    Thesis\\Feature Scripts\\Working\\src\\mutpy\\utils.py\", line 30, in create_module\n\
+    \    exec(code, module.__dict__)\n  File \"coverage\", line 1, in <module>\nNameError:\
+    \ name 'mutpy' is not defined\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 55
+    operator: CRP
+  number: 22
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 136, in test_class_def_coverage\n    self.coverage_injector.inject(node)\n\
+    \  File \"coverage\", line 157, in inject\n  File \"C:\\Users\\steph\\Documents\\\
+    Software\\Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\ast.py\", line\
+    \ 326, in generic_visit\n    value = self.visit(value)\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n\
+    \  File \"coverage\", line 38, in inject_before_visit\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\ast.py\", line 326, in generic_visit\n   \
+    \ value = self.visit(value)\n  File \"C:\\Users\\steph\\Documents\\Software\\\
+    Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n  File\
+    \ \"coverage\", line 38, in inject_before_visit\n  File \"C:\\Users\\steph\\Documents\\\
+    Software\\Anaconda\\lib\\ast.py\", line 326, in generic_visit\n    value = self.visit(value)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\ast.py\", line\
+    \ 271, in visit\n    return visitor(node)\n  File \"coverage\", line 41, in inject_before_visit\n\
+    \  File \"coverage\", line 55, in generate_coverage_node\nIndexError: list index\
+    \ out of range\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 55
+    operator: CRP
+  number: 23
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 136, in test_class_def_coverage\n    self.coverage_injector.inject(node)\n\
+    \  File \"coverage\", line 157, in inject\n  File \"C:\\Users\\steph\\Documents\\\
+    Software\\Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\ast.py\", line\
+    \ 326, in generic_visit\n    value = self.visit(value)\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n\
+    \  File \"coverage\", line 38, in inject_before_visit\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\ast.py\", line 326, in generic_visit\n   \
+    \ value = self.visit(value)\n  File \"C:\\Users\\steph\\Documents\\Software\\\
+    Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n  File\
+    \ \"coverage\", line 38, in inject_before_visit\n  File \"C:\\Users\\steph\\Documents\\\
+    Software\\Anaconda\\lib\\ast.py\", line 326, in generic_visit\n    value = self.visit(value)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\ast.py\", line\
+    \ 271, in visit\n    return visitor(node)\n  File \"coverage\", line 41, in inject_before_visit\n\
+    \  File \"coverage\", line 55, in generate_coverage_node\nIndexError: list index\
+    \ out of range\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 55
+    operator: CRP
+  number: 24
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 59, in test_future_statement_coverage\n    self.coverage_injector.inject(node)\n\
+    \  File \"coverage\", line 163, in inject\n  File \"C:\\Users\\steph\\Desktop\\\
+    Thesis\\Feature Scripts\\Working\\src\\mutpy\\utils.py\", line 27, in create_module\n\
+    \    code = compile(ast_node, module_name, 'exec')\n  File \"coverage\", line\
+    \ 1\nSyntaxError: from __future__ imports must occur at the beginning of the file\n"
+  killer: test_future_statement_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 61
+    operator: CRP
+  number: 25
+  status: killed
+  tests_run: 7
+  time: 0.015577554702758789
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 59, in test_future_statement_coverage\n    self.coverage_injector.inject(node)\n\
+    \  File \"coverage\", line 163, in inject\n  File \"C:\\Users\\steph\\Desktop\\\
+    Thesis\\Feature Scripts\\Working\\src\\mutpy\\utils.py\", line 27, in create_module\n\
+    \    code = compile(ast_node, module_name, 'exec')\n  File \"coverage\", line\
+    \ 1\nSyntaxError: from __future__ imports must occur at the beginning of the file\n"
+  killer: test_future_statement_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 61
+    operator: CRP
+  number: 26
+  status: killed
+  tests_run: 7
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 141, in test_class_def_coverage\n    self.assert_covered([class_node, base_node])\n\
+    \  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\\
+    mutpytests\\test_coverage.py\", line 25, in assert_covered\n    self.assertTrue(self.coverage_injector.is_covered(node))\n\
+    AssertionError: False is not true\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 64
+    operator: CRP
+  number: 27
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 141, in test_class_def_coverage\n    self.assert_covered([class_node, base_node])\n\
+    \  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\\
+    mutpytests\\test_coverage.py\", line 25, in assert_covered\n    self.assertTrue(self.coverage_injector.is_covered(node))\n\
+    AssertionError: False is not true\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 64
+    operator: CRP
+  number: 28
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 82
+    operator: CRP
+  number: 29
+  status: survived
+  tests_run: 14
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 136, in test_class_def_coverage\n    self.coverage_injector.inject(node)\n\
+    \  File \"coverage\", line 157, in inject\n  File \"coverage\", line 29, in __init__\n\
+    \  File \"coverage\", line 103, in get_coverable_nodes\nAttributeError: module\
+    \ 'ast' has no attribute 'TryExcept'\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 82
+    operator: CRP
+  number: 30
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 136, in test_class_def_coverage\n    self.coverage_injector.inject(node)\n\
+    \  File \"coverage\", line 157, in inject\n  File \"coverage\", line 29, in __init__\n\
+    \  File \"coverage\", line 103, in get_coverable_nodes\nAttributeError: module\
+    \ 'ast' has no attribute 'TryExcept'\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 113
+    operator: CRP
+  number: 31
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 113
+    operator: CRP
+  number: 32
+  status: survived
+  tests_run: 14
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 153
+    operator: CRP
+  number: 33
+  status: survived
+  tests_run: 14
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 153
+    operator: CRP
+  number: 34
+  status: survived
+  tests_run: 14
+  time: 0.015613555908203125
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 23
+    operator: DDL
+  number: 35
+  status: survived
+  tests_run: 14
+  time: 0.015630483627319336
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 84
+    operator: DDL
+  number: 36
+  status: survived
+  tests_run: 14
+  time: 0.015621662139892578
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 115
+    operator: DDL
+  number: 37
+  status: survived
+  tests_run: 14
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 136, in test_class_def_coverage\n    self.coverage_injector.inject(node)\n\
+    \  File \"coverage\", line 156, in inject\n  File \"coverage\", line 16, in visit\n\
+    AttributeError: 'MarkerNodeTransformer' object has no attribute 'last_marker'\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: IOD
+  number: 38
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 136, in test_class_def_coverage\n    self.coverage_injector.inject(node)\n\
+    \  File \"coverage\", line 158, in inject\nAttributeError: 'Module' object has\
+    \ no attribute 'marker'\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: IOD
+  number: 39
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 141, in test_class_def_coverage\n    self.assert_covered([class_node, base_node])\n\
+    \  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\\
+    mutpytests\\test_coverage.py\", line 25, in assert_covered\n    self.assertTrue(self.coverage_injector.is_covered(node))\n\
+    AssertionError: False is not true\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 27
+    operator: IOD
+  number: 40
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 84
+    operator: IOD
+  number: 41
+  status: survived
+  tests_run: 14
+  time: 0.015625476837158203
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 136, in test_class_def_coverage\n    self.coverage_injector.inject(node)\n\
+    \  File \"coverage\", line 157, in inject\n  File \"coverage\", line 29, in __init__\n\
+    \  File \"coverage\", line 25, in get_coverable_nodes\nNotImplementedError\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 115
+    operator: IOD
+  number: 42
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: IOP
+  number: 43
+  status: survived
+  tests_run: 14
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 27
+    operator: IOP
+  number: 44
+  status: survived
+  tests_run: 14
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 136, in test_class_def_coverage\n    self.coverage_injector.inject(node)\n\
+    \  File \"coverage\", line 157, in inject\n  File \"C:\\Users\\steph\\Documents\\\
+    Software\\Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\ast.py\", line\
+    \ 326, in generic_visit\n    value = self.visit(value)\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n\
+    \  File \"coverage\", line 38, in inject_before_visit\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\ast.py\", line 326, in generic_visit\n   \
+    \ value = self.visit(value)\n  File \"C:\\Users\\steph\\Documents\\Software\\\
+    Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n  File\
+    \ \"coverage\", line 38, in inject_before_visit\n  File \"C:\\Users\\steph\\Documents\\\
+    Software\\Anaconda\\lib\\ast.py\", line 326, in generic_visit\n    value = self.visit(value)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\ast.py\", line\
+    \ 271, in visit\n    return visitor(node)\n  File \"coverage\", line 39, in inject_before_visit\n\
+    \  File \"coverage\", line 61, in is_future_statement\nAttributeError: 'Pass'\
+    \ object has no attribute 'module'\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 61
+    operator: LCR
+  number: 45
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 92, in test_if_coverage\n    self.assert_covered([first_if_test_node, second_if_test_node,\
+    \ second_if_body_el])\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\Feature Scripts\\\
+    Working\\src\\tests\\mutpytests\\test_coverage.py\", line 25, in assert_covered\n\
+    \    self.assertTrue(self.coverage_injector.is_covered(node))\nAssertionError:\
+    \ False is not true\n"
+  killer: test_if_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 72
+    operator: LOR
+  number: 46
+  status: killed
+  tests_run: 8
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 190, in test_for_coverage\n    self.assert_covered([for_node, for_node.target,\
+    \ for_node.iter, else_body_el])\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\\
+    Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\", line 25,\
+    \ in assert_covered\n    self.assertTrue(self.coverage_injector.is_covered(node))\n\
+    AssertionError: False is not true\n"
+  killer: test_for_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 74
+    operator: LOR
+  number: 47
+  status: killed
+  tests_run: 5
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 190, in test_for_coverage\n    self.assert_covered([for_node, for_node.target,\
+    \ for_node.iter, else_body_el])\n  File \"C:\\Users\\steph\\Desktop\\Thesis\\\
+    Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\", line 25,\
+    \ in assert_covered\n    self.assertTrue(self.coverage_injector.is_covered(node))\n\
+    AssertionError: False is not true\n"
+  killer: test_for_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 74
+    operator: LOR
+  number: 48
+  status: killed
+  tests_run: 5
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 136, in test_class_def_coverage\n    self.coverage_injector.inject(node)\n\
+    \  File \"coverage\", line 157, in inject\n  File \"C:\\Users\\steph\\Documents\\\
+    Software\\Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\ast.py\", line\
+    \ 326, in generic_visit\n    value = self.visit(value)\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n\
+    \  File \"coverage\", line 45, in inject_inside_visit\n  File \"C:\\Users\\steph\\\
+    Documents\\Software\\Anaconda\\lib\\ast.py\", line 326, in generic_visit\n   \
+    \ value = self.visit(value)\n  File \"C:\\Users\\steph\\Documents\\Software\\\
+    Anaconda\\lib\\ast.py\", line 271, in visit\n    return visitor(node)\n  File\
+    \ \"coverage\", line 45, in inject_inside_visit\n  File \"C:\\Users\\steph\\Documents\\\
+    Software\\Anaconda\\lib\\ast.py\", line 326, in generic_visit\n    value = self.visit(value)\n\
+    \  File \"C:\\Users\\steph\\Documents\\Software\\Anaconda\\lib\\ast.py\", line\
+    \ 271, in visit\n    return visitor(node)\n  File \"coverage\", line 47, in inject_inside_visit\n\
+    AttributeError: 'Pass' object has no attribute 'body'\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 32
+    operator: ROR
+  number: 49
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 59, in test_future_statement_coverage\n    self.coverage_injector.inject(node)\n\
+    \  File \"coverage\", line 163, in inject\n  File \"C:\\Users\\steph\\Desktop\\\
+    Thesis\\Feature Scripts\\Working\\src\\mutpy\\utils.py\", line 27, in create_module\n\
+    \    code = compile(ast_node, module_name, 'exec')\n  File \"coverage\", line\
+    \ 1\nSyntaxError: from __future__ imports must occur at the beginning of the file\n"
+  killer: test_future_statement_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 61
+    operator: ROR
+  number: 50
+  status: killed
+  tests_run: 7
+  time: 0.015619754791259766
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: SCD
+  number: 51
+  status: survived
+  tests_run: 14
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 27
+    operator: SCD
+  number: 52
+  status: survived
+  tests_run: 14
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 54, in test_result\n    self.assertEqual(self.coverage_injector.get_result(),\
+    \ (5, 5))\nAssertionError: Tuples differ: (5, 19) != (5, 5)\n\nFirst differing\
+    \ element 1:\n19\n5\n\n- (5, 19)\n?     ^^\n\n+ (5, 5)\n?     ^\n\n"
+  killer: test_result (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: SCI
+  number: 53
+  status: killed
+  tests_run: 10
+  time: 0.015572547912597656
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 84
+    operator: SCI
+  number: 54
+  status: survived
+  tests_run: 14
+  time: 0.015624523162841797
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_coverage.py\"\
+    , line 136, in test_class_def_coverage\n    self.coverage_injector.inject(node)\n\
+    \  File \"coverage\", line 157, in inject\n  File \"coverage\", line 29, in __init__\n\
+    \  File \"coverage\", line 117, in get_coverable_nodes\n  File \"coverage\", line\
+    \ 25, in get_coverable_nodes\nNotImplementedError\n"
+  killer: test_class_def_coverage (test_coverage.CoverageInjectorTest)
+  module: *id001
+  mutations:
+  - lineno: 115
+    operator: SCI
+  number: 55
+  status: killed
+  tests_run: 1
+  time: 0.0
+number_of_tests: 14
+targets:
+- src/mutpy/coverage.py
+tests:
+- name: test_coverage
+  target: null
+  time: 0.01562047004699707
+time_stats:
+  create_mutant_module: 0.031207561492919922
+  create_target_ast: 0.0
+  mutate_module: 0.8005130290985107
+  run_tests_with_mutant: 0.20308780670166016
+total_time: 0.8161334991455078

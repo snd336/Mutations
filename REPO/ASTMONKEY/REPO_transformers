@@ -1,0 +1,267 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 73.33333333333333
+mutations:
+- exception_traceback: "self = <test_transformers.TestParentChildNodeTransformer object\
+    \ at 0x0000015823121EC8>\ntransformer = <transformers.ParentChildNodeTransformer\
+    \ object at 0x00000158231357C8>\n\n    def test_module_node(self, transformer):\n\
+    \        node = ast.parse('')\n    \n        transformed_node = transformer.visit(node)\n\
+    \    \n>       assert transformed_node.parent is None\nE       AttributeError:\
+    \ 'Module' object has no attribute 'parent'\n\nsrc\\tests\\astmonkeytests\\test_transformers.py:22:\
+    \ AttributeError"
+  killer: src/tests/astmonkeytests/test_transformers.py::TestParentChildNodeTransformer::test_module_node
+  module: &id001
+  mutations:
+  - lineno: 14
+    operator: COD
+  number: 1
+  status: killed
+  tests_run: 1
+  time: 0.2882356643676758
+- exception_traceback: "self = <test_transformers.TestParentChildNodeTransformer object\
+    \ at 0x00000158231BA9C8>\ntransformer = <transformers.ParentChildNodeTransformer\
+    \ object at 0x00000158231C4EC8>\n\n    def test_non_module_node(self, transformer):\n\
+    \        node = ast.parse('x = 1')\n    \n>       transformed_node = transformer.visit(node)\n\
+    \nsrc\\tests\\astmonkeytests\\test_transformers.py:28: \n_ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntransformers:9: in\
+    \ visit\n    ???\ntransformers:25: in _process_field\n    ???\ntransformers:30:\
+    \ in _process_child\n    ???\ntransformers:9: in visit\n    ???\ntransformers:25:\
+    \ in _process_field\n    ???\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <transformers.ParentChildNodeTransformer\
+    \ object at 0x00000158231C4EC8>\nchild = <_ast.Name object at 0x00000158231C41C8>\n\
+    parent = <_ast.Assign object at 0x00000158231C47C8>, field_name = 'targets'\n\
+    index = 0\n\n>   ???\nE   AttributeError: 'Name' object has no attribute 'parents'\n\
+    \ntransformers:32: AttributeError"
+  killer: src/tests/astmonkeytests/test_transformers.py::TestParentChildNodeTransformer::test_non_module_node
+  module: *id001
+  mutations:
+  - lineno: 16
+    operator: COD
+  number: 2
+  status: killed
+  tests_run: 2
+  time: 0.2913172245025635
+- exception_traceback: "self = <test_transformers.TestParentChildNodeTransformer object\
+    \ at 0x0000015823226A88>\ntransformer = <transformers.ParentChildNodeTransformer\
+    \ object at 0x0000015823226588>\n\n    def test_module_node(self, transformer):\n\
+    \        node = ast.parse('')\n    \n        transformed_node = transformer.visit(node)\n\
+    \    \n        assert transformed_node.parent is None\n>       assert transformed_node.children\
+    \ == []\nE       AttributeError: 'Module' object has no attribute 'children'\n\
+    \nsrc\\tests\\astmonkeytests\\test_transformers.py:23: AttributeError"
+  killer: src/tests/astmonkeytests/test_transformers.py::TestParentChildNodeTransformer::test_module_node
+  module: *id001
+  mutations:
+  - lineno: 18
+    operator: COD
+  number: 3
+  status: killed
+  tests_run: 1
+  time: 0.28424072265625
+- exception_traceback: "self = <test_transformers.TestParentChildNodeTransformer object\
+    \ at 0x0000015823231588>\ntransformer = <transformers.ParentChildNodeTransformer\
+    \ object at 0x00000158232C1C88>\n\n    def test_module_node(self, transformer):\n\
+    \        node = ast.parse('')\n    \n        transformed_node = transformer.visit(node)\n\
+    \    \n>       assert transformed_node.parent is None\nE       AttributeError:\
+    \ 'Module' object has no attribute 'parent'\n\nsrc\\tests\\astmonkeytests\\test_transformers.py:22:\
+    \ AttributeError"
+  killer: src/tests/astmonkeytests/test_transformers.py::TestParentChildNodeTransformer::test_module_node
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: COI
+  number: 4
+  status: killed
+  tests_run: 1
+  time: 0.2802140712738037
+- exception_traceback: "self = <test_transformers.TestParentChildNodeTransformer object\
+    \ at 0x00000158232F9948>\ntransformer = <transformers.ParentChildNodeTransformer\
+    \ object at 0x00000158232F9548>\n\n    def test_non_module_node(self, transformer):\n\
+    \        node = ast.parse('x = 1')\n    \n>       transformed_node = transformer.visit(node)\n\
+    \nsrc\\tests\\astmonkeytests\\test_transformers.py:28: \n_ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntransformers:9: in\
+    \ visit\n    ???\ntransformers:25: in _process_field\n    ???\ntransformers:30:\
+    \ in _process_child\n    ???\ntransformers:9: in visit\n    ???\ntransformers:25:\
+    \ in _process_field\n    ???\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <transformers.ParentChildNodeTransformer\
+    \ object at 0x00000158232F9548>\nchild = <_ast.Name object at 0x00000158232F9E88>\n\
+    parent = <_ast.Assign object at 0x00000158232F9648>, field_name = 'targets'\n\
+    index = 0\n\n>   ???\nE   AttributeError: 'Name' object has no attribute 'parents'\n\
+    \ntransformers:32: AttributeError"
+  killer: src/tests/astmonkeytests/test_transformers.py::TestParentChildNodeTransformer::test_non_module_node
+  module: *id001
+  mutations:
+  - lineno: 16
+    operator: COI
+  number: 5
+  status: killed
+  tests_run: 2
+  time: 0.280193567276001
+- exception_traceback: "self = <test_transformers.TestParentChildNodeTransformer object\
+    \ at 0x0000015823366248>\ntransformer = <transformers.ParentChildNodeTransformer\
+    \ object at 0x0000015823394388>\n\n    def test_module_node(self, transformer):\n\
+    \        node = ast.parse('')\n    \n        transformed_node = transformer.visit(node)\n\
+    \    \n        assert transformed_node.parent is None\n>       assert transformed_node.children\
+    \ == []\nE       AttributeError: 'Module' object has no attribute 'children'\n\
+    \nsrc\\tests\\astmonkeytests\\test_transformers.py:23: AttributeError"
+  killer: src/tests/astmonkeytests/test_transformers.py::TestParentChildNodeTransformer::test_module_node
+  module: *id001
+  mutations:
+  - lineno: 18
+    operator: COI
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.28024816513061523
+- exception_traceback: "self = <test_transformers.TestParentChildNodeTransformer object\
+    \ at 0x00000158233FF248>\ntransformer = <transformers.ParentChildNodeTransformer\
+    \ object at 0x00000158233FF048>\n\n    def test_non_module_node(self, transformer):\n\
+    \        node = ast.parse('x = 1')\n    \n        transformed_node = transformer.visit(node)\n\
+    \    \n        assign_node = transformed_node.body[0]\n>       assert transformed_node\
+    \ == assign_node.parent\nE       AttributeError: 'Assign' object has no attribute\
+    \ 'parent'\n\nsrc\\tests\\astmonkeytests\\test_transformers.py:31: AttributeError"
+  killer: src/tests/astmonkeytests/test_transformers.py::TestParentChildNodeTransformer::test_non_module_node
+  module: *id001
+  mutations:
+  - lineno: 22
+    operator: COI
+  number: 7
+  status: killed
+  tests_run: 2
+  time: 0.2774641513824463
+- exception_traceback: "self = <test_transformers.TestParentChildNodeTransformer object\
+    \ at 0x0000015823392308>\ntransformer = <transformers.ParentChildNodeTransformer\
+    \ object at 0x0000015823469F08>\n\n    def test_non_module_node(self, transformer):\n\
+    \        node = ast.parse('x = 1')\n    \n        transformed_node = transformer.visit(node)\n\
+    \    \n        assign_node = transformed_node.body[0]\n>       assert transformed_node\
+    \ == assign_node.parent\nE       AttributeError: 'Assign' object has no attribute\
+    \ 'parent'\n\nsrc\\tests\\astmonkeytests\\test_transformers.py:31: AttributeError"
+  killer: src/tests/astmonkeytests/test_transformers.py::TestParentChildNodeTransformer::test_non_module_node
+  module: *id001
+  mutations:
+  - lineno: 24
+    operator: COI
+  number: 8
+  status: killed
+  tests_run: 2
+  time: 0.2782561779022217
+- exception_traceback: "self = <test_transformers.TestParentChildNodeTransformer object\
+    \ at 0x00000158233606C8>\ntransformer = <transformers.ParentChildNodeTransformer\
+    \ object at 0x00000158234B0488>\n\n    def test_non_module_node(self, transformer):\n\
+    \        node = ast.parse('x = 1')\n    \n>       transformed_node = transformer.visit(node)\n\
+    \nsrc\\tests\\astmonkeytests\\test_transformers.py:28: \n_ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntransformers:9: in\
+    \ visit\n    ???\ntransformers:25: in _process_field\n    ???\ntransformers:30:\
+    \ in _process_child\n    ???\ntransformers:9: in visit\n    ???\ntransformers:25:\
+    \ in _process_field\n    ???\ntransformers:30: in _process_child\n    ???\ntransformers:9:\
+    \ in visit\n    ???\ntransformers:27: in _process_field\n    ???\ntransformers:30:\
+    \ in _process_child\n    ???\ntransformers:7: in visit\n    ???\n_ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nnode =\
+    \ 'x'\n\n>   ???\nE   AttributeError: 'str' object has no attribute 'parent'\n\
+    \ntransformers:15: AttributeError"
+  killer: src/tests/astmonkeytests/test_transformers.py::TestParentChildNodeTransformer::test_non_module_node
+  module: *id001
+  mutations:
+  - lineno: 26
+    operator: COI
+  number: 9
+  status: killed
+  tests_run: 2
+  time: 0.31610679626464844
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: CRP
+  number: 10
+  status: survived
+  tests_run: 3
+  time: 0.278627872467041
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 14
+    operator: CRP
+  number: 11
+  status: survived
+  tests_run: 3
+  time: 0.2778017520904541
+- exception_traceback: "self = <test_transformers.TestParentChildNodeTransformer object\
+    \ at 0x000001582359F688>\ntransformer = <transformers.ParentChildNodeTransformer\
+    \ object at 0x000001582359FA48>\n\n    def test_expr_context_nodes(self, transformer):\n\
+    \        node = ast.parse('x = 1\\nx = 2')\n    \n        transformer.visit(node)\n\
+    \    \n        ctx_node = node.body[0].targets[0].ctx\n        first_name_node\
+    \ = node.body[0].targets[0]\n        second_name_node = node.body[1].targets[0]\n\
+    >       assert first_name_node in ctx_node.parents\nE       AssertionError\n\n\
+    src\\tests\\astmonkeytests\\test_transformers.py:45: AssertionError"
+  killer: src/tests/astmonkeytests/test_transformers.py::TestParentChildNodeTransformer::test_expr_context_nodes
+  module: *id001
+  mutations:
+  - lineno: 16
+    operator: CRP
+  number: 12
+  status: killed
+  tests_run: 3
+  time: 0.2793447971343994
+- exception_traceback: "self = <test_transformers.TestParentChildNodeTransformer object\
+    \ at 0x00000158235F97C8>\ntransformer = <transformers.ParentChildNodeTransformer\
+    \ object at 0x00000158235F98C8>\n\n    def test_expr_context_nodes(self, transformer):\n\
+    \        node = ast.parse('x = 1\\nx = 2')\n    \n        transformer.visit(node)\n\
+    \    \n        ctx_node = node.body[0].targets[0].ctx\n        first_name_node\
+    \ = node.body[0].targets[0]\n        second_name_node = node.body[1].targets[0]\n\
+    >       assert first_name_node in ctx_node.parents\nE       AssertionError\n\n\
+    src\\tests\\astmonkeytests\\test_transformers.py:45: AssertionError"
+  killer: src/tests/astmonkeytests/test_transformers.py::TestParentChildNodeTransformer::test_expr_context_nodes
+  module: *id001
+  mutations:
+  - lineno: 16
+    operator: CRP
+  number: 13
+  status: killed
+  tests_run: 3
+  time: 0.28320789337158203
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 18
+    operator: CRP
+  number: 14
+  status: survived
+  tests_run: 3
+  time: 0.2832069396972656
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 18
+    operator: CRP
+  number: 15
+  status: survived
+  tests_run: 3
+  time: 0.27681851387023926
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: DDL
+  number: 16
+  status: incompetent
+  tests_run: 1
+  time: 0.2766916751861572
+number_of_tests: 3
+targets:
+- src/astmonkey/transformers.py
+tests:
+- name: test_transformers
+  target: null
+  time: 0.9292974472045898
+time_stats:
+  create_mutant_module: 0.007104158401489258
+  create_target_ast: 0.002032041549682617
+  mutate_module: 4.682321071624756
+  run_tests_with_mutant: 4.539028644561768
+total_time: 5.616529941558838

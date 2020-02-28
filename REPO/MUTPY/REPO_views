@@ -1,0 +1,3557 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 6.927710843373494
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001
+  mutations:
+  - lineno: 133
+    operator: AOD
+  number: 1
+  status: survived
+  tests_run: 2
+  time: 0.0019905567169189453
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 98
+    operator: AOR
+  number: 2
+  status: survived
+  tests_run: 2
+  time: 0.001043558120727539
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 98
+    operator: AOR
+  number: 3
+  status: survived
+  tests_run: 2
+  time: 0.001033782958984375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 98
+    operator: AOR
+  number: 4
+  status: survived
+  tests_run: 2
+  time: 0.0009968280792236328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 98
+    operator: AOR
+  number: 5
+  status: survived
+  tests_run: 2
+  time: 0.0009975433349609375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 98
+    operator: AOR
+  number: 6
+  status: survived
+  tests_run: 2
+  time: 0.0010349750518798828
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 100
+    operator: AOR
+  number: 7
+  status: survived
+  tests_run: 2
+  time: 0.0020170211791992188
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 100
+    operator: AOR
+  number: 8
+  status: survived
+  tests_run: 2
+  time: 0.0005586147308349609
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 100
+    operator: AOR
+  number: 9
+  status: survived
+  tests_run: 2
+  time: 0.00098419189453125
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 100
+    operator: AOR
+  number: 10
+  status: survived
+  tests_run: 2
+  time: 0.0019989013671875
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 100
+    operator: AOR
+  number: 11
+  status: survived
+  tests_run: 2
+  time: 0.0011756420135498047
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 102
+    operator: AOR
+  number: 12
+  status: survived
+  tests_run: 2
+  time: 0.0010063648223876953
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 102
+    operator: AOR
+  number: 13
+  status: survived
+  tests_run: 2
+  time: 0.0009500980377197266
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 102
+    operator: AOR
+  number: 14
+  status: survived
+  tests_run: 2
+  time: 0.001947641372680664
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 102
+    operator: AOR
+  number: 15
+  status: survived
+  tests_run: 2
+  time: 0.001108407974243164
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 102
+    operator: AOR
+  number: 16
+  status: survived
+  tests_run: 2
+  time: 0.0009584426879882812
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 104
+    operator: AOR
+  number: 17
+  status: survived
+  tests_run: 2
+  time: 0.0009064674377441406
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 104
+    operator: AOR
+  number: 18
+  status: survived
+  tests_run: 2
+  time: 0.0009517669677734375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 104
+    operator: AOR
+  number: 19
+  status: survived
+  tests_run: 2
+  time: 0.0010313987731933594
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 104
+    operator: AOR
+  number: 20
+  status: survived
+  tests_run: 2
+  time: 0.0009906291961669922
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 104
+    operator: AOR
+  number: 21
+  status: survived
+  tests_run: 2
+  time: 0.0009517669677734375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 108
+    operator: AOR
+  number: 22
+  status: survived
+  tests_run: 2
+  time: 0.0009450912475585938
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 108
+    operator: AOR
+  number: 23
+  status: survived
+  tests_run: 2
+  time: 0.002118825912475586
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 108
+    operator: AOR
+  number: 24
+  status: survived
+  tests_run: 2
+  time: 0.0009522438049316406
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 108
+    operator: AOR
+  number: 25
+  status: survived
+  tests_run: 2
+  time: 0.0019941329956054688
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 108
+    operator: AOR
+  number: 26
+  status: survived
+  tests_run: 2
+  time: 0.001997232437133789
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 115
+    operator: AOR
+  number: 27
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 115
+    operator: AOR
+  number: 28
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 133
+    operator: AOR
+  number: 29
+  status: survived
+  tests_run: 2
+  time: 0.0013418197631835938
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 139
+    operator: AOR
+  number: 30
+  status: survived
+  tests_run: 2
+  time: 0.0010318756103515625
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: AOR
+  number: 31
+  status: incompetent
+  tests_run: 1
+  time: 0.0009438991546630859
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: AOR
+  number: 32
+  status: incompetent
+  tests_run: 1
+  time: 0.0009975433349609375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: AOR
+  number: 33
+  status: incompetent
+  tests_run: 1
+  time: 0.0009515285491943359
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: AOR
+  number: 34
+  status: incompetent
+  tests_run: 1
+  time: 0.0019409656524658203
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: AOR
+  number: 35
+  status: incompetent
+  tests_run: 1
+  time: 0.0009515285491943359
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: AOR
+  number: 36
+  status: incompetent
+  tests_run: 1
+  time: 0.0019352436065673828
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: AOR
+  number: 37
+  status: incompetent
+  tests_run: 1
+  time: 0.001995086669921875
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: AOR
+  number: 38
+  status: incompetent
+  tests_run: 1
+  time: 0.0019948482513427734
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 162
+    operator: AOR
+  number: 39
+  status: survived
+  tests_run: 2
+  time: 0.0040018558502197266
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 162
+    operator: AOR
+  number: 40
+  status: survived
+  tests_run: 2
+  time: 0.003989696502685547
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 162
+    operator: AOR
+  number: 41
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 162
+    operator: AOR
+  number: 42
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 166
+    operator: AOR
+  number: 43
+  status: survived
+  tests_run: 2
+  time: 0.002995014190673828
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 166
+    operator: AOR
+  number: 44
+  status: survived
+  tests_run: 2
+  time: 0.0020089149475097656
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 169
+    operator: AOR
+  number: 45
+  status: survived
+  tests_run: 2
+  time: 0.0009944438934326172
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 169
+    operator: AOR
+  number: 46
+  status: survived
+  tests_run: 2
+  time: 0.0030050277709960938
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 172
+    operator: AOR
+  number: 47
+  status: survived
+  tests_run: 2
+  time: 0.0009958744049072266
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 172
+    operator: AOR
+  number: 48
+  status: survived
+  tests_run: 2
+  time: 0.0009961128234863281
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 178
+    operator: AOR
+  number: 49
+  status: survived
+  tests_run: 2
+  time: 0.002027273178100586
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 184
+    operator: AOR
+  number: 50
+  status: survived
+  tests_run: 2
+  time: 0.0010001659393310547
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 59, in test_print_code\n    output\nAssertionError: '----[74 chars]--\\\
+    n- 1: x = x + 1\\n+ 1: x = x - 1\\n----------[66 chars]----' != '----[74 chars]--\\\
+    n--- \\n+++ \\n@@ -1 +1 @@\\n-----------------[59 chars]----'\n  --------------------------------------------------------------------------------\n\
+    - - 1: x = x + 1\n- + 1: x = x - 1\n+ --- \n+ +++ \n+ @@ -1 +1 @@\n  --------------------------------------------------------------------------------\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 152
+    operator: COD
+  number: 51
+  status: killed
+  tests_run: 2
+  time: 0.0019428730010986328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 28
+    operator: COI
+  number: 52
+  status: survived
+  tests_run: 2
+  time: 0.0019941329956054688
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 33
+    operator: COI
+  number: 53
+  status: survived
+  tests_run: 2
+  time: 0.001995086669921875
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 54
+    operator: COI
+  number: 54
+  status: survived
+  tests_run: 2
+  time: 0.001990795135498047
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 57
+    operator: COI
+  number: 55
+  status: survived
+  tests_run: 2
+  time: 0.000997781753540039
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 59
+    operator: COI
+  number: 56
+  status: survived
+  tests_run: 2
+  time: 0.000997304916381836
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 36, in test_decorate_with_color\n    self.assertEqual(expected_colored_text,\
+    \ colored_text)\nAssertionError: '\\x1b[31mmutpy\\x1b[0m' != 'mutpy'\n- \e[31mmutpy\e\
+    [0m\n+ mutpy\n\n"
+  killer: test_decorate_with_color (test_views.QuietTextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 65
+    operator: COI
+  number: 57
+  status: killed
+  tests_run: 1
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 72
+    operator: COI
+  number: 58
+  status: survived
+  tests_run: 2
+  time: 0.00099945068359375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 96
+    operator: COI
+  number: 59
+  status: survived
+  tests_run: 2
+  time: 0.0019485950469970703
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 105
+    operator: COI
+  number: 60
+  status: survived
+  tests_run: 2
+  time: 0.001967191696166992
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 123
+    operator: COI
+  number: 61
+  status: survived
+  tests_run: 2
+  time: 0.001995563507080078
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 133
+    operator: COI
+  number: 62
+  status: survived
+  tests_run: 2
+  time: 0.0019965171813964844
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 135
+    operator: COI
+  number: 63
+  status: survived
+  tests_run: 2
+  time: 0.0009524822235107422
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: CRP
+  number: 64
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 15
+    operator: CRP
+  number: 65
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 46
+    operator: CRP
+  number: 66
+  status: survived
+  tests_run: 2
+  time: 0.0009484291076660156
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 46
+    operator: CRP
+  number: 67
+  status: survived
+  tests_run: 2
+  time: 0.0009515285491943359
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 48
+    operator: CRP
+  number: 68
+  status: survived
+  tests_run: 2
+  time: 0.0009500980377197266
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 48
+    operator: CRP
+  number: 69
+  status: survived
+  tests_run: 2
+  time: 0.000989675521850586
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 48
+    operator: CRP
+  number: 70
+  status: survived
+  tests_run: 2
+  time: 0.0009970664978027344
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 48
+    operator: CRP
+  number: 71
+  status: survived
+  tests_run: 2
+  time: 0.0019462108612060547
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 48
+    operator: CRP
+  number: 72
+  status: survived
+  tests_run: 2
+  time: 0.0009491443634033203
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 48
+    operator: CRP
+  number: 73
+  status: survived
+  tests_run: 2
+  time: 0.0009975433349609375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 51
+    operator: CRP
+  number: 74
+  status: survived
+  tests_run: 2
+  time: 0.0009531974792480469
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 52
+    operator: CRP
+  number: 75
+  status: survived
+  tests_run: 2
+  time: 0.000997304916381836
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 52
+    operator: CRP
+  number: 76
+  status: survived
+  tests_run: 2
+  time: 0.0009527206420898438
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 52
+    operator: CRP
+  number: 77
+  status: survived
+  tests_run: 2
+  time: 0.0009465217590332031
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 57
+    operator: CRP
+  number: 78
+  status: survived
+  tests_run: 2
+  time: 0.0009582042694091797
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 58
+    operator: CRP
+  number: 79
+  status: survived
+  tests_run: 2
+  time: 0.00095367431640625
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 58
+    operator: CRP
+  number: 80
+  status: survived
+  tests_run: 2
+  time: 0.0009970664978027344
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 58
+    operator: CRP
+  number: 81
+  status: survived
+  tests_run: 2
+  time: 0.0009520053863525391
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 58
+    operator: CRP
+  number: 82
+  status: survived
+  tests_run: 2
+  time: 0.0009884834289550781
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 59
+    operator: CRP
+  number: 83
+  status: survived
+  tests_run: 2
+  time: 0.003017902374267578
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 60
+    operator: CRP
+  number: 84
+  status: survived
+  tests_run: 2
+  time: 0.0010325908660888672
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 60
+    operator: CRP
+  number: 85
+  status: survived
+  tests_run: 2
+  time: 0.00199127197265625
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 60
+    operator: CRP
+  number: 86
+  status: survived
+  tests_run: 2
+  time: 0.001998424530029297
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 60
+    operator: CRP
+  number: 87
+  status: survived
+  tests_run: 2
+  time: 0.0019948482513427734
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 62
+    operator: CRP
+  number: 88
+  status: survived
+  tests_run: 2
+  time: 0.0020041465759277344
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 62
+    operator: CRP
+  number: 89
+  status: survived
+  tests_run: 2
+  time: 0.0009996891021728516
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 73
+    operator: CRP
+  number: 90
+  status: survived
+  tests_run: 2
+  time: 0.0009510517120361328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 73
+    operator: CRP
+  number: 91
+  status: survived
+  tests_run: 2
+  time: 0.000949859619140625
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 75
+    operator: CRP
+  number: 92
+  status: survived
+  tests_run: 2
+  time: 0.0009453296661376953
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 75
+    operator: CRP
+  number: 93
+  status: survived
+  tests_run: 2
+  time: 0.0009927749633789062
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 85
+    operator: CRP
+  number: 94
+  status: survived
+  tests_run: 2
+  time: 0.001993894577026367
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 85
+    operator: CRP
+  number: 95
+  status: survived
+  tests_run: 2
+  time: 0.001956462860107422
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 86
+    operator: CRP
+  number: 96
+  status: survived
+  tests_run: 2
+  time: 0.0009508132934570312
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 86
+    operator: CRP
+  number: 97
+  status: survived
+  tests_run: 2
+  time: 0.0009500980377197266
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 86
+    operator: CRP
+  number: 98
+  status: survived
+  tests_run: 2
+  time: 0.0020225048065185547
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 86
+    operator: CRP
+  number: 99
+  status: survived
+  tests_run: 2
+  time: 0.0010004043579101562
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 86
+    operator: CRP
+  number: 100
+  status: survived
+  tests_run: 2
+  time: 0.0009479522705078125
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 87
+    operator: CRP
+  number: 101
+  status: survived
+  tests_run: 2
+  time: 0.00202178955078125
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 87
+    operator: CRP
+  number: 102
+  status: survived
+  tests_run: 2
+  time: 0.0019497871398925781
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 87
+    operator: CRP
+  number: 103
+  status: survived
+  tests_run: 2
+  time: 0.0019483566284179688
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 87
+    operator: CRP
+  number: 104
+  status: survived
+  tests_run: 2
+  time: 0.0009529590606689453
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 87
+    operator: CRP
+  number: 105
+  status: survived
+  tests_run: 2
+  time: 0.0010344982147216797
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 90
+    operator: CRP
+  number: 106
+  status: survived
+  tests_run: 2
+  time: 0.0009517669677734375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 90
+    operator: CRP
+  number: 107
+  status: survived
+  tests_run: 2
+  time: 0.0009520053863525391
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 94
+    operator: CRP
+  number: 108
+  status: survived
+  tests_run: 2
+  time: 0.0009529590606689453
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 94
+    operator: CRP
+  number: 109
+  status: survived
+  tests_run: 2
+  time: 0.001949310302734375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 94
+    operator: CRP
+  number: 110
+  status: survived
+  tests_run: 2
+  time: 0.0009520053863525391
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 97
+    operator: CRP
+  number: 111
+  status: survived
+  tests_run: 2
+  time: 0.0019466876983642578
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 97
+    operator: CRP
+  number: 112
+  status: survived
+  tests_run: 2
+  time: 0.0009534358978271484
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 98
+    operator: CRP
+  number: 113
+  status: survived
+  tests_run: 2
+  time: 0.0009567737579345703
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 98
+    operator: CRP
+  number: 114
+  status: survived
+  tests_run: 2
+  time: 0.0009510517120361328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 99
+    operator: CRP
+  number: 115
+  status: survived
+  tests_run: 2
+  time: 0.0009531974792480469
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 99
+    operator: CRP
+  number: 116
+  status: survived
+  tests_run: 2
+  time: 0.000949859619140625
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 100
+    operator: CRP
+  number: 117
+  status: survived
+  tests_run: 2
+  time: 0.0009894371032714844
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 100
+    operator: CRP
+  number: 118
+  status: survived
+  tests_run: 2
+  time: 0.0010335445404052734
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 101
+    operator: CRP
+  number: 119
+  status: survived
+  tests_run: 2
+  time: 0.0009510517120361328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 101
+    operator: CRP
+  number: 120
+  status: survived
+  tests_run: 2
+  time: 0.0009491443634033203
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 102
+    operator: CRP
+  number: 121
+  status: survived
+  tests_run: 2
+  time: 0.000995635986328125
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 102
+    operator: CRP
+  number: 122
+  status: survived
+  tests_run: 2
+  time: 0.0015180110931396484
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 103
+    operator: CRP
+  number: 123
+  status: survived
+  tests_run: 2
+  time: 0.0020012855529785156
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 103
+    operator: CRP
+  number: 124
+  status: survived
+  tests_run: 2
+  time: 0.0009496212005615234
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 104
+    operator: CRP
+  number: 125
+  status: survived
+  tests_run: 2
+  time: 0.0009946823120117188
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 104
+    operator: CRP
+  number: 126
+  status: survived
+  tests_run: 2
+  time: 0.0019981861114501953
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 106
+    operator: CRP
+  number: 127
+  status: survived
+  tests_run: 2
+  time: 0.0017070770263671875
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 106
+    operator: CRP
+  number: 128
+  status: survived
+  tests_run: 2
+  time: 0.0010018348693847656
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 108
+    operator: CRP
+  number: 129
+  status: survived
+  tests_run: 2
+  time: 0.0009961128234863281
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 112
+    operator: CRP
+  number: 130
+  status: survived
+  tests_run: 2
+  time: 0.0009968280792236328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 112
+    operator: CRP
+  number: 131
+  status: survived
+  tests_run: 2
+  time: 0.0019969940185546875
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 115
+    operator: CRP
+  number: 132
+  status: survived
+  tests_run: 2
+  time: 0.0009980201721191406
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 115
+    operator: CRP
+  number: 133
+  status: survived
+  tests_run: 2
+  time: 0.0019876956939697266
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 115
+    operator: CRP
+  number: 134
+  status: survived
+  tests_run: 2
+  time: 0.002269268035888672
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 116
+    operator: CRP
+  number: 135
+  status: survived
+  tests_run: 2
+  time: 0.0009965896606445312
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 116
+    operator: CRP
+  number: 136
+  status: survived
+  tests_run: 2
+  time: 0.001150369644165039
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 116
+    operator: CRP
+  number: 137
+  status: survived
+  tests_run: 2
+  time: 0.001950979232788086
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 119
+    operator: CRP
+  number: 138
+  status: survived
+  tests_run: 2
+  time: 0.0010004043579101562
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 119
+    operator: CRP
+  number: 139
+  status: survived
+  tests_run: 2
+  time: 0.001995563507080078
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 119
+    operator: CRP
+  number: 140
+  status: survived
+  tests_run: 2
+  time: 0.0019965171813964844
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 119
+    operator: CRP
+  number: 141
+  status: survived
+  tests_run: 2
+  time: 0.001993894577026367
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 119
+    operator: CRP
+  number: 142
+  status: survived
+  tests_run: 2
+  time: 0.0019941329956054688
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 119
+    operator: CRP
+  number: 143
+  status: survived
+  tests_run: 2
+  time: 0.0040318965911865234
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 122
+    operator: CRP
+  number: 144
+  status: survived
+  tests_run: 2
+  time: 0.001995563507080078
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 122
+    operator: CRP
+  number: 145
+  status: survived
+  tests_run: 2
+  time: 0.0010306835174560547
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 122
+    operator: CRP
+  number: 146
+  status: survived
+  tests_run: 2
+  time: 0.0009992122650146484
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 124
+    operator: CRP
+  number: 147
+  status: survived
+  tests_run: 2
+  time: 0.0009913444519042969
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 129
+    operator: CRP
+  number: 148
+  status: survived
+  tests_run: 2
+  time: 0.0019941329956054688
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 129
+    operator: CRP
+  number: 149
+  status: survived
+  tests_run: 2
+  time: 0.0010020732879638672
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 131
+    operator: CRP
+  number: 150
+  status: survived
+  tests_run: 2
+  time: 0.0009503364562988281
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 133
+    operator: CRP
+  number: 151
+  status: survived
+  tests_run: 2
+  time: 0.0009906291961669922
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 139
+    operator: CRP
+  number: 152
+  status: survived
+  tests_run: 2
+  time: 0.0010380744934082031
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 139
+    operator: CRP
+  number: 153
+  status: survived
+  tests_run: 2
+  time: 0.0009508132934570312
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 139
+    operator: CRP
+  number: 154
+  status: survived
+  tests_run: 2
+  time: 0.0009512901306152344
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 139
+    operator: CRP
+  number: 155
+  status: survived
+  tests_run: 2
+  time: 0.000949859619140625
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 139
+    operator: CRP
+  number: 156
+  status: survived
+  tests_run: 2
+  time: 0.001994609832763672
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 139
+    operator: CRP
+  number: 157
+  status: survived
+  tests_run: 2
+  time: 0.0009961128234863281
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 139
+    operator: CRP
+  number: 158
+  status: survived
+  tests_run: 2
+  time: 0.000949859619140625
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 139
+    operator: CRP
+  number: 159
+  status: survived
+  tests_run: 2
+  time: 0.0009975433349609375
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 59, in test_print_code\n    output\nAssertionError: '----[74 chars]--\\\
+    n- 1: x = x + 1\\n+ 1: x = x - 1\\n----------[66 chars]----' != '----[74 chars]--\\\
+    n--- \\n- 1: x = x + 1\\n+ 1: x = x - 1\\n----[72 chars]----'\n  --------------------------------------------------------------------------------\n\
+    + --- \n  - 1: x = x + 1\n  + 1: x = x - 1\n  --------------------------------------------------------------------------------\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 152
+    operator: CRP
+  number: 160
+  status: killed
+  tests_run: 2
+  time: 0.0009968280792236328
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 59, in test_print_code\n    output\nAssertionError: '----[73 chars]---\\\
+    n- 1: x = x + 1\\n+ 1: x = x - 1\\n---------[67 chars]----' != '----[73 chars]---\\\
+    n\\n---------------------------------------[37 chars]----'\n  --------------------------------------------------------------------------------\n\
+    + \n- - 1: x = x + 1\n- + 1: x = x - 1\n  --------------------------------------------------------------------------------\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 152
+    operator: CRP
+  number: 161
+  status: killed
+  tests_run: 2
+  time: 0.0009887218475341797
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 59, in test_print_code\n    output\nAssertionError: '----[73 chars]---\\\
+    n- 1: x = x + 1\\n+ 1: x = x - 1\\n---------[67 chars]----' != '----[73 chars]---\\\
+    n+++ \\n- 1: x = x + 1\\n+ 1: x = x - 1\\n---[73 chars]----'\n  --------------------------------------------------------------------------------\n\
+    + +++ \n  - 1: x = x + 1\n  + 1: x = x - 1\n  --------------------------------------------------------------------------------\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 152
+    operator: CRP
+  number: 162
+  status: killed
+  tests_run: 2
+  time: 0.0009515285491943359
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 59, in test_print_code\n    output\nAssertionError: '----[73 chars]---\\\
+    n- 1: x = x + 1\\n+ 1: x = x - 1\\n---------[67 chars]----' != '----[73 chars]---\\\
+    n\\n---------------------------------------[37 chars]----'\n  --------------------------------------------------------------------------------\n\
+    + \n- - 1: x = x + 1\n- + 1: x = x - 1\n  --------------------------------------------------------------------------------\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 152
+    operator: CRP
+  number: 163
+  status: killed
+  tests_run: 2
+  time: 0.0009970664978027344
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 59, in test_print_code\n    output\nAssertionError: '----[73 chars]---\\\
+    n- 1: x = x + 1\\n+ 1: x = x - 1\\n---------[67 chars]----' != '----[73 chars]---\\\
+    n@@ -1 +1 @@\\n- 1: x = x + 1\\n+ 1: x = x -[80 chars]----'\n  --------------------------------------------------------------------------------\n\
+    + @@ -1 +1 @@\n  - 1: x = x + 1\n  + 1: x = x - 1\n  --------------------------------------------------------------------------------\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 152
+    operator: CRP
+  number: 164
+  status: killed
+  tests_run: 2
+  time: 0.0019867420196533203
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 59, in test_print_code\n    output\nAssertionError: '----[73 chars]---\\\
+    n- 1: x = x + 1\\n+ 1: x = x - 1\\n---------[67 chars]----' != '----[73 chars]---\\\
+    n\\n---------------------------------------[37 chars]----'\n  --------------------------------------------------------------------------------\n\
+    + \n- - 1: x = x + 1\n- + 1: x = x - 1\n  --------------------------------------------------------------------------------\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 152
+    operator: CRP
+  number: 165
+  status: killed
+  tests_run: 2
+  time: 0.001995086669921875
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 153
+    operator: CRP
+  number: 166
+  status: survived
+  tests_run: 2
+  time: 0.000949859619140625
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 153
+    operator: CRP
+  number: 167
+  status: survived
+  tests_run: 2
+  time: 0.0010170936584472656
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 153
+    operator: CRP
+  number: 168
+  status: survived
+  tests_run: 2
+  time: 0.001988649368286133
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 153
+    operator: CRP
+  number: 169
+  status: survived
+  tests_run: 2
+  time: 0.0009975433349609375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 154
+    operator: CRP
+  number: 170
+  status: survived
+  tests_run: 2
+  time: 0.0009527206420898438
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 154
+    operator: CRP
+  number: 171
+  status: survived
+  tests_run: 2
+  time: 0.0020074844360351562
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 154
+    operator: CRP
+  number: 172
+  status: survived
+  tests_run: 2
+  time: 0.0020008087158203125
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 154
+    operator: CRP
+  number: 173
+  status: survived
+  tests_run: 2
+  time: 0.000997781753540039
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 59, in test_print_code\n    output\nAssertionError: '-----------------------------------------[149\
+    \ chars]----' != 'mutpy- 1: x = x + 1\\n+ 1: x = x - 1\\n----[72 chars]----'\n\
+    - --------------------------------------------------------------------------------\n\
+    - - 1: x = x + 1\n+ mutpy- 1: x = x + 1\n? +++++\n  + 1: x = x - 1\n  --------------------------------------------------------------------------------\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: CRP
+  number: 174
+  status: killed
+  tests_run: 2
+  time: 0.0009510517120361328
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 59, in test_print_code\n    output\nAssertionError: '------------------------------------------[148\
+    \ chars]----' != '- 1: x = x + 1\\n+ 1: x = x - 1\\n----------[66 chars]----'\n\
+    - --------------------------------------------------------------------------------\n\
+    \  - 1: x = x + 1\n  + 1: x = x - 1\n  --------------------------------------------------------------------------------\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: CRP
+  number: 175
+  status: killed
+  tests_run: 2
+  time: 0.0029916763305664062
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 59, in test_print_code\n    output\nAssertionError: '-----------------------------------------[149\
+    \ chars]----' != 'mutpymutpymutpymutpymutpymutpymutpymutpym[469 chars]----'\n\
+    - --------------------------------------------------------------------------------\n\
+    + mutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpy\n\
+    \  - 1: x = x + 1\n  + 1: x = x - 1\n  --------------------------------------------------------------------------------\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: CRP
+  number: 176
+  status: killed
+  tests_run: 2
+  time: 0.001043081283569336
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 59, in test_print_code\n    output\nAssertionError: '------------------------------------------[148\
+    \ chars]----' != '- 1: x = x + 1\\n+ 1: x = x - 1\\n----------[66 chars]----'\n\
+    - --------------------------------------------------------------------------------\n\
+    \  - 1: x = x + 1\n  + 1: x = x - 1\n  --------------------------------------------------------------------------------\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: CRP
+  number: 177
+  status: killed
+  tests_run: 2
+  time: 0.0019872188568115234
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 59, in test_print_code\n    output\nAssertionError: '----[71 chars]-----\\\
+    n- 1: x = x + 1\\n+ 1: x = x - 1\\n-------[69 chars]----' != '----[71 chars]------\\\
+    n- 1: x = x + 1\\n+ 1: x = x - 1\\n------[70 chars]----'\n- --------------------------------------------------------------------------------\n\
+    + ---------------------------------------------------------------------------------\n\
+    ? +\n  - 1: x = x + 1\n  + 1: x = x - 1\n  --------------------------------------------------------------------------------\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: CRP
+  number: 178
+  status: killed
+  tests_run: 2
+  time: 0.0039424896240234375
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 59, in test_print_code\n    output\nAssertionError: '----[87 chars]x +\
+    \ 1\\n+ 1: x = x - 1\\n-----------------------[53 chars]----' != '----[87 chars]x\
+    \ + 1mutpy+ 1: x = x - 1\\n--------------------[56 chars]----'\n  --------------------------------------------------------------------------------\n\
+    + - 1: x = x + 1mutpy+ 1: x = x - 1\n- - 1: x = x + 1\n- + 1: x = x - 1\n  --------------------------------------------------------------------------------\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: CRP
+  number: 179
+  status: killed
+  tests_run: 2
+  time: 0.003986835479736328
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 59, in test_print_code\n    output\nAssertionError: '----[87 chars]x +\
+    \ 1\\n+ 1: x = x - 1\\n-----------------------[53 chars]----' != '----[87 chars]x\
+    \ + 1+ 1: x = x - 1\\n-------------------------[51 chars]----'\n  --------------------------------------------------------------------------------\n\
+    + - 1: x = x + 1+ 1: x = x - 1\n- - 1: x = x + 1\n- + 1: x = x - 1\n  --------------------------------------------------------------------------------\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: CRP
+  number: 180
+  status: killed
+  tests_run: 2
+  time: 0.001996278762817383
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 59, in test_print_code\n    output\nAssertionError: '----[103 chars]x -\
+    \ 1\\n---------------------------------------[37 chars]----' != '----[103 chars]x\
+    \ - 1mutpy'\n  --------------------------------------------------------------------------------\n\
+    \  - 1: x = x + 1\n- + 1: x = x - 1\n?               ^\n+ + 1: x = x - 1mutpy?\
+    \               ^^^^^\n- --------------------------------------------------------------------------------\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: CRP
+  number: 181
+  status: killed
+  tests_run: 2
+  time: 0.0019958019256591797
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 59, in test_print_code\n    output\nAssertionError: '----[103 chars]x -\
+    \ 1\\n---------------------------------------[37 chars]----' != '----[103 chars]x\
+    \ - 1'\n  --------------------------------------------------------------------------------\n\
+    \  - 1: x = x + 1\n- + 1: x = x - 1\n?               -\n+ + 1: x = x - 1- --------------------------------------------------------------------------------\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: CRP
+  number: 182
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 59, in test_print_code\n    output\nAssertionError: '----[105 chars]- 1\\\
+    n-----------------------------------------[35 chars]----' != '----[105 chars]-\
+    \ 1\\nmutpymutpymutpymutpymutpymutpymutpymutpym[355 chars]utpy'\n  --------------------------------------------------------------------------------\n\
+    \  - 1: x = x + 1\n  + 1: x = x - 1\n- --------------------------------------------------------------------------------+\
+    \ mutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpymutpy\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: CRP
+  number: 183
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 59, in test_print_code\n    output\nAssertionError: '----[103 chars]x -\
+    \ 1\\n---------------------------------------[37 chars]----' != '----[103 chars]x\
+    \ - 1'\n  --------------------------------------------------------------------------------\n\
+    \  - 1: x = x + 1\n- + 1: x = x - 1\n?               -\n+ + 1: x = x - 1- --------------------------------------------------------------------------------\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: CRP
+  number: 184
+  status: killed
+  tests_run: 2
+  time: 0.0
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 59, in test_print_code\n    output\nAssertionError: '----[129 chars]-------------------------------------------------------------'\
+    \ != '----[129 chars]--------------------------------------------------------------'\n\
+    \  --------------------------------------------------------------------------------\n\
+    \  - 1: x = x + 1\n  + 1: x = x - 1\n- --------------------------------------------------------------------------------+\
+    \ ---------------------------------------------------------------------------------?\
+    \                                                                            \
+    \     +\n\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 155
+    operator: CRP
+  number: 185
+  status: killed
+  tests_run: 2
+  time: 0.0060236454010009766
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 159
+    operator: CRP
+  number: 186
+  status: survived
+  tests_run: 2
+  time: 0.00179290771484375
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 54, in test_print_code\n    text_view.print_code(mutant, original)\n  File\
+    \ \"views\", line 148, in print_code\n  File \"views\", line 151, in _print_diff\n\
+    \  File \"views\", line 159, in _create_diff\nValueError: empty separator\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 159
+    operator: CRP
+  number: 187
+  status: killed
+  tests_run: 2
+  time: 0.003985881805419922
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 159
+    operator: CRP
+  number: 188
+  status: survived
+  tests_run: 2
+  time: 0.0019898414611816406
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 54, in test_print_code\n    text_view.print_code(mutant, original)\n  File\
+    \ \"views\", line 148, in print_code\n  File \"views\", line 151, in _print_diff\n\
+    \  File \"views\", line 159, in _create_diff\nValueError: empty separator\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 159
+    operator: CRP
+  number: 189
+  status: killed
+  tests_run: 2
+  time: 0.0029926300048828125
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 159
+    operator: CRP
+  number: 190
+  status: survived
+  tests_run: 2
+  time: 0.0019953250885009766
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 159
+    operator: CRP
+  number: 191
+  status: survived
+  tests_run: 2
+  time: 0.0009524822235107422
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 162
+    operator: CRP
+  number: 192
+  status: survived
+  tests_run: 2
+  time: 0.0019466876983642578
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 162
+    operator: CRP
+  number: 193
+  status: survived
+  tests_run: 2
+  time: 0.0009512901306152344
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 162
+    operator: CRP
+  number: 194
+  status: survived
+  tests_run: 2
+  time: 0.0019953250885009766
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 162
+    operator: CRP
+  number: 195
+  status: survived
+  tests_run: 2
+  time: 0.000995635986328125
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 162
+    operator: CRP
+  number: 196
+  status: survived
+  tests_run: 2
+  time: 0.000995635986328125
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 162
+    operator: CRP
+  number: 197
+  status: survived
+  tests_run: 2
+  time: 0.0009629726409912109
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 162
+    operator: CRP
+  number: 198
+  status: survived
+  tests_run: 2
+  time: 0.0019948482513427734
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 162
+    operator: CRP
+  number: 199
+  status: survived
+  tests_run: 2
+  time: 0.0009653568267822266
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 166
+    operator: CRP
+  number: 200
+  status: survived
+  tests_run: 2
+  time: 0.0009970664978027344
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 166
+    operator: CRP
+  number: 201
+  status: survived
+  tests_run: 2
+  time: 0.0009510517120361328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 166
+    operator: CRP
+  number: 202
+  status: survived
+  tests_run: 2
+  time: 0.0009508132934570312
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 166
+    operator: CRP
+  number: 203
+  status: survived
+  tests_run: 2
+  time: 0.0009772777557373047
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 166
+    operator: CRP
+  number: 204
+  status: survived
+  tests_run: 2
+  time: 0.00102996826171875
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 166
+    operator: CRP
+  number: 205
+  status: survived
+  tests_run: 2
+  time: 0.0009980201721191406
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 169
+    operator: CRP
+  number: 206
+  status: survived
+  tests_run: 2
+  time: 0.0009500980377197266
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 169
+    operator: CRP
+  number: 207
+  status: survived
+  tests_run: 2
+  time: 0.000997781753540039
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 169
+    operator: CRP
+  number: 208
+  status: survived
+  tests_run: 2
+  time: 0.0010101795196533203
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 169
+    operator: CRP
+  number: 209
+  status: survived
+  tests_run: 2
+  time: 0.0010344982147216797
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 169
+    operator: CRP
+  number: 210
+  status: survived
+  tests_run: 2
+  time: 0.0009980201721191406
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 169
+    operator: CRP
+  number: 211
+  status: survived
+  tests_run: 2
+  time: 0.0009968280792236328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 172
+    operator: CRP
+  number: 212
+  status: survived
+  tests_run: 2
+  time: 0.0019478797912597656
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 172
+    operator: CRP
+  number: 213
+  status: survived
+  tests_run: 2
+  time: 0.0009920597076416016
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 172
+    operator: CRP
+  number: 214
+  status: survived
+  tests_run: 2
+  time: 0.000997304916381836
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 172
+    operator: CRP
+  number: 215
+  status: survived
+  tests_run: 2
+  time: 0.0019757747650146484
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 172
+    operator: CRP
+  number: 216
+  status: survived
+  tests_run: 2
+  time: 0.001043081283569336
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 172
+    operator: CRP
+  number: 217
+  status: survived
+  tests_run: 2
+  time: 0.000997304916381836
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 178
+    operator: CRP
+  number: 218
+  status: survived
+  tests_run: 2
+  time: 0.0019838809967041016
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 178
+    operator: CRP
+  number: 219
+  status: survived
+  tests_run: 2
+  time: 0.0029816627502441406
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 178
+    operator: CRP
+  number: 220
+  status: survived
+  tests_run: 2
+  time: 0.0009500980377197266
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 184
+    operator: CRP
+  number: 221
+  status: survived
+  tests_run: 2
+  time: 0.0009829998016357422
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 184
+    operator: CRP
+  number: 222
+  status: survived
+  tests_run: 2
+  time: 0.0019693374633789062
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 200
+    operator: CRP
+  number: 223
+  status: survived
+  tests_run: 2
+  time: 0.0020287036895751953
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 200
+    operator: CRP
+  number: 224
+  status: survived
+  tests_run: 2
+  time: 0.0010004043579101562
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 200
+    operator: CRP
+  number: 225
+  status: survived
+  tests_run: 2
+  time: 0.001004934310913086
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 200
+    operator: CRP
+  number: 226
+  status: survived
+  tests_run: 2
+  time: 0.002949237823486328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 202
+    operator: CRP
+  number: 227
+  status: survived
+  tests_run: 2
+  time: 0.0009922981262207031
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 202
+    operator: CRP
+  number: 228
+  status: survived
+  tests_run: 2
+  time: 0.0009510517120361328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 203
+    operator: CRP
+  number: 229
+  status: survived
+  tests_run: 2
+  time: 0.0009913444519042969
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 203
+    operator: CRP
+  number: 230
+  status: survived
+  tests_run: 2
+  time: 0.001992940902709961
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 204
+    operator: CRP
+  number: 231
+  status: survived
+  tests_run: 2
+  time: 0.0009510517120361328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 204
+    operator: CRP
+  number: 232
+  status: survived
+  tests_run: 2
+  time: 0.000988006591796875
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 209
+    operator: CRP
+  number: 233
+  status: survived
+  tests_run: 2
+  time: 0.001986265182495117
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 209
+    operator: CRP
+  number: 234
+  status: survived
+  tests_run: 2
+  time: 0.0009794235229492188
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 217
+    operator: CRP
+  number: 235
+  status: survived
+  tests_run: 2
+  time: 0.0009963512420654297
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 217
+    operator: CRP
+  number: 236
+  status: survived
+  tests_run: 2
+  time: 0.0009980201721191406
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 220
+    operator: CRP
+  number: 237
+  status: survived
+  tests_run: 2
+  time: 0.0009510517120361328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 220
+    operator: CRP
+  number: 238
+  status: survived
+  tests_run: 2
+  time: 0.0010385513305664062
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 223
+    operator: CRP
+  number: 239
+  status: survived
+  tests_run: 2
+  time: 0.0009899139404296875
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 223
+    operator: CRP
+  number: 240
+  status: survived
+  tests_run: 2
+  time: 0.0009906291961669922
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 226
+    operator: CRP
+  number: 241
+  status: survived
+  tests_run: 2
+  time: 0.0009865760803222656
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 226
+    operator: CRP
+  number: 242
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 227
+    operator: CRP
+  number: 243
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 227
+    operator: CRP
+  number: 244
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 228
+    operator: CRP
+  number: 245
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 228
+    operator: CRP
+  number: 246
+  status: survived
+  tests_run: 2
+  time: 0.015621423721313477
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 229
+    operator: CRP
+  number: 247
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 229
+    operator: CRP
+  number: 248
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 230
+    operator: CRP
+  number: 249
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 230
+    operator: CRP
+  number: 250
+  status: survived
+  tests_run: 2
+  time: 0.015622138977050781
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 241
+    operator: CRP
+  number: 251
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 241
+    operator: CRP
+  number: 252
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 243
+    operator: CRP
+  number: 253
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 243
+    operator: CRP
+  number: 254
+  status: survived
+  tests_run: 2
+  time: 0.015616655349731445
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 244
+    operator: CRP
+  number: 255
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 244
+    operator: CRP
+  number: 256
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 245
+    operator: CRP
+  number: 257
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 245
+    operator: CRP
+  number: 258
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 246
+    operator: CRP
+  number: 259
+  status: survived
+  tests_run: 2
+  time: 0.0
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 246
+    operator: CRP
+  number: 260
+  status: survived
+  tests_run: 2
+  time: 0.0009961128234863281
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 247
+    operator: CRP
+  number: 261
+  status: survived
+  tests_run: 2
+  time: 0.0009937286376953125
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 247
+    operator: CRP
+  number: 262
+  status: survived
+  tests_run: 2
+  time: 0.0009579658508300781
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 248
+    operator: CRP
+  number: 263
+  status: survived
+  tests_run: 2
+  time: 0.0009949207305908203
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 248
+    operator: CRP
+  number: 264
+  status: survived
+  tests_run: 2
+  time: 0.001956462860107422
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 249
+    operator: CRP
+  number: 265
+  status: survived
+  tests_run: 2
+  time: 0.000985860824584961
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 249
+    operator: CRP
+  number: 266
+  status: survived
+  tests_run: 2
+  time: 0.0019953250885009766
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 250
+    operator: CRP
+  number: 267
+  status: survived
+  tests_run: 2
+  time: 0.000990152359008789
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 250
+    operator: CRP
+  number: 268
+  status: survived
+  tests_run: 2
+  time: 0.000989675521850586
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 244
+    operator: CRP
+  number: 269
+  status: survived
+  tests_run: 2
+  time: 0.001994609832763672
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 244
+    operator: CRP
+  number: 270
+  status: survived
+  tests_run: 2
+  time: 0.0009975433349609375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 244
+    operator: CRP
+  number: 271
+  status: survived
+  tests_run: 2
+  time: 0.000985860824584961
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 244
+    operator: CRP
+  number: 272
+  status: survived
+  tests_run: 2
+  time: 0.0009942054748535156
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 244
+    operator: CRP
+  number: 273
+  status: survived
+  tests_run: 2
+  time: 0.0010361671447753906
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 244
+    operator: CRP
+  number: 274
+  status: survived
+  tests_run: 2
+  time: 0.001001596450805664
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 251
+    operator: CRP
+  number: 275
+  status: survived
+  tests_run: 2
+  time: 0.0019571781158447266
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 251
+    operator: CRP
+  number: 276
+  status: survived
+  tests_run: 2
+  time: 0.0029850006103515625
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 252
+    operator: CRP
+  number: 277
+  status: survived
+  tests_run: 2
+  time: 0.0009510517120361328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 252
+    operator: CRP
+  number: 278
+  status: survived
+  tests_run: 2
+  time: 0.0009975433349609375
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 263
+    operator: CRP
+  number: 279
+  status: survived
+  tests_run: 2
+  time: 0.0009970664978027344
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 263
+    operator: CRP
+  number: 280
+  status: survived
+  tests_run: 2
+  time: 0.0020363330841064453
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 264
+    operator: CRP
+  number: 281
+  status: survived
+  tests_run: 2
+  time: 0.0009515285491943359
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 264
+    operator: CRP
+  number: 282
+  status: survived
+  tests_run: 2
+  time: 0.001001119613647461
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 269
+    operator: CRP
+  number: 283
+  status: survived
+  tests_run: 2
+  time: 0.0019698143005371094
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 269
+    operator: CRP
+  number: 284
+  status: survived
+  tests_run: 2
+  time: 0.0019936561584472656
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 273
+    operator: CRP
+  number: 285
+  status: survived
+  tests_run: 2
+  time: 0.0019941329956054688
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 273
+    operator: CRP
+  number: 286
+  status: survived
+  tests_run: 2
+  time: 0.002007007598876953
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 275
+    operator: CRP
+  number: 287
+  status: survived
+  tests_run: 2
+  time: 0.005983829498291016
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 275
+    operator: CRP
+  number: 288
+  status: survived
+  tests_run: 2
+  time: 0.0019958019256591797
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 275
+    operator: CRP
+  number: 289
+  status: survived
+  tests_run: 2
+  time: 0.0009496212005615234
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 275
+    operator: CRP
+  number: 290
+  status: survived
+  tests_run: 2
+  time: 0.0019526481628417969
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 279
+    operator: CRP
+  number: 291
+  status: survived
+  tests_run: 2
+  time: 0.0009577274322509766
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 279
+    operator: CRP
+  number: 292
+  status: survived
+  tests_run: 2
+  time: 0.000997781753540039
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 279
+    operator: CRP
+  number: 293
+  status: survived
+  tests_run: 2
+  time: 0.0009589195251464844
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 279
+    operator: CRP
+  number: 294
+  status: survived
+  tests_run: 2
+  time: 0.0009968280792236328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 279
+    operator: CRP
+  number: 295
+  status: survived
+  tests_run: 2
+  time: 0.0009951591491699219
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 279
+    operator: CRP
+  number: 296
+  status: survived
+  tests_run: 2
+  time: 0.001995086669921875
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 280
+    operator: CRP
+  number: 297
+  status: survived
+  tests_run: 2
+  time: 0.000997781753540039
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 280
+    operator: CRP
+  number: 298
+  status: survived
+  tests_run: 2
+  time: 0.0009989738464355469
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 284
+    operator: CRP
+  number: 299
+  status: survived
+  tests_run: 2
+  time: 0.0008969306945800781
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 284
+    operator: CRP
+  number: 300
+  status: survived
+  tests_run: 2
+  time: 0.0009510517120361328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 286
+    operator: CRP
+  number: 301
+  status: survived
+  tests_run: 2
+  time: 0.0009906291961669922
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 286
+    operator: CRP
+  number: 302
+  status: survived
+  tests_run: 2
+  time: 0.0019943714141845703
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 287
+    operator: CRP
+  number: 303
+  status: survived
+  tests_run: 2
+  time: 0.0019571781158447266
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 287
+    operator: CRP
+  number: 304
+  status: survived
+  tests_run: 2
+  time: 0.0009508132934570312
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 288
+    operator: CRP
+  number: 305
+  status: survived
+  tests_run: 2
+  time: 0.0009899139404296875
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 288
+    operator: CRP
+  number: 306
+  status: survived
+  tests_run: 2
+  time: 0.0009431838989257812
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 289
+    operator: CRP
+  number: 307
+  status: survived
+  tests_run: 2
+  time: 0.000995635986328125
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 289
+    operator: CRP
+  number: 308
+  status: survived
+  tests_run: 2
+  time: 0.0019488334655761719
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 290
+    operator: CRP
+  number: 309
+  status: survived
+  tests_run: 2
+  time: 0.0009868144989013672
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 290
+    operator: CRP
+  number: 310
+  status: survived
+  tests_run: 2
+  time: 0.000997781753540039
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 291
+    operator: CRP
+  number: 311
+  status: survived
+  tests_run: 2
+  time: 0.0009572505950927734
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 291
+    operator: CRP
+  number: 312
+  status: survived
+  tests_run: 2
+  time: 0.0009953975677490234
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 292
+    operator: CRP
+  number: 313
+  status: survived
+  tests_run: 2
+  time: 0.0009510517120361328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 292
+    operator: CRP
+  number: 314
+  status: survived
+  tests_run: 2
+  time: 0.0009996891021728516
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 295
+    operator: CRP
+  number: 315
+  status: survived
+  tests_run: 2
+  time: 0.0019559860229492188
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 295
+    operator: CRP
+  number: 316
+  status: survived
+  tests_run: 2
+  time: 0.0009510517120361328
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 296
+    operator: CRP
+  number: 317
+  status: survived
+  tests_run: 2
+  time: 0.0019452571868896484
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 296
+    operator: CRP
+  number: 318
+  status: survived
+  tests_run: 2
+  time: 0.0009903907775878906
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 70
+    operator: DDL
+  number: 319
+  status: survived
+  tests_run: 2
+  time: 0.0009527206420898438
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 157
+    operator: DDL
+  number: 320
+  status: incompetent
+  tests_run: 1
+  time: 0.0009481906890869141
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 80
+    operator: IOD
+  number: 321
+  status: incompetent
+  tests_run: 1
+  time: 0.0009984970092773438
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 92
+    operator: IOD
+  number: 322
+  status: survived
+  tests_run: 2
+  time: 0.0009584426879882812
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 236
+    operator: IOD
+  number: 323
+  status: survived
+  tests_run: 2
+  time: 0.0009982585906982422
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 259
+    operator: IOD
+  number: 324
+  status: survived
+  tests_run: 2
+  time: 0.0009980201721191406
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 267
+    operator: IOD
+  number: 325
+  status: survived
+  tests_run: 2
+  time: 0.0009965896606445312
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 271
+    operator: IOD
+  number: 326
+  status: survived
+  tests_run: 2
+  time: 0.00029397010803222656
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 80
+    operator: IOP
+  number: 327
+  status: survived
+  tests_run: 2
+  time: 0.000997781753540039
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 92
+    operator: IOP
+  number: 328
+  status: survived
+  tests_run: 2
+  time: 0.001955270767211914
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 236
+    operator: IOP
+  number: 329
+  status: survived
+  tests_run: 2
+  time: 0.0019490718841552734
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 259
+    operator: IOP
+  number: 330
+  status: survived
+  tests_run: 2
+  time: 0.0009984970092773438
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 267
+    operator: IOP
+  number: 331
+  status: survived
+  tests_run: 2
+  time: 0.001995086669921875
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 271
+    operator: IOP
+  number: 332
+  status: survived
+  tests_run: 2
+  time: 0.001957416534423828
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 57
+    operator: ROR
+  number: 333
+  status: survived
+  tests_run: 2
+  time: 0.0010344982147216797
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 59
+    operator: ROR
+  number: 334
+  status: survived
+  tests_run: 2
+  time: 0.0009944438934326172
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 133
+    operator: ROR
+  number: 335
+  status: survived
+  tests_run: 2
+  time: 0.001983642578125
+- exception_traceback: "Traceback (most recent call last):\n  File \"C:\\Users\\steph\\\
+    Desktop\\Thesis\\Feature Scripts\\Working\\src\\tests\\mutpytests\\test_views.py\"\
+    , line 54, in test_print_code\n    text_view.print_code(mutant, original)\n  File\
+    \ \"views\", line 148, in print_code\n  File \"views\", line 153, in _print_diff\n\
+    \  File \"views\", line 153, in <listcomp>\n  File \"views\", line 65, in decorate\n\
+    AttributeError: 'TextView' object has no attribute 'colored_output'\n"
+  killer: test_print_code (test_views.TextViewTest)
+  module: *id001
+  mutations:
+  - lineno: 80
+    operator: SCD
+  number: 336
+  status: killed
+  tests_run: 2
+  time: 0.004027605056762695
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 92
+    operator: SCD
+  number: 337
+  status: survived
+  tests_run: 2
+  time: 0.0019974708557128906
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 236
+    operator: SCD
+  number: 338
+  status: survived
+  tests_run: 2
+  time: 0.0009522438049316406
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 259
+    operator: SCD
+  number: 339
+  status: survived
+  tests_run: 2
+  time: 0.0009508132934570312
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 267
+    operator: SCD
+  number: 340
+  status: survived
+  tests_run: 2
+  time: 0.0009667873382568359
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 271
+    operator: SCD
+  number: 341
+  status: survived
+  tests_run: 2
+  time: 0.0009894371032714844
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 34
+    operator: SIR
+  number: 342
+  status: survived
+  tests_run: 2
+  time: 0.0009503364562988281
+number_of_tests: 2
+targets:
+- src/mutpy/views.py
+tests:
+- name: test_views
+  target: null
+  time: 0.0009982585906982422
+time_stats:
+  create_mutant_module: 0.663205623626709
+  create_target_ast: 0.010993242263793945
+  mutate_module: 2.677727460861206
+  run_tests_with_mutant: 0.7111434936523438
+total_time: 2.687718152999878

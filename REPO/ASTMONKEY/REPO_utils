@@ -1,0 +1,407 @@
+coverage:
+  all_nodes: 0
+  covered_nodes: 0
+mutation_score: 16.666666666666664
+mutations:
+- exception_traceback: null
+  killer: null
+  module: &id001
+  mutations:
+  - lineno: 23
+    operator: AOR
+  number: 1
+  status: survived
+  tests_run: 4
+  time: 0.2919728755950928
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 20
+    operator: COD
+  number: 2
+  status: survived
+  tests_run: 4
+  time: 0.2881002426147461
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 22
+    operator: COD
+  number: 3
+  status: survived
+  tests_run: 4
+  time: 0.2667231559753418
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 43
+    operator: COD
+  number: 4
+  status: survived
+  tests_run: 4
+  time: 0.27741169929504395
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 44
+    operator: COD
+  number: 5
+  status: survived
+  tests_run: 4
+  time: 0.26800084114074707
+- exception_traceback: "self = <test_utils.TestIsDocstring testMethod=test_class_docstring_node>\n\
+    \n    def test_class_docstring_node(self):\n        node = ParentChildNodeTransformer().visit(ast.parse('class\
+    \ X:\\n\\t\"\"\"doc\"\"\"'))\n    \n>       assert is_docstring(node.body[0].body[0].value)\n\
+    E       AssertionError\n\nsrc\\tests\\astmonkeytests\\test_utils.py:26: AssertionError"
+  killer: src/tests/astmonkeytests/test_utils.py::TestIsDocstring::test_class_docstring_node
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: COI
+  number: 6
+  status: killed
+  tests_run: 1
+  time: 0.28118395805358887
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 19
+    operator: COI
+  number: 7
+  status: survived
+  tests_run: 4
+  time: 0.2722930908203125
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 20
+    operator: COI
+  number: 8
+  status: survived
+  tests_run: 4
+  time: 0.2673640251159668
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 22
+    operator: COI
+  number: 9
+  status: survived
+  tests_run: 4
+  time: 0.2655630111694336
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 35
+    operator: COI
+  number: 10
+  status: survived
+  tests_run: 4
+  time: 0.3437063694000244
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 37
+    operator: COI
+  number: 11
+  status: survived
+  tests_run: 4
+  time: 0.27477216720581055
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 43
+    operator: COI
+  number: 12
+  status: survived
+  tests_run: 4
+  time: 0.2811465263366699
+- exception_traceback: "self = <test_utils.TestIsDocstring testMethod=test_class_docstring_node>\n\
+    \n    def test_class_docstring_node(self):\n        node = ParentChildNodeTransformer().visit(ast.parse('class\
+    \ X:\\n\\t\"\"\"doc\"\"\"'))\n    \n>       assert is_docstring(node.body[0].body[0].value)\n\
+    \nsrc\\tests\\astmonkeytests\\test_utils.py:26: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nnode = <_ast.Str object\
+    \ at 0x0000020541648C88>\n\n>   ???\nE   IndexError: list index out of range\n\
+    \nutils:11: IndexError"
+  killer: src/tests/astmonkeytests/test_utils.py::TestIsDocstring::test_class_docstring_node
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: CRP
+  number: 13
+  status: killed
+  tests_run: 1
+  time: 0.2812199592590332
+- exception_traceback: "self = <test_utils.TestIsDocstring testMethod=test_class_docstring_node>\n\
+    \n    def test_class_docstring_node(self):\n        node = ParentChildNodeTransformer().visit(ast.parse('class\
+    \ X:\\n\\t\"\"\"doc\"\"\"'))\n    \n>       assert is_docstring(node.body[0].body[0].value)\n\
+    \nsrc\\tests\\astmonkeytests\\test_utils.py:26: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nnode = <_ast.Str object\
+    \ at 0x00000205416495C8>\n\n>   ???\nE   IndexError: list index out of range\n\
+    \nutils:11: IndexError"
+  killer: src/tests/astmonkeytests/test_utils.py::TestIsDocstring::test_class_docstring_node
+  module: *id001
+  mutations:
+  - lineno: 11
+    operator: CRP
+  number: 14
+  status: killed
+  tests_run: 1
+  time: 0.2811455726623535
+- exception_traceback: "self = <test_utils.TestIsDocstring testMethod=test_class_docstring_node>\n\
+    \n    def test_class_docstring_node(self):\n        node = ParentChildNodeTransformer().visit(ast.parse('class\
+    \ X:\\n\\t\"\"\"doc\"\"\"'))\n    \n>       assert is_docstring(node.body[0].body[0].value)\n\
+    \nsrc\\tests\\astmonkeytests\\test_utils.py:26: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nnode = <_ast.Str object\
+    \ at 0x000002054172D688>\n\n>   ???\nE   IndexError: list index out of range\n\
+    \nutils:12: IndexError"
+  killer: src/tests/astmonkeytests/test_utils.py::TestIsDocstring::test_class_docstring_node
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: CRP
+  number: 15
+  status: killed
+  tests_run: 1
+  time: 0.2770829200744629
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 23
+    operator: CRP
+  number: 16
+  status: survived
+  tests_run: 4
+  time: 0.2725794315338135
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 23
+    operator: CRP
+  number: 17
+  status: survived
+  tests_run: 4
+  time: 0.27340078353881836
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 38
+    operator: CRP
+  number: 18
+  status: survived
+  tests_run: 4
+  time: 0.28974246978759766
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 38
+    operator: CRP
+  number: 19
+  status: survived
+  tests_run: 4
+  time: 0.26674342155456543
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 40
+    operator: CRP
+  number: 20
+  status: survived
+  tests_run: 4
+  time: 0.2811751365661621
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 40
+    operator: CRP
+  number: 21
+  status: survived
+  tests_run: 4
+  time: 0.3073232173919678
+- exception_traceback: "self = <test_utils.TestIsDocstring testMethod=test_non_docstring_node>\n\
+    \n    def test_non_docstring_node(self):\n        node = ParentChildNodeTransformer().visit(ast.parse(''))\n\
+    \    \n>       assert not is_docstring(node)\n\nsrc\\tests\\astmonkeytests\\test_utils.py:11:\
+    \ \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\
+    \ _ _ _\n\nnode = <_ast.Module object at 0x000002054199F888>\n\n>   ???\nE   AttributeError:\
+    \ 'NoneType' object has no attribute 'parent'\n\nutils:6: AttributeError"
+  killer: src/tests/astmonkeytests/test_utils.py::TestIsDocstring::test_non_docstring_node
+  module: *id001
+  mutations:
+  - lineno: 6
+    operator: LCR
+  number: 22
+  status: killed
+  tests_run: 4
+  time: 0.27559781074523926
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 10
+    operator: LCR
+  number: 23
+  status: survived
+  tests_run: 4
+  time: 0.28118300437927246
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 20
+    operator: LCR
+  number: 24
+  status: survived
+  tests_run: 4
+  time: 0.2655611038208008
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 43
+    operator: LCR
+  number: 25
+  status: survived
+  tests_run: 4
+  time: 0.29262781143188477
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 43
+    operator: LCR
+  number: 26
+  status: survived
+  tests_run: 4
+  time: 0.2723701000213623
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 44
+    operator: LCR
+  number: 27
+  status: survived
+  tests_run: 4
+  time: 0.26668310165405273
+- exception_traceback: "self = <test_utils.TestIsDocstring testMethod=test_class_docstring_node>\n\
+    \n    def test_class_docstring_node(self):\n        node = ParentChildNodeTransformer().visit(ast.parse('class\
+    \ X:\\n\\t\"\"\"doc\"\"\"'))\n    \n>       assert is_docstring(node.body[0].body[0].value)\n\
+    E       AssertionError\n\nsrc\\tests\\astmonkeytests\\test_utils.py:26: AssertionError"
+  killer: src/tests/astmonkeytests/test_utils.py::TestIsDocstring::test_class_docstring_node
+  module: *id001
+  mutations:
+  - lineno: 12
+    operator: ROR
+  number: 28
+  status: killed
+  tests_run: 1
+  time: 0.2811894416809082
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 19
+    operator: ROR
+  number: 29
+  status: survived
+  tests_run: 4
+  time: 0.278515100479126
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 19
+    operator: ROR
+  number: 30
+  status: survived
+  tests_run: 4
+  time: 0.28118348121643066
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 20
+    operator: ROR
+  number: 31
+  status: survived
+  tests_run: 4
+  time: 0.27287936210632324
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 20
+    operator: ROR
+  number: 32
+  status: survived
+  tests_run: 4
+  time: 0.2910647392272949
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 43
+    operator: ROR
+  number: 33
+  status: survived
+  tests_run: 4
+  time: 0.27785420417785645
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 43
+    operator: ROR
+  number: 34
+  status: survived
+  tests_run: 4
+  time: 0.31238842010498047
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 44
+    operator: ROR
+  number: 35
+  status: survived
+  tests_run: 4
+  time: 0.2870800495147705
+- exception_traceback: null
+  killer: null
+  module: *id001
+  mutations:
+  - lineno: 44
+    operator: ROR
+  number: 36
+  status: survived
+  tests_run: 4
+  time: 0.2786557674407959
+number_of_tests: 4
+targets:
+- src/astmonkey/utils.py
+tests:
+- name: test_utils
+  target: null
+  time: 0.9309697151184082
+time_stats:
+  create_mutant_module: 0.002006053924560547
+  create_target_ast: 0.0
+  mutate_module: 10.333554744720459
+  run_tests_with_mutant: 10.124479055404663
+total_time: 11.266819715499878
