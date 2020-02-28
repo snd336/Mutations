@@ -13,5 +13,11 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\steph\Desktop\Thesis\Feature Scripts\Working\.coverage</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="[3]" uuid="57e78c79-1b25-4b9c-a4d1-6bbb82ec27b5">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\steph\Desktop\Thesis\Feature Scripts\Working\src\runners\.coverage</jdbc-url>
+    </data-source>
   </component>
 </project>
